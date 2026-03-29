@@ -351,4 +351,107 @@
       box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305;
     }
 
+  card-mod-row-yaml: |
+    .: |
+      :host {
+        display: block;
+        margin: 3px 0;
+        padding: 2px 6px;
+        background: linear-gradient(180deg, #0d1019 0%, #05070c 100%);
+        box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+      }
+    hui-generic-entity-row$: |
+      state-badge {
+        color: var(--winamp-gold) !important;
+      }
+      .info,
+      .text-content,
+      .secondary,
+      .secondary span {
+        color: var(--winamp-lcd-green) !important;
+      }
+      .name {
+        color: var(--winamp-gold-bright) !important;
+      }
+    hui-toggle-entity-row$: |
+      state-badge {
+        color: var(--winamp-gold) !important;
+      }
+      .info,
+      .text-content,
+      .secondary,
+      .secondary span {
+        color: var(--winamp-lcd-green) !important;
+      }
+      .name {
+        color: var(--winamp-gold-bright) !important;
+      }
+
+  card-mod-element: |
+    button,
+    mwc-button,
+    ha-icon-button,
+    ha-control-button {
+      border-radius: 0 !important;
+      box-shadow: inset 1px 1px 0 #eef1f8, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+    }
+    ha-slider,
+    ha-control-slider {
+      --slider-color: var(--winamp-gold) !important;
+      --slider-secondary-color: #4c5670 !important;
+    }
+
+  card-mod-more-info: |
+    .container,
+    .content,
+    ha-dialog,
+    .mdc-dialog__surface {
+      background:
+        linear-gradient(180deg, rgba(154, 162, 189, 0.22) 0%, rgba(90, 99, 128, 0.16) 10%, rgba(52, 59, 84, 0.12) 50%, rgba(9, 11, 18, 0.18) 100%),
+        linear-gradient(180deg, var(--winamp-shell-mid) 0%, #303650 100%) !important;
+      border-radius: 0 !important;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
+    }
+    .header,
+    h1,
+    h2,
+    .title {
+      color: var(--winamp-gold-bright) !important;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .value,
+    .state,
+    .secondary,
+    .info {
+      color: var(--winamp-lcd-green) !important;
+    }
+    ha-control-button,
+    button,
+    mwc-button {
+      border-radius: 0 !important;
+    }
+
+  card-mod-dialog: |
+    .mdc-dialog__surface,
+    .container,
+    .content {
+      background:
+        linear-gradient(180deg, rgba(154, 162, 189, 0.22) 0%, rgba(90, 99, 128, 0.16) 10%, rgba(52, 59, 84, 0.12) 50%, rgba(9, 11, 18, 0.18) 100%),
+        linear-gradient(180deg, var(--winamp-shell-mid) 0%, #303650 100%) !important;
+      border-radius: 0 !important;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
+    }
+    .mdc-dialog__title,
+    h2 {
+      color: var(--winamp-gold-bright) !important;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .mdc-dialog__content,
+    .content,
+    .secondary {
+      color: var(--winamp-lcd-green) !important;
+    }
+
   card-mod-theme: "Winamp Classic"
