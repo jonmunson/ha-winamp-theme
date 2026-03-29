@@ -90,9 +90,9 @@
   paper-dialog-background-color: "#343b50"
   paper-dialog-color: "#efe8b7"
   paper-dialog-button-color: "#cabf6c"
-  paper-font-common-base_-_font-family: "Arial, Tahoma, Verdana, sans-serif"
+  paper-font-common-base_-_font-family: "Tahoma, Arial, Verdana, sans-serif"
   paper-font-common-code_-_font-family: "'Lucida Console', 'Courier New', monospace"
-  primary-font-family: "Arial, Tahoma, Verdana, sans-serif"
+  primary-font-family: "Tahoma, Arial, Verdana, sans-serif"
   mcg-title-letter-spacing: "0.015em"
   mcg-title-font-weight: "700"
   mini-media-player-base-color: "#e6e0bf"
@@ -574,57 +574,100 @@
 
   card-mod-card-yaml: |
     hui-media-control-card$:
-      ha-media-player$: |
-        .container,
-        .player,
-        .music-player,
-        .media-player,
-        .card-content,
-        .content,
-        .controls,
-        .progress,
-        .volume,
-        .volume-level,
-        .media-info,
-        .metadata,
-        .background {
-          background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-          background-color: #090c14 !important;
-          box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      .: |
+        ha-card {
+          overflow: hidden;
         }
-        .container,
-        .player,
-        .music-player,
-        .media-player,
-        .content {
-          padding: 8px !important;
-        }
-        .artwork,
-        .cover,
+        .background,
+        .color-block,
+        .color-gradient,
         .image,
-        .entity__picture,
-        .entity-picture,
-        .background-cover,
-        .no-image,
         .no-img {
           background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
           background-color: #0b0f17 !important;
+        }
+        .background {
+          opacity: 1 !important;
+          filter: none !important;
+        }
+        .color-block {
+          width: 100% !important;
+        }
+        .color-gradient {
+          opacity: 0.12 !important;
+        }
+        .image {
+          opacity: 0.16 !important;
+          background-size: cover !important;
+        }
+        .no-img {
+          width: 34% !important;
+          opacity: 0.18 !important;
+          background-image: none !important;
+          background-color: #131827 !important;
           box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
         }
-        .title,
-        .name,
-        .artist,
-        .media-info,
-        .source {
-          color: #e6e0bf !important;
-          font-family: Tahoma, Arial, sans-serif !important;
+        .player {
+          margin: 7px !important;
+          padding: 10px !important;
+          height: calc(100% - 14px);
+          box-sizing: border-box !important;
+          background:
+            linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
+            linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+          box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
         }
-        .title,
-        .name {
-          font-size: 10px !important;
+        .top-info {
+          align-items: center;
+          margin-bottom: 8px;
+          padding-bottom: 6px;
+          border-bottom: 1px solid rgba(82, 89, 110, 0.7);
+        }
+        .icon-name,
+        .icon-name div {
+          color: var(--winamp-gold-bright) !important;
+          font-family: Tahoma, Arial, sans-serif !important;
+          font-size: 9px !important;
           font-weight: 700 !important;
           letter-spacing: 0.015em !important;
           text-transform: uppercase;
+          text-shadow: 0 1px 0 #090b12;
+        }
+        .icon,
+        .icon-name ha-state-icon {
+          color: var(--winamp-gold) !important;
+        }
+        .more-info {
+          top: 0 !important;
+          right: 0 !important;
+        }
+        .title-controls {
+          padding-top: 4px !important;
+        }
+        .media-info,
+        hui-marquee {
+          color: #00ff62 !important;
+          font-family: Tahoma, Arial, sans-serif !important;
+        }
+        .media-info {
+          font-size: 13px !important;
+          text-shadow: 0 0 6px rgba(0,255,98,0.08);
+        }
+        hui-marquee {
+          font-size: 1.02em !important;
+          font-weight: 700 !important;
+          letter-spacing: 0.01em !important;
+        }
+        .controls {
+          padding: 8px 0 2px !important;
+          align-items: center;
+          gap: 6px;
+        }
+        .controls .start,
+        .controls .end {
+          display: flex;
+          align-items: center;
+          gap: 6px;
         }
         .controls ha-icon-button,
         .controls ha-control-button,
@@ -638,11 +681,19 @@
           color: #283048 !important;
           box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
         }
-        paper-slider,
-        .mdc-slider,
-        .slider {
-          --mdc-slider-active-track-color: #bca742 !important;
-          --mdc-slider-inactive-track-color: #3e465d !important;
+        ha-icon-button[action="media_play"],
+        ha-icon-button[action="media_play_pause"],
+        ha-icon-button[action="media_pause"],
+        ha-icon-button[action="media_stop"],
+        ha-icon-button[action="turn_on"],
+        ha-icon-button[action="turn_off"] {
+          --ha-icon-button-size: 36px !important;
+          --mdc-icon-size: 22px !important;
+        }
+        mwc-linear-progress {
+          margin-top: 10px !important;
+          --mdc-theme-primary: #bca742 !important;
+          --mdc-linear-progress-buffer-color: #3e465d !important;
         }
     mini-media-player$: |
       ha-card {
@@ -1092,135 +1143,110 @@
     }
 
   card-mod-more-info-yaml: |
-    more-info-media_player$: |
-      ha-media-player$: |
-        .container,
-        .player,
-        .music-player,
-        .media-player,
-        .content,
-        .controls,
-        .bottom-controls,
-        .progress,
-        .volume,
-        .volume-level,
-        .media-info,
-        .metadata,
-        .background {
-          background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-          background-color: #090c14 !important;
-          box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    more-info-media_player$:
+      .: |
+        :host {
+          --mdc-theme-primary: #cabf6c !important;
+          --slider-color: #bca742 !important;
+          --slider-secondary-color: #3e465d !important;
         }
-        .container,
-        .player,
-        .music-player,
-        .media-player,
-        .content {
-          padding: 8px !important;
-        }
-        .artwork,
-        .cover,
-        .image,
-        .entity__picture,
-        .entity-picture,
-        .background-cover,
-        .no-image,
-        .no-img {
-          background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-          background-color: #0b0f17 !important;
-          box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-        }
-        .title,
-        .name,
-        .artist,
-        .media-info {
-          color: #e6e0bf !important;
-          font-family: Tahoma, Arial, sans-serif !important;
-        }
-        .title,
-        .name {
-          font-size: 10px !important;
-          font-weight: 700 !important;
-          letter-spacing: 0.015em !important;
-          text-transform: uppercase;
-        }
-        .controls ha-icon-button,
-        .controls ha-control-button,
-        .controls mwc-icon-button,
-        .controls mwc-button,
-        .controls button {
-          border-radius: 0 !important;
-          background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-          color: #283048 !important;
-          box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-        }
-        paper-slider,
-        .mdc-slider,
-        .slider {
-          --mdc-slider-active-track-color: #bca742 !important;
-          --mdc-slider-inactive-track-color: #3e465d !important;
-        }
-      .container,
-      .content,
-      .player,
-      .music-player,
-      .media-info,
-      .controls,
-      .bottom-controls,
-      .progress,
-      .volume,
-      .volume-level {
-        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-        background-color: #090c14 !important;
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-      }
-      .container,
-      .content,
-      .player,
-      .music-player {
-        padding: 8px !important;
-      }
-      .background,
-      .background-cover,
-      .image,
-      .no-image,
-      .no-img,
-      .entity__picture,
-      .artwork,
-      .cover {
-        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-        background-color: #0b0f17 !important;
-        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-      }
-      .title,
-      .name,
-      .artist {
-        color: #e6e0bf !important;
-        font-family: Tahoma, Arial, sans-serif !important;
-      }
-      .title,
-      .name {
-        font-size: 10px !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.015em !important;
-        text-transform: uppercase;
-      }
-      .controls ha-icon-button,
-      .controls ha-control-button,
-      .controls mwc-icon-button,
-      .controls mwc-button,
-      .controls button {
-        border-radius: 0 !important;
-        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-        color: #283048 !important;
-        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-      }
-      paper-slider,
-      .mdc-slider,
-      .slider {
-        --mdc-slider-active-track-color: #bca742 !important;
-        --mdc-slider-inactive-track-color: #3e465d !important;
-      }
+      ha-media-player$:
+        .: |
+          :host {
+            color: #e6e0bf !important;
+            font-family: Tahoma, Arial, sans-serif !important;
+          }
+          .container,
+          .player,
+          .music-player,
+          .media-player,
+          .content,
+          .controls,
+          .bottom-controls,
+          .progress,
+          .volume,
+          .volume-level,
+          .media-info,
+          .metadata,
+          .background {
+            background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+            background-color: #090c14 !important;
+            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+          }
+          .container,
+          .player,
+          .music-player,
+          .media-player,
+          .content {
+            padding: 10px !important;
+          }
+          .artwork,
+          .cover,
+          .image,
+          .entity__picture,
+          .entity-picture,
+          .background-cover,
+          .no-image,
+          .no-img {
+            background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+            background-color: #0b0f17 !important;
+            box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+          }
+          .title,
+          .name,
+          .artist {
+            color: #efe8b7 !important;
+            font-family: Tahoma, Arial, sans-serif !important;
+          }
+          .title,
+          .name {
+            font-size: 9px !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.015em !important;
+            text-transform: uppercase;
+          }
+          .media-info,
+          hui-marquee {
+            color: #00ff62 !important;
+            font-family: Tahoma, Arial, sans-serif !important;
+          }
+          .controls,
+          .bottom-controls {
+            padding-top: 8px !important;
+            gap: 6px;
+          }
+          .controls ha-icon-button,
+          .controls ha-control-button,
+          .controls mwc-icon-button,
+          .controls mwc-button,
+          .controls button,
+          .bottom-controls ha-icon-button,
+          .bottom-controls ha-control-button,
+          .bottom-controls mwc-icon-button,
+          .bottom-controls mwc-button,
+          .bottom-controls button {
+            border-radius: 0 !important;
+            background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+            color: #283048 !important;
+            box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+          }
+          ha-icon-button[action="media_play"],
+          ha-icon-button[action="media_play_pause"],
+          ha-icon-button[action="media_pause"],
+          ha-icon-button[action="media_stop"] {
+            --ha-icon-button-size: 38px !important;
+            --mdc-icon-size: 22px !important;
+          }
+          paper-slider,
+          .mdc-slider,
+          .slider,
+          ha-slider,
+          ha-control-slider {
+            --mdc-slider-active-track-color: #bca742 !important;
+            --mdc-slider-inactive-track-color: #3e465d !important;
+            --slider-color: #bca742 !important;
+            --slider-secondary-color: #3e465d !important;
+          }
 
   card-mod-dialog: |
     .mdc-dialog__surface,
