@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Winamp Classic Home Assistant theme preview</title>
+  <desc id="desc">Stylized preview card showing a Home Assistant dashboard rendered in a Winamp Classic 2.x inspired shell.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#666e7a"/>
+      <stop offset="30%" stop-color="#444b56"/>
+      <stop offset="100%" stop-color="#1c2028"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#aab0bb"/>
+      <stop offset="10%" stop-color="#8d94a0"/>
+      <stop offset="45%" stop-color="#676f7b"/>
+      <stop offset="100%" stop-color="#39404a"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#757c88"/>
+      <stop offset="100%" stop-color="#5a616d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="none" opacity="0.16"/>
+  <rect x="88" y="66" width="1104" height="588" rx="6" fill="#262a32" stroke="#11151b" stroke-width="4"/>
+  <rect x="104" y="82" width="1072" height="64" fill="url(#chrome)" stroke="#0f131b" stroke-width="2"/>
+  <text x="136" y="123" fill="#12161c" font-family="Tahoma, Verdana, sans-serif" font-size="32" font-weight="700">WINAMP CLASSIC</text>
+  <rect x="104" y="146" width="248" height="492" fill="url(#chrome)" stroke="#0f131b" stroke-width="2"/>
+  <rect x="370" y="146" width="806" height="492" fill="#2a2f39" stroke="#0f131b" stroke-width="2"/>
+  <rect x="128" y="174" width="200" height="36" fill="#4f6fa8"/>
+  <text x="150" y="199" fill="#f4f7fb" font-family="Tahoma, Verdana, sans-serif" font-size="20" font-weight="700">Dashboard</text>
+  <text x="132" y="256" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Overview</text>
+  <text x="132" y="304" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Playlist</text>
+  <text x="132" y="352" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Equalizer</text>
+  <text x="132" y="400" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Preferences</text>
+  <rect x="406" y="182" width="352" height="160" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
+  <rect x="430" y="206" width="304" height="56" fill="#11151d" stroke="#89929d" stroke-width="2"/>
+  <text x="452" y="243" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="30">44100 KHZ</text>
+  <text x="430" y="304" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="28" font-weight="700">Living Room</text>
+  <text x="430" y="332" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="20">Chrome shell, blue focus, green display, amber controls</text>
+  <rect x="786" y="182" width="352" height="160" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
+  <rect x="818" y="224" width="288" height="18" fill="#555c68"/>
+  <rect x="818" y="224" width="196" height="18" fill="#d7921f"/>
+  <circle cx="1014" cy="233" r="14" fill="#f0b44b" stroke="#5b3906" stroke-width="3"/>
+  <text x="818" y="297" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Volume 68%</text>
+  <rect x="406" y="374" width="226" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
+  <rect x="654" y="374" width="226" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
+  <rect x="902" y="374" width="236" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
+  <text x="432" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Kitchen</text>
+  <text x="680" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Equalizer</text>
+  <text x="928" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Playlist</text>
+  <rect x="432" y="448" width="174" height="24" fill="#555c68"/>
+  <rect x="432" y="448" width="116" height="24" fill="#4f6fa8"/>
+  <rect x="680" y="448" width="170" height="72" fill="#11151d" stroke="#89929d" stroke-width="2"/>
+  <text x="696" y="493" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="38">PREAMP</text>
+  <rect x="928" y="448" width="182" height="28" fill="#11151d" stroke="#89929d" stroke-width="2"/>
+  <text x="944" y="468" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="18">01. The Living Room</text>
+  <rect x="928" y="486" width="182" height="28" fill="#4f6fa8"/>
+  <text x="944" y="506" fill="#f4f7fb" font-family="'Lucida Console', monospace" font-size="18">02. Lights Out Mix</text>
+  <rect x="928" y="524" width="182" height="28" fill="#11151d" stroke="#89929d" stroke-width="2"/>
+  <text x="944" y="544" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="18">03. Security Loop</text>
+  <text x="430" y="540" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="18">Closer to the default classic skin: blue selection, green text, harder bevels.</text>
+  <text x="430" y="568" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="18">Built as a HACS-ready single-theme repository.</text>
+</svg>
