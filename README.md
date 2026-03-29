@@ -23,7 +23,7 @@ The theme focuses on:
 - hard beveled, square-edged cards
 - darker inset panes for graphs, tables, and media displays
 
-It also includes styling for `mini-graph-card`, and it supports a higher-fidelity mode through `card-mod`.
+It also includes styling for [`mini-graph-card`](https://github.com/kalkih/mini-graph-card), and it supports a higher-fidelity mode through `card-mod`.
 
 ## Installation
 
@@ -67,7 +67,7 @@ The theme includes styling for:
 - core Home Assistant cards and dialogs
 - Energy dashboard surfaces
 - media player cards and more-info dialogs
-- `mini-graph-card`
+- [`mini-graph-card`](https://github.com/kalkih/mini-graph-card)
 
 ## Notes
 
