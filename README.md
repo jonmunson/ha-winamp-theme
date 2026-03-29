@@ -16,6 +16,8 @@ The theme is tuned around the referenced Winamp 5.9.2 screenshot:
 - neon green status and playlist text
 - yellow and gold control accents
 - hard beveled, square-edged cards
+- brighter dialog and button chrome
+- stronger black display treatment for lists, badges, and inputs
 
 ## Installation
 
@@ -54,4 +56,4 @@ Restart Home Assistant after changing `configuration.yaml`.
 
 Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but they cannot fully recreate Winamp's bitmap skinning system. This theme is biased toward the specific Winamp 5.9.2 screenshot palette and chrome treatment without requiring extra custom cards.
 
-If you want a more extreme recreation later, the next step would be pairing this theme with dashboard-level styling such as `card-mod`, image assets, and a custom view layout that mimics the Winamp player frame.
+If you want a more extreme recreation later, the next step would be pairing this theme with dashboard-level styling such as `card-mod`, image assets, and a custom view layout that mimics the Winamp player frame. This repo currently stays dependency-free so it can be installed as a plain HACS theme.
