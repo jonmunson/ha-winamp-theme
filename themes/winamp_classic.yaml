@@ -314,6 +314,56 @@
     ha-card .value {
       color: var(--primary-text-color);
     }
+    ha-card ha-chart-base,
+    ha-card state-history-charts,
+    ha-card .chart-container,
+    ha-card .graph,
+    ha-card .apexcharts-canvas,
+    ha-card .recharts-wrapper {
+      display: block;
+      margin-top: 4px;
+      padding: 8px;
+      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      color: var(--winamp-lcd-green);
+    }
+    ha-card svg text,
+    ha-card .legend,
+    ha-card .legend__item,
+    ha-card .axis,
+    ha-card .xAxis,
+    ha-card .yAxis {
+      fill: #bcb7a2 !important;
+      color: #bcb7a2 !important;
+    }
+    ha-card .grid line,
+    ha-card .gridline,
+    ha-card .recharts-cartesian-grid line {
+      stroke: #404860 !important;
+    }
+    ha-card .forecast,
+    ha-card .hourly,
+    ha-card .daily,
+    ha-card .weather,
+    ha-card .temp,
+    ha-card .templow,
+    ha-card .temperature {
+      color: #e4dfc1;
+    }
+    ha-card .media-info,
+    ha-card .entity__info,
+    ha-card .metadata,
+    ha-card .title,
+    ha-card .artist {
+      color: #e4dfc1;
+    }
+    ha-card .media-player,
+    ha-card .player,
+    ha-card .controls,
+    ha-card .progress {
+      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%);
+      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+    }
     ha-card mwc-button,
     ha-card button,
     ha-card .button {
@@ -382,7 +432,7 @@
         color: var(--winamp-lcd-green) !important;
       }
       .name {
-        color: var(--winamp-gold-bright) !important;
+        color: #d8d2ae !important;
       }
     hui-toggle-entity-row$: |
       state-badge {
@@ -395,7 +445,7 @@
         color: var(--winamp-lcd-green) !important;
       }
       .name {
-        color: var(--winamp-gold-bright) !important;
+        color: #d8d2ae !important;
       }
 
   card-mod-element: |
