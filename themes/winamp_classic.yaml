@@ -402,6 +402,14 @@
       color: var(--winamp-gold-bright);
       font-family: Arial, Tahoma, Verdana, sans-serif;
     }
+    ha-card .header {
+      font-family: Tahoma, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 #090b12;
+    }
     ha-card .secondary,
     ha-card .state__uom,
     ha-card .state,
@@ -551,6 +559,90 @@
     }
 
   card-mod-card-yaml: |
+    hui-media-player-card$: |
+      ha-card {
+        background:
+          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
+          repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
+          linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
+      }
+      .color-block,
+      .background,
+      .background-cover,
+      .image,
+      .no-image,
+      .no-img,
+      .overlay,
+      .artwork,
+      .cover,
+      .entity__picture {
+        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+        background-color: #0b0f17 !important;
+        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .container,
+      .music-player,
+      .player,
+      .content,
+      .media-info,
+      .metadata,
+      .title-controls,
+      .controls,
+      .progress,
+      .progress-bar,
+      .volume,
+      .volume-level {
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        background-color: #090c14 !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .music-player,
+      .player,
+      .content {
+        padding: 8px !important;
+      }
+      .title,
+      .name,
+      .artist,
+      .media-info,
+      .source {
+        color: #e6e0bf !important;
+        font-family: Arial, Tahoma, Verdana, sans-serif !important;
+      }
+      .title,
+      .name {
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.015em !important;
+        text-transform: uppercase;
+      }
+      ha-icon,
+      .icon {
+        color: var(--winamp-gold) !important;
+      }
+      .controls ha-icon-button,
+      .controls ha-control-button,
+      .controls mwc-icon-button,
+      .controls mwc-button,
+      .controls button {
+        min-width: 28px;
+        min-height: 28px;
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+        color: #283048 !important;
+        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      }
+      .progress,
+      .progress-bar,
+      .volume,
+      .volume-level {
+        padding: 4px !important;
+      }
+      .state,
+      .state-info {
+        color: var(--winamp-lcd-green) !important;
+      }
     mini-graph-card$: |
       .states,
       .state,
@@ -837,6 +929,64 @@
     mwc-button {
       border-radius: 0 !important;
     }
+
+  card-mod-more-info-yaml: |
+    more-info-media_player$: |
+      .container,
+      .content,
+      .player,
+      .music-player,
+      .media-info,
+      .controls,
+      .bottom-controls,
+      .progress,
+      .volume,
+      .volume-level {
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        background-color: #090c14 !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .container,
+      .content,
+      .player,
+      .music-player {
+        padding: 8px !important;
+      }
+      .background,
+      .background-cover,
+      .image,
+      .no-image,
+      .no-img,
+      .entity__picture,
+      .artwork,
+      .cover {
+        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+        background-color: #0b0f17 !important;
+        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .title,
+      .name,
+      .artist {
+        color: #e6e0bf !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+      }
+      .title,
+      .name {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.015em !important;
+        text-transform: uppercase;
+      }
+      .controls ha-icon-button,
+      .controls ha-control-button,
+      .controls mwc-icon-button,
+      .controls mwc-button,
+      .controls button {
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+        color: #283048 !important;
+        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      }
 
   card-mod-dialog: |
     .mdc-dialog__surface,
