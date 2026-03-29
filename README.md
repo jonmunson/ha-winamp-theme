@@ -49,6 +49,32 @@ Restart Home Assistant after changing `configuration.yaml`.
 6. Run the `frontend.reload_themes` action, or restart Home Assistant.
 7. Select `Winamp Classic` in your user profile.
 
+## Updates In HACS
+
+You do not need a `latest` branch for HACS.
+
+This repository is now set up to use GitHub releases for HACS updates:
+
+- if there is no release, HACS uses the default branch
+- if releases exist, HACS tracks the latest GitHub release
+
+To publish an update that HACS will detect cleanly:
+
+1. Commit and push your changes to `main`.
+2. Create a semantic version tag such as `v0.2.0`.
+3. Push the tag to GitHub.
+4. The GitHub Actions release workflow will create a GitHub release from that tag.
+5. HACS will then see the new release as the next available version.
+
+Example:
+
+```bash
+git tag v0.2.0
+git push origin v0.2.0
+```
+
+The release workflow is defined in `.github/workflows/release.yaml`.
+
 ### Full fidelity with card-mod
 
 If you want the detailed header, sidebar, dialog, row, and component chrome included in this theme:
