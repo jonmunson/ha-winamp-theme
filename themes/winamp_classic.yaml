@@ -20,17 +20,17 @@
   light-primary-color: "#dfd59b"
   dark-primary-color: "#847a37"
 
-  primary-background-color: "#1a1d29"
-  secondary-background-color: "#2d3344"
-  lovelace-background: "radial-gradient(circle at top, rgba(202,191,108,0.04) 0%, rgba(202,191,108,0.01) 9%, rgba(30,34,52,0) 20%), repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, rgba(0,0,0,0.018) 1px, rgba(0,0,0,0.018) 2px), linear-gradient(180deg, #212433 0%, #171a25 100%)"
-  mdc-theme-background: "#1a1d29"
-  card-background-color: "#444b5f"
-  ha-card-background: "#444b5f"
-  secondary-card-background-color: "#363c4f"
-  mdc-theme-surface: "#444b5f"
-  mdc-theme-surface-variant: "#363c4f"
-  popup-background-color: "#3c4356"
-  card-background-image: "linear-gradient(180deg, rgba(188,193,210,0.26) 0%, rgba(137,145,170,0.18) 8%, rgba(91,99,124,0.12) 20%, rgba(67,74,95,0.08) 52%, rgba(16,19,30,0.22) 100%)"
+  primary-background-color: "#181b27"
+  secondary-background-color: "#293042"
+  lovelace-background: "radial-gradient(circle at top, rgba(202,191,108,0.035) 0%, rgba(202,191,108,0.008) 8%, rgba(30,34,52,0) 18%), repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px), linear-gradient(180deg, #202432 0%, #151822 100%)"
+  mdc-theme-background: "#181b27"
+  card-background-color: "#40475b"
+  ha-card-background: "#40475b"
+  secondary-card-background-color: "#31384b"
+  mdc-theme-surface: "#40475b"
+  mdc-theme-surface-variant: "#31384b"
+  popup-background-color: "#353c50"
+  card-background-image: "linear-gradient(180deg, rgba(188,193,210,0.22) 0%, rgba(137,145,170,0.16) 8%, rgba(91,99,124,0.1) 20%, rgba(67,74,95,0.07) 52%, rgba(16,19,30,0.24) 100%)"
 
   primary-text-color: "#d9d8c8"
   secondary-text-color: "#b9b498"
@@ -48,7 +48,7 @@
   header-tab-text-color-active: "#f2ecb1"
   header-tab-text-color-inactive: "#8f8a66"
 
-  sidebar-background-color: "#3f4659"
+  sidebar-background-color: "#40475b"
   sidebar-text-color: "#c9c28a"
   sidebar-icon-color: "#c9c28a"
   sidebar-selected-background-color: "#090c14"
@@ -73,7 +73,7 @@
 
   paper-listbox-background-color: "#090c14"
   paper-listbox-color: "#00ff62"
-  material-background-color: "#3a415a"
+  material-background-color: "#343b50"
   list-item-background-color: "#090c14"
   table-header-background-color: "#171a28"
   table-header-color: "#efe8a9"
@@ -87,7 +87,7 @@
   label-badge-grey: "#6d7388"
 
   paper-card-header-color: "#efe8a9"
-  paper-dialog-background-color: "#343b54"
+  paper-dialog-background-color: "#343b50"
   paper-dialog-color: "#efe8b7"
   paper-dialog-button-color: "#cabf6c"
   paper-font-common-base_-_font-family: "Tahoma, Verdana, 'Segoe UI', sans-serif"
@@ -159,8 +159,8 @@
   ha-card-border-width: "1px"
   ha-card-border-color: "#141724"
   ha-card-box-shadow: "inset 1px 1px 0 #8b92ad, inset 2px 2px 0 rgba(255,255,255,0.08), inset -1px -1px 0 #20263a, inset -2px -2px 0 rgba(0,0,0,0.28), 0 0 0 1px #141724"
-  paper-card-background-color: "#3a415a"
-  paper-card-background-image: "linear-gradient(180deg, rgba(149,157,185,0.22) 0%, rgba(93,102,131,0.14) 12%, rgba(46,52,75,0.1) 48%, rgba(12,14,24,0.24) 100%)"
+  paper-card-background-color: "#343b50"
+  paper-card-background-image: "linear-gradient(180deg, rgba(149,157,185,0.2) 0%, rgba(93,102,131,0.12) 12%, rgba(46,52,75,0.08) 48%, rgba(12,14,24,0.26) 100%)"
   ha-dialog-border-radius: "0px"
   ha-view-sections-column-gap: "8px"
   ha-view-sections-row-gap: "8px"
@@ -184,7 +184,7 @@
         background: var(--lovelace-background);
       }
       app-header {
-        background: linear-gradient(180deg, #22283a 0%, #181c2b 45%, #10131f 100%) !important;
+        background: linear-gradient(180deg, #202637 0%, #171b29 45%, #0f121d 100%) !important;
         border-bottom: 1px solid #111420;
         box-shadow: inset 0 1px 0 #7d869c, inset 0 2px 0 rgba(255,255,255,0.08), inset 0 -1px 0 #0b0d15;
       }
@@ -193,7 +193,7 @@
         background:
           linear-gradient(90deg, transparent 0 10px, #efe8a9 10px 18px, var(--winamp-gold) 18px 126px, transparent 126px calc(100% - 126px), var(--winamp-gold) calc(100% - 126px) calc(100% - 18px), #efe8a9 calc(100% - 18px) calc(100% - 10px), transparent calc(100% - 10px)),
           repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-          linear-gradient(180deg, #252b3f 0%, #1a1e2d 42%, #141827 100%) !important;
+          linear-gradient(180deg, #23283b 0%, #181c2a 42%, #121624 100%) !important;
         box-shadow: inset 0 1px 0 #7b849b, inset 0 2px 0 rgba(255,255,255,0.08), inset 0 -1px 0 #0b0d15;
       }
       [main-title] {
@@ -225,8 +225,8 @@
       hui-energy-date-selection,
       ha-date-range-picker {
         background:
-          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 10%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.14) 100%),
-          linear-gradient(180deg, #555d73 0%, #454d62 18%, #3a4154 100%) !important;
+          linear-gradient(180deg, rgba(188, 194, 212, 0.16) 0%, rgba(142, 149, 173, 0.1) 10%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.16) 100%),
+          linear-gradient(180deg, #535b72 0%, #42495d 18%, #343b4d 100%) !important;
         box-shadow: inset 1px 1px 0 #8d95ad, inset -1px -1px 0 #20263a, 0 0 0 1px #0b0d15 !important;
         border-radius: 0 !important;
       }
@@ -248,9 +248,9 @@
   card-mod-sidebar: |
     :host {
       background:
-        linear-gradient(180deg, rgba(180,186,206,0.08) 0%, rgba(0,0,0,0) 12%),
+        linear-gradient(180deg, rgba(180,186,206,0.07) 0%, rgba(0,0,0,0) 12%),
         repeating-linear-gradient(180deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #535b72 0%, #444b5f 18%, #3b4255 58%, #343a4d 100%) !important;
+        linear-gradient(180deg, #51596f 0%, #434a5e 18%, #394054 58%, #31384a 100%) !important;
       border-right: 1px solid #131722;
       box-shadow: inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 #69718d;
     }
@@ -258,19 +258,24 @@
     .iron-selected,
     .menu-link {
       border-radius: 0 !important;
-      margin: 1px 8px !important;
-      min-height: 34px !important;
-      background: linear-gradient(180deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 100%);
+      margin: 1px 6px !important;
+      min-height: 36px !important;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0) 20%),
+        linear-gradient(180deg, #4a5268 0%, #40485b 20%, #3b4255 100%);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(17,20,32,0.65), 0 0 0 1px rgba(20,23,36,0.28);
     }
     .iron-selected,
     ha-md-list-item[selected] {
-      background: linear-gradient(180deg, #53656d 0%, #44565d 18%, #3a4a50 100%) !important;
+      background:
+        linear-gradient(180deg, rgba(172,196,188,0.15) 0%, rgba(0,0,0,0) 26%),
+        linear-gradient(180deg, #586a6c 0%, #4b5d5f 18%, #3d4d50 100%) !important;
       color: var(--winamp-lcd-green) !important;
-      box-shadow: inset 1px 1px 0 #8592a6, inset -1px -1px 0 #223239, 0 0 0 1px #141724;
+      box-shadow: inset 1px 1px 0 #8c98a8, inset -1px -1px 0 #213336, 0 0 0 1px #141724;
     }
     ha-md-list-item:not([selected]):not(.iron-selected),
     .menu-link:not(.iron-selected) {
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 0 0 1px rgba(20,23,36,0.18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), inset 0 -1px 0 rgba(18,21,34,0.6), 0 0 0 1px rgba(20,23,36,0.18);
     }
     .primary,
     .mdc-list-item__primary-text {
@@ -285,6 +290,7 @@
   card-mod-view: |
     :host {
       padding: 6px 8px 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.008) 0%, rgba(255,255,255,0) 14%), linear-gradient(180deg, #1d2130 0%, #161924 100%);
     }
     #columns {
       gap: 8px !important;
@@ -296,9 +302,9 @@
       overflow: hidden;
       padding-top: 14px;
       background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.22) 0%, rgba(142, 149, 173, 0.16) 8%, rgba(103, 110, 134, 0.1) 18%, rgba(71, 77, 97, 0.07) 52%, rgba(9, 11, 18, 0.16) 100%),
+        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
         repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #5a627a 0%, #4a5167 14%, #434a5f 54%, #3f4659 100%) !important;
+        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
       border: 1px solid #141724 !important;
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
@@ -334,10 +340,10 @@
     ha-card > .card-content,
     ha-card > #states,
     ha-card > .content {
-      margin: 0;
+      margin: 0 7px 7px;
       padding: 8px;
-      background: transparent;
-      box-shadow: none;
+      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%);
+      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
       color: var(--primary-text-color);
     }
     ha-card h1,
@@ -405,6 +411,7 @@
     }
     ha-card .media-player {
       padding: 8px 10px;
+      border-top: 1px solid rgba(118,126,151,0.3);
     }
     ha-card .media-player .title,
     ha-card .media-player .artist,
@@ -443,6 +450,23 @@
       background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
       box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
       color: #d8d2ae !important;
+    }
+    ha-card hui-energy-distribution-card,
+    ha-card hui-energy-usage-graph-card,
+    ha-card hui-energy-solar-graph-card,
+    ha-card hui-energy-devices-graph-card,
+    ha-card hui-energy-sources-table,
+    ha-card hui-energy-carbon-consumed-gas-graph-card,
+    ha-card hui-energy-carbon-value-card,
+    ha-card .energy,
+    ha-card .distribution,
+    ha-card .energy-usage,
+    ha-card .details,
+    ha-card .table-container,
+    ha-card .chart {
+      display: block;
+      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
     }
     ha-card thead,
     ha-card th,
@@ -598,12 +622,34 @@
     .content,
     ha-dialog,
     .mdc-dialog__surface {
+      position: relative;
+      overflow: hidden;
+      padding-top: 14px;
       background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.22) 0%, rgba(142, 149, 173, 0.16) 8%, rgba(103, 110, 134, 0.1) 18%, rgba(71, 77, 97, 0.07) 52%, rgba(9, 11, 18, 0.16) 100%),
+        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
         repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #5a627a 0%, #4a5167 14%, #434a5f 54%, #3f4659 100%) !important;
+        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
+      --mdc-theme-primary: var(--winamp-gold) !important;
+      --mdc-theme-secondary: var(--winamp-gold) !important;
+      --mdc-filled-button-container-color: #d5dbe5 !important;
+      --mdc-filled-button-label-text-color: #283048 !important;
+    }
+    .mdc-dialog__surface::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background:
+        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
+        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
+      border-bottom: 1px solid #49506a;
+      box-shadow: inset 0 1px 0 #7f88a0;
+      pointer-events: none;
+      z-index: 0;
     }
     .header,
     h1,
@@ -619,6 +665,43 @@
     .info {
       color: var(--winamp-lcd-green) !important;
     }
+    more-info-media_player,
+    ha-media-player,
+    .media-player,
+    .player {
+      display: block;
+      margin: 0 10px 10px;
+      padding: 10px;
+      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    }
+    .artwork,
+    .entity__picture,
+    .player__image,
+    .cover,
+    .coverart {
+      background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    }
+    .controls,
+    .bottom-controls,
+    .control-row,
+    .media-info,
+    .progress,
+    .volume,
+    .volume-level {
+      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    }
+    .controls button,
+    .controls ha-icon-button,
+    .controls ha-control-button,
+    .controls mwc-button {
+      border-radius: 0 !important;
+      background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+      color: #283048 !important;
+      box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+    }
     ha-control-button,
     button,
     mwc-button {
@@ -629,12 +712,30 @@
     .mdc-dialog__surface,
     .container,
     .content {
+      position: relative;
+      overflow: hidden;
+      padding-top: 14px;
       background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.22) 0%, rgba(142, 149, 173, 0.16) 8%, rgba(103, 110, 134, 0.1) 18%, rgba(71, 77, 97, 0.07) 52%, rgba(9, 11, 18, 0.16) 100%),
+        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
         repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #5a627a 0%, #4a5167 14%, #434a5f 54%, #3f4659 100%) !important;
+        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
+    }
+    .mdc-dialog__surface::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background:
+        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
+        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
+      border-bottom: 1px solid #49506a;
+      box-shadow: inset 0 1px 0 #7f88a0;
+      pointer-events: none;
+      z-index: 0;
     }
     .mdc-dialog__title,
     h2 {
