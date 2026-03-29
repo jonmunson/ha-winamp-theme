@@ -2,17 +2,41 @@ name: Validate
 
 on:
   push:
+    branches:
+      - main
   pull_request:
-  schedule:
-    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  hacs:
-    name: HACS
+  repository:
+    name: Theme Files
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate
-        uses: hacs/action@main
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          category: theme
+          ruby-version: "3.3"
+      - name: Validate HACS manifest and theme file
+        run: |
+          ruby <<'RUBY'
+          require "json"
+          require "yaml"
+
+          raise "README.md is missing" unless File.exist?("README.md")
+          raise "hacs.json is missing" unless File.exist?("hacs.json")
+          raise "themes/winamp_classic.yaml is missing" unless File.exist?("themes/winamp_classic.yaml")
+
+          hacs = JSON.parse(File.read("hacs.json"))
+          raise "hacs.json name is missing" if hacs["name"].to_s.strip.empty?
+          raise "hacs.json filename must be winamp_classic.yaml" unless hacs["filename"] == "winamp_classic.yaml"
+          raise "hacs.json content_in_root must be false" unless hacs["content_in_root"] == false
+
+          theme = YAML.load_file("themes/winamp_classic.yaml")
+          raise "theme file must define Winamp Classic" unless theme.is_a?(Hash) && theme.key?("Winamp Classic")
+
+          puts "Validation passed"
+          RUBY
