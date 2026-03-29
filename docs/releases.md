@@ -1,15 +1,17 @@
-# Release Process
+# Release Notes For Maintainers
+
+This file is only relevant if you maintain the repository.
 
 HACS does not need a `latest` branch for this repository.
 
 For custom theme repositories:
 
 - if the repository has no releases, HACS uses the default branch
-- if the repository has releases, HACS uses the latest GitHub release
+- if releases exist, HACS uses the latest GitHub release
 
-This repository is configured for the release-based path.
+This repository uses the release-based path.
 
-## How to publish an update
+## Publishing An Update
 
 1. Merge your changes into `main`.
 2. Create a semantic version tag:

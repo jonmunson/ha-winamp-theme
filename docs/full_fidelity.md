@@ -1,21 +1,32 @@
-# Full Fidelity Setup
+# Enhanced Mode Setup
 
-The theme file works by itself, but the closer Winamp clone depends on `card-mod` theme variables such as `card-mod-root`, `card-mod-card`, `card-mod-row`, `card-mod-sidebar`, `card-mod-more-info`, and `card-mod-dialog`.
+The theme works on its own, but the closest Winamp-style result uses `card-mod` as well.
 
-## Why card-mod is needed
+This is what unlocks the extra styling for:
 
-Home Assistant theme variables can recolor many components, but they cannot fully restyle global chrome such as the header, sidebar, dialog shell, or entity-row internals. `card-mod` can, and its official theme docs support these theme variables directly.
+- sidebar chrome
+- dialogs and more-info popups
+- entity rows
+- enhanced card internals
+- more detailed media-player styling
 
-## Install steps
+## Why it is optional
+
+If you only want the theme colors, card shells, and basic Winamp treatment, you do not need `card-mod`.
+
+If you want the closest clone, you do.
+
+## Setup
 
 1. Install `card-mod` from HACS.
 2. Open `Settings -> Dashboards -> Resources`.
-3. Find the HACS-added `card-mod.js` resource URL.
-4. Add that URL to `frontend.extra_module_url` in `configuration.yaml`.
-5. Restart Home Assistant.
-6. Keep the HACS dashboard resource entry in place.
+3. Find the `card-mod.js` resource HACS added.
+4. Copy that resource URL.
+5. Add the same URL to `frontend.extra_module_url` in `configuration.yaml`.
+6. Restart Home Assistant.
+7. Keep the original HACS dashboard resource in place.
 
-Example:
+Example configuration:
 
 ```yaml
 frontend:
@@ -24,8 +35,8 @@ frontend:
     - /hacsfiles/lovelace-card-mod/card-mod.js?hacstag=YOUR_HACS_TAG
 ```
 
-## Notes
+## Important Notes
 
-- The `hacstag` value will be specific to your Home Assistant instance.
+- The `hacstag` value is specific to your Home Assistant instance.
 - If you change `extra_module_url`, restart Home Assistant.
-- Styling the sidebar outside Lovelace dashboards requires `card-mod` to be loaded as a frontend module, not only as a dashboard resource.
+- This step is required because some parts of Home Assistant, including the sidebar and dialogs, are outside the scope of normal dashboard-only styling.

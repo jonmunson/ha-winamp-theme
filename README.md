@@ -5,39 +5,29 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jon%20Munson-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonmunson/)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-FFDD00?logo=buymeacoffee&logoColor=000000)](https://buymeacoffee.com/jonmunson)
 
----
-
-Home Assistant theme tuned to the Winamp 5.9.2 default skin shown on Wikipedia: dark navy title bars, blue-grey chassis panels, gold controls, and black display surfaces with neon green text.
+Home Assistant theme inspired by the default Winamp 5.9.2 skin: dark navy chrome, metallic blue-grey panels, gold trim, and black display surfaces with neon green accents.
 
 ![Winamp Classic preview](docs/preview.svg)
 
-## What this is
+## Overview
 
-This repository is structured as a HACS theme repo, so once it is pushed to GitHub it can be added to any Home Assistant instance through HACS as a custom repository.
+This repository is a HACS-installable Home Assistant theme designed to push Lovelace toward the look of the Winamp 5.9.2 default skin.
 
-The theme is tuned around the referenced Winamp 5.9.2 screenshot:
+The theme focuses on:
 
 - dark navy title bars with gold separators
 - blue-grey chassis panels
 - black playlist and display surfaces
 - neon green status and playlist text
-- yellow and gold control accents
+- silver and gold control accents
 - hard beveled, square-edged cards
-- brighter dialog and button chrome
-- stronger black display treatment for lists, badges, and inputs
+- darker inset panes for graphs, tables, and media displays
 
-## Fidelity levels
-
-There are two ways to use the repo:
-
-- Theme only: installs cleanly through HACS and applies the Winamp palette, spacing, and core component styling.
-- Full fidelity: adds card-by-card, row, dialog, header, and sidebar chrome through `card-mod` theme hooks. This is the version that pushes closest to the screenshot.
-
-For the full fidelity path, install `card-mod` through HACS and load it as a frontend module. The official card-mod docs note that frontend-module loading improves functionality and is required when styling non-dashboard panels such as the sidebar.
+It also includes styling for `mini-graph-card`, and it supports a higher-fidelity mode through `card-mod`.
 
 ## Installation
 
-Add the following to your `configuration.yaml` if you do not already load themes:
+Home Assistant must be configured to load themes. If you do not already have this in `configuration.yaml`, add:
 
 ```yaml
 frontend:
@@ -48,60 +38,12 @@ Restart Home Assistant after changing `configuration.yaml`.
 
 ### HACS
 
-1. Push this repository to GitHub.
-2. In Home Assistant, open HACS.
-3. Open the menu in the top right and choose `Custom repositories`.
-4. Add your GitHub repository URL and select the `Theme` category.
-5. Install `Winamp Classic`.
-6. Run the `frontend.reload_themes` action, or restart Home Assistant.
-7. Select `Winamp Classic` in your user profile.
-
-## Updates In HACS
-
-You do not need a `latest` branch for HACS.
-
-This repository is now set up to use GitHub releases for HACS updates:
-
-- if there is no release, HACS uses the default branch
-- if releases exist, HACS tracks the latest GitHub release
-
-To publish an update that HACS will detect cleanly:
-
-1. Commit and push your changes to `main`.
-2. Create a semantic version tag such as `v0.2.0`.
-3. Push the tag to GitHub.
-4. The GitHub Actions release workflow will create a GitHub release from that tag.
-5. HACS will then see the new release as the next available version.
-
-Example:
-
-```bash
-git tag v0.2.0
-git push origin v0.2.0
-```
-
-The release workflow is defined in `.github/workflows/release.yaml`.
-
-### Full fidelity with card-mod
-
-If you want the detailed header, sidebar, dialog, row, and component chrome included in this theme:
-
-1. Install `card-mod` from HACS.
-2. In Home Assistant, open `Settings -> Dashboards -> Resources` and copy the `card-mod.js` resource URL HACS added.
-3. Add that resource URL to `frontend.extra_module_url` in `configuration.yaml`.
-4. Restart Home Assistant.
-5. Keep the dashboard resource entry HACS created; do not remove it.
-
-Example:
-
-```yaml
-frontend:
-  themes: !include_dir_merge_named themes
-  extra_module_url:
-    - /hacsfiles/lovelace-card-mod/card-mod.js?hacstag=YOUR_HACS_TAG
-```
-
-Detailed notes: [docs/full_fidelity.md](docs/full_fidelity.md)
+1. In Home Assistant, open HACS.
+2. Open the menu in the top right and choose `Custom repositories`.
+3. Add `https://github.com/jonmunson/ha-winamp-theme` and select the `Theme` category.
+4. Install `Winamp Classic`.
+5. Run the `frontend.reload_themes` action, or restart Home Assistant.
+6. Select `Winamp Classic` in your user profile.
 
 ### Manual
 
@@ -109,17 +51,38 @@ Detailed notes: [docs/full_fidelity.md](docs/full_fidelity.md)
 2. Run the `frontend.reload_themes` action, or restart Home Assistant.
 3. Select `Winamp Classic` in your user profile.
 
-## Repo layout
+## Fidelity Modes
 
-- `themes/winamp_classic.yaml`: theme definition HACS installs
-- `hacs.json`: HACS manifest for a single theme file
-- `.github/workflows/validate.yaml`: HACS validation workflow
+There are two ways to use the theme:
+
+- Standard mode: uses the theme by itself and applies the Winamp palette, pane treatment, bevels, and typography.
+- Enhanced mode: adds sidebar, dialog, popup, row, and component chrome through `card-mod`. This is the closest match to the Winamp reference.
+
+If you want the enhanced version, follow the setup guide in [docs/full_fidelity.md](docs/full_fidelity.md).
+
+## Included Support
+
+The theme includes styling for:
+
+- core Home Assistant cards and dialogs
+- Energy dashboard surfaces
+- media player cards and more-info dialogs
+- `mini-graph-card`
 
 ## Notes
 
-Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but the closest clone in this repo comes from combining the theme with `card-mod` theme hooks. The plain theme works on its own; the full Winamp window chrome needs `card-mod`.
+Home Assistant themes can get very close to the Winamp look, but the most accurate version depends on `card-mod` because some global surfaces are not fully themeable with built-in Home Assistant variables alone.
 
----
+If HACS does not show an update immediately:
+
+1. Update the repository in HACS.
+2. Run `frontend.reload_themes`.
+3. Hard refresh the browser.
+4. Restart Home Assistant if you use the `card-mod` frontend module.
+
+## For Maintainers
+
+- Release notes and HACS update flow: [docs/releases.md](docs/releases.md)
 
 ### Who made this?
 
