@@ -1,4 +1,18 @@
 "Winamp Classic":
+  winamp-shell-dark: "#1a1e2d"
+  winamp-shell-mid: "#353c55"
+  winamp-shell-light: "#5b6483"
+  winamp-panel-dark: "#090c14"
+  winamp-panel-mid: "#161a27"
+  winamp-gold: "#cabf6c"
+  winamp-gold-bright: "#efe8a9"
+  winamp-lcd-green: "#00ff62"
+  winamp-lcd-green-dim: "#0db34f"
+  winamp-silver: "#d2d6df"
+  winamp-silver-dark: "#6f7892"
+  winamp-bevel-light: "#8b92ad"
+  winamp-bevel-dark: "#20263a"
+
   primary-color: "#cabf6c"
   accent-color: "#00ff62"
   rgb-primary-color: "202, 191, 108"
@@ -157,5 +171,80 @@
   ha-chip-box-shadow: "inset 1px 1px 0 #6f7691, inset -1px -1px 0 #1e2436, 0 0 0 1px #141724"
   badge-color: "#00ff62"
   badge-background-color: "#090c14"
+
+  card-mod-root-yaml: |
+    paper-tabs$: |
+      #selectionBar {
+        height: 3px !important;
+        background: linear-gradient(180deg, var(--winamp-gold-bright) 0%, var(--winamp-gold) 100%) !important;
+        box-shadow: 0 0 0 1px #5a5227;
+      }
+    .: |
+      ha-app-layout {
+        background: var(--lovelace-background);
+      }
+      app-header {
+        background: linear-gradient(180deg, var(--winamp-shell-dark) 0%, #10131f 100%) !important;
+        border-bottom: 1px solid #111420;
+        box-shadow: inset 0 1px 0 var(--winamp-shell-light), inset 0 -1px 0 #0b0d15;
+      }
+      app-toolbar {
+        min-height: 46px;
+        background:
+          linear-gradient(90deg, transparent 0 10px, var(--winamp-gold) 10px 126px, transparent 126px calc(100% - 126px), var(--winamp-gold) calc(100% - 126px) calc(100% - 10px), transparent calc(100% - 10px)),
+          linear-gradient(180deg, #1d2132 0%, #141827 100%) !important;
+        box-shadow: inset 0 1px 0 #69718d, inset 0 -1px 0 #0b0d15;
+      }
+      [main-title] {
+        color: var(--winamp-gold-bright) !important;
+        font-size: 13px !important;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      ha-menu-button,
+      ha-button-menu,
+      ha-assist-chip-icon {
+        color: var(--winamp-gold) !important;
+      }
+      ha-tabs {
+        --paper-tabs-selection-bar-color: var(--winamp-gold) !important;
+      }
+      paper-tab[aria-selected="true"] {
+        color: var(--winamp-gold-bright) !important;
+      }
+      paper-tab {
+        color: #9a956f !important;
+      }
+
+  card-mod-sidebar: |
+    :host {
+      background: linear-gradient(180deg, #353c55 0%, #2c334c 100%) !important;
+      border-right: 1px solid #131722;
+      box-shadow: inset -1px 0 0 #626a86;
+    }
+    ha-md-list-item,
+    .iron-selected,
+    .menu-link {
+      border-radius: 0 !important;
+    }
+    .iron-selected,
+    ha-md-list-item[selected] {
+      background: linear-gradient(180deg, #0d1019 0%, #05070c 100%) !important;
+      color: var(--winamp-lcd-green) !important;
+      box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305, 0 0 0 1px #141724;
+    }
+    ha-icon,
+    ha-svg-icon {
+      color: var(--winamp-gold) !important;
+    }
+
+  card-mod-view: |
+    :host {
+      padding: 10px 12px 18px;
+    }
+    #columns {
+      gap: 12px !important;
+    }
 
   card-mod-theme: "Winamp Classic"
