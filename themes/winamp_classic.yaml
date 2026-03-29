@@ -1184,110 +1184,105 @@
     }
 
   card-mod-more-info-yaml: |
-    more-info-media_player$:
-      .: |
-        :host {
-          --mdc-theme-primary: #cabf6c !important;
-          --slider-color: #bca742 !important;
-          --slider-secondary-color: #3e465d !important;
-        }
-      ha-media-player$:
-        .: |
-          :host {
-            color: #e6e0bf !important;
-            font-family: Tahoma, Arial, sans-serif !important;
-          }
-          .container,
-          .player,
-          .music-player,
-          .media-player,
-          .content,
-          .controls,
-          .bottom-controls,
-          .progress,
-          .volume,
-          .volume-level,
-          .media-info,
-          .metadata,
-          .background {
-            background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-            background-color: #090c14 !important;
-            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-          }
-          .container,
-          .player,
-          .music-player,
-          .media-player,
-          .content {
-            padding: 10px !important;
-          }
-          .artwork,
-          .cover,
-          .image,
-          .entity__picture,
-          .entity-picture,
-          .background-cover,
-          .no-image,
-          .no-img {
-            background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-            background-color: #0b0f17 !important;
-            box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-          }
-          .title,
-          .name,
-          .artist {
-            color: #efe8b7 !important;
-            font-family: Tahoma, Arial, sans-serif !important;
-          }
-          .title,
-          .name {
-            font-size: 9px !important;
-            font-weight: 700 !important;
-            letter-spacing: 0.015em !important;
-            text-transform: uppercase;
-          }
-          .media-info,
-          hui-marquee {
-            color: #00ff62 !important;
-            font-family: Tahoma, Arial, sans-serif !important;
-          }
-          .controls,
-          .bottom-controls {
-            padding-top: 8px !important;
-            gap: 6px;
-          }
-          .controls ha-icon-button,
-          .controls ha-control-button,
-          .controls mwc-icon-button,
-          .controls mwc-button,
-          .controls button,
-          .bottom-controls ha-icon-button,
-          .bottom-controls ha-control-button,
-          .bottom-controls mwc-icon-button,
-          .bottom-controls mwc-button,
-          .bottom-controls button {
-            border-radius: 0 !important;
-            background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-            color: #283048 !important;
-            box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-          }
-          ha-icon-button[action="media_play"],
-          ha-icon-button[action="media_play_pause"],
-          ha-icon-button[action="media_pause"],
-          ha-icon-button[action="media_stop"] {
-            --ha-icon-button-size: 38px !important;
-            --mdc-icon-size: 22px !important;
-          }
-          paper-slider,
-          .mdc-slider,
-          .slider,
-          ha-slider,
-          ha-control-slider {
-            --mdc-slider-active-track-color: #bca742 !important;
-            --mdc-slider-inactive-track-color: #3e465d !important;
-            --slider-color: #bca742 !important;
-            --slider-secondary-color: #3e465d !important;
-          }
+    more-info-media_player$: |
+      :host {
+        color: #e6e0bf !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        --mdc-theme-primary: #cabf6c !important;
+        --slider-color: #bca742 !important;
+        --slider-secondary-color: #3e465d !important;
+        --ha-button-filled-container-color: #d6dae5 !important;
+        --ha-button-filled-text-color: #283048 !important;
+        --ha-button-border-radius: 0px !important;
+      }
+      .cover-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        height: 256px !important;
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .cover-image,
+      .empty-cover {
+        width: 208px !important;
+        height: 208px !important;
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+        background-color: #0b0f17 !important;
+        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .cover-image--playing {
+        width: 224px !important;
+        height: 224px !important;
+      }
+      .media-info-row {
+        margin: 0 20px !important;
+        padding: 10px 12px !important;
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .media-title {
+        color: #00ff62 !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.01em !important;
+      }
+      .media-artist {
+        color: #d8d2ae !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 11px !important;
+      }
+      .position-bar,
+      .volume,
+      .bottom-controls {
+        margin: 0 20px !important;
+      }
+      .position-bar,
+      .volume {
+        padding: 8px 10px !important;
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .bottom-controls {
+        gap: 10px !important;
+        padding: 10px 12px !important;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
+          linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .main-controls,
+      .controls-row {
+        direction: ltr;
+      }
+      ha-icon-button {
+        color: var(--winamp-gold) !important;
+        --ha-icon-button-size: 30px !important;
+        --mdc-icon-size: 18px !important;
+      }
+      .main-controls ha-icon-button {
+        --ha-icon-button-size: 34px !important;
+        --mdc-icon-size: 20px !important;
+      }
+      .center-control {
+        --ha-button-height: 50px !important;
+        --ha-button-filled-container-color: #d6dae5 !important;
+        --ha-button-filled-text-color: #283048 !important;
+        --ha-button-border-radius: 0px !important;
+      }
+      .position-bar ha-slider,
+      .volume ha-slider {
+        --slider-color: #bca742 !important;
+        --slider-secondary-color: #3e465d !important;
+      }
+      .position-bar ha-slider::part(references) {
+        color: #bcb7a2 !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 10px !important;
+      }
 
   card-mod-dialog: |
     more-info-media_player,
