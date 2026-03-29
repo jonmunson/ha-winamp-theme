@@ -1,5 +1,12 @@
 # Winamp Classic for Home Assistant
 
+[![Website](https://img.shields.io/badge/Website-jonmunson.co.uk-111111?)](https://www.jonmunson.co.uk)
+[![X](https://img.shields.io/badge/@jonmunson-111111?logo=x&logoColor=white)](https://x.com/jonmunson)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jon%20Munson-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonmunson/)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-FFDD00?logo=buymeacoffee&logoColor=000000)](https://buymeacoffee.com/jonmunson)
+
+---
+
 Home Assistant theme tuned to the Winamp 5.9.2 default skin shown on Wikipedia: dark navy title bars, blue-grey chassis panels, gold controls, and black display surfaces with neon green text.
 
 ![Winamp Classic preview](docs/preview.svg)
@@ -111,3 +118,22 @@ Detailed notes: [docs/full_fidelity.md](docs/full_fidelity.md)
 ## Notes
 
 Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but the closest clone in this repo comes from combining the theme with `card-mod` theme hooks. The plain theme works on its own; the full Winamp window chrome needs `card-mod`.
+
+---
+
+### Who made this?
+
+I’m **Jon Munson** - I like building simple things that solve real problems.
+
+**Your support helps me keep shipping:** maintaining repos, refining themes, and improving the details.  
+<a href="https://buymeacoffee.com/jonmunson">
+  <img src="https://cdn.simpleicons.org/buymeacoffee/FFDD00" alt="buy me a coffee" width="16" height="16">
+  <b>&nbsp;Buy me a coffee</b>
+</a>
+
+More about me:
+&nbsp;<a href="https://www.jonmunson.co.uk"><img src="https://cdn.simpleicons.org/googlechrome/ffffff" width="16" height="16"><b>&nbsp;Website</b></a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://x.com/jonmunson"><img src="https://s.magecdn.com/social/tc-x.svg" width="16" height="16"><b>&nbsp;@jonmunson</b></a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/jonmunson/"><img src="https://s.magecdn.com/social/tc-linkedin.svg" width="16" height="16"><b>&nbsp;LinkedIn</b></a>
