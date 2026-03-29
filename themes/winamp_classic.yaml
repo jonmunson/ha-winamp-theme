@@ -95,6 +95,20 @@
   primary-font-family: "Arial, Tahoma, Verdana, sans-serif"
   mcg-title-letter-spacing: "0.015em"
   mcg-title-font-weight: "700"
+  mini-media-player-base-color: "#e6e0bf"
+  mini-media-player-accent-color: "#cabf6c"
+  mini-media-player-icon-color: "#cabf6c"
+  mini-media-player-button-color: "rgba(210,214,223,0.18)"
+  mini-media-player-overlay-color: "rgba(5,7,12,0.84)"
+  mini-media-player-overlay-color-stop: "18%"
+  mini-media-player-overlay-base-color: "#e6e0bf"
+  mini-media-player-overlay-accent-color: "#cabf6c"
+  mini-media-player-media-cover-info-color: "#e6e0bf"
+  mini-media-player-background-opacity: "1"
+  mini-media-player-artwork-opacity: "0.08"
+  mini-media-player-progress-height: "6px"
+  mini-media-player-scale: "1"
+  mini-media-player-name-font-weight: "700"
   code-editor-background-color: "#090c14"
   markdown-code-background-color: "#090c14"
   markdown-table-row-background-color: "#090c14"
@@ -559,6 +573,82 @@
     }
 
   card-mod-card-yaml: |
+    mini-media-player$: |
+      ha-card {
+        background:
+          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
+          repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
+          linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
+        --ha-card-background: transparent !important;
+      }
+      .mmp-player,
+      .mmp-player__bg,
+      .mmp-player__info,
+      .mmp-player__details,
+      .mmp-player__controls,
+      .mmp-player__progress,
+      .mmp-player__cover,
+      .mmp-player__artwork {
+        background-color: transparent !important;
+      }
+      .mmp-player__info,
+      .mmp-player__details,
+      .mmp-player__controls,
+      .mmp-player__progress {
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .mmp-player__info,
+      .mmp-player__details,
+      .mmp-player__controls {
+        padding: 8px !important;
+      }
+      .mmp-player__cover,
+      .mmp-player__artwork,
+      .entity-picture,
+      .cover {
+        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+        background-color: #0b0f17 !important;
+        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .entity__info__name,
+      .mmp-player__primary-info,
+      .mmp-player__title {
+        color: #e6e0bf !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.015em !important;
+        text-transform: uppercase;
+      }
+      .entity__info__artist,
+      .mmp-player__secondary-info,
+      .mmp-player__source,
+      .mmp-player__time {
+        color: #d8d2ae !important;
+        font-family: Arial, Tahoma, Verdana, sans-serif !important;
+      }
+      .mmp-player__controls *,
+      mwc-icon-button,
+      paper-icon-button,
+      ha-icon-button {
+        color: var(--winamp-gold) !important;
+      }
+      .mmp-player__controls mwc-icon-button,
+      .mmp-player__controls paper-icon-button,
+      .mmp-player__controls ha-icon-button,
+      .mmp-player__controls button {
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+        color: #283048 !important;
+        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      }
+      .mmp-player .mdc-slider,
+      .mmp-player .slider,
+      .mmp-player paper-progress {
+        --mdc-slider-active-track-color: #bca742 !important;
+        --mdc-slider-inactive-track-color: #3e465d !important;
+      }
     hui-media-player-card$: |
       ha-card {
         background:
@@ -986,6 +1076,12 @@
         background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
         color: #283048 !important;
         box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      }
+      paper-slider,
+      .mdc-slider,
+      .slider {
+        --mdc-slider-active-track-color: #bca742 !important;
+        --mdc-slider-inactive-track-color: #3e465d !important;
       }
 
   card-mod-dialog: |
