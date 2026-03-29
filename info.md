@@ -1,1 +1,1 @@
-Home Assistant theme tuned to the default Winamp Classic 2.x skin with silver chrome, blue selection states, amber controls, and green LCD accents. Install through HACS as a custom `Theme` repository.
+Home Assistant theme tuned to the Winamp 5.9.2 default screenshot with navy title bars, blue-grey panels, gold controls, and neon green playlist-style accents. Install through HACS as a custom `Theme` repository.

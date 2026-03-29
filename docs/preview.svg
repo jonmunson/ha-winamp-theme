@@ -1,62 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
-  <title id="title">Winamp Classic Home Assistant theme preview</title>
-  <desc id="desc">Stylized preview card showing a Home Assistant dashboard rendered in a Winamp Classic 2.x inspired shell.</desc>
+  <title id="title">Winamp 5.9.2 inspired Home Assistant theme preview</title>
+  <desc id="desc">A Home Assistant dashboard preview restyled to resemble the Winamp 5.9.2 screenshot with navy header bars, blue grey panels, black displays, green text, and yellow controls.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#666e7a"/>
-      <stop offset="30%" stop-color="#444b56"/>
-      <stop offset="100%" stop-color="#1c2028"/>
-    </linearGradient>
-    <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#aab0bb"/>
-      <stop offset="10%" stop-color="#8d94a0"/>
-      <stop offset="45%" stop-color="#676f7b"/>
-      <stop offset="100%" stop-color="#39404a"/>
+    <linearGradient id="shell" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4f5776"/>
+      <stop offset="100%" stop-color="#323851"/>
     </linearGradient>
     <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#757c88"/>
-      <stop offset="100%" stop-color="#5a616d"/>
+      <stop offset="0%" stop-color="#434b67"/>
+      <stop offset="100%" stop-color="#353b56"/>
+    </linearGradient>
+    <linearGradient id="titlebar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2336"/>
+      <stop offset="100%" stop-color="#141827"/>
     </linearGradient>
   </defs>
-  <rect width="1280" height="720" fill="url(#bg)"/>
-  <rect width="1280" height="720" fill="none" opacity="0.16"/>
-  <rect x="88" y="66" width="1104" height="588" rx="6" fill="#262a32" stroke="#11151b" stroke-width="4"/>
-  <rect x="104" y="82" width="1072" height="64" fill="url(#chrome)" stroke="#0f131b" stroke-width="2"/>
-  <text x="136" y="123" fill="#12161c" font-family="Tahoma, Verdana, sans-serif" font-size="32" font-weight="700">WINAMP CLASSIC</text>
-  <rect x="104" y="146" width="248" height="492" fill="url(#chrome)" stroke="#0f131b" stroke-width="2"/>
-  <rect x="370" y="146" width="806" height="492" fill="#2a2f39" stroke="#0f131b" stroke-width="2"/>
-  <rect x="128" y="174" width="200" height="36" fill="#4f6fa8"/>
-  <text x="150" y="199" fill="#f4f7fb" font-family="Tahoma, Verdana, sans-serif" font-size="20" font-weight="700">Dashboard</text>
-  <text x="132" y="256" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Overview</text>
-  <text x="132" y="304" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Playlist</text>
-  <text x="132" y="352" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Equalizer</text>
-  <text x="132" y="400" fill="#171c25" font-family="Tahoma, Verdana, sans-serif" font-size="24">Preferences</text>
-  <rect x="406" y="182" width="352" height="160" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
-  <rect x="430" y="206" width="304" height="56" fill="#11151d" stroke="#89929d" stroke-width="2"/>
-  <text x="452" y="243" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="30">44100 KHZ</text>
-  <text x="430" y="304" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="28" font-weight="700">Living Room</text>
-  <text x="430" y="332" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="20">Chrome shell, blue focus, green display, amber controls</text>
-  <rect x="786" y="182" width="352" height="160" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
-  <rect x="818" y="224" width="288" height="18" fill="#555c68"/>
-  <rect x="818" y="224" width="196" height="18" fill="#d7921f"/>
-  <circle cx="1014" cy="233" r="14" fill="#f0b44b" stroke="#5b3906" stroke-width="3"/>
-  <text x="818" y="297" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Volume 68%</text>
-  <rect x="406" y="374" width="226" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
-  <rect x="654" y="374" width="226" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
-  <rect x="902" y="374" width="236" height="224" fill="url(#panel)" stroke="#0f131b" stroke-width="2"/>
-  <text x="432" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Kitchen</text>
-  <text x="680" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Equalizer</text>
-  <text x="928" y="420" fill="#ece6c3" font-family="Tahoma, Verdana, sans-serif" font-size="24" font-weight="700">Playlist</text>
-  <rect x="432" y="448" width="174" height="24" fill="#555c68"/>
-  <rect x="432" y="448" width="116" height="24" fill="#4f6fa8"/>
-  <rect x="680" y="448" width="170" height="72" fill="#11151d" stroke="#89929d" stroke-width="2"/>
-  <text x="696" y="493" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="38">PREAMP</text>
-  <rect x="928" y="448" width="182" height="28" fill="#11151d" stroke="#89929d" stroke-width="2"/>
-  <text x="944" y="468" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="18">01. The Living Room</text>
-  <rect x="928" y="486" width="182" height="28" fill="#4f6fa8"/>
-  <text x="944" y="506" fill="#f4f7fb" font-family="'Lucida Console', monospace" font-size="18">02. Lights Out Mix</text>
-  <rect x="928" y="524" width="182" height="28" fill="#11151d" stroke="#89929d" stroke-width="2"/>
-  <text x="944" y="544" fill="#00ff66" font-family="'Lucida Console', monospace" font-size="18">03. Security Loop</text>
-  <text x="430" y="540" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="18">Closer to the default classic skin: blue selection, green text, harder bevels.</text>
-  <text x="430" y="568" fill="#c4c0a6" font-family="Tahoma, Verdana, sans-serif" font-size="18">Built as a HACS-ready single-theme repository.</text>
+  <rect width="1280" height="720" fill="#1b1f2f"/>
+
+  <rect x="92" y="72" width="1096" height="172" fill="url(#shell)" stroke="#111421" stroke-width="4"/>
+  <rect x="92" y="72" width="1096" height="24" fill="url(#titlebar)" stroke="#0c0f19" stroke-width="2"/>
+  <rect x="112" y="82" width="120" height="4" fill="#cabf6c"/>
+  <rect x="248" y="82" width="784" height="4" fill="#cabf6c"/>
+  <text x="540" y="89" fill="#f2ecb1" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">WINAMP DASHBOARD</text>
+
+  <rect x="124" y="110" width="410" height="98" fill="#090c14" stroke="#838ca4" stroke-width="2"/>
+  <text x="150" y="171" fill="#00ff62" font-family="'Lucida Console', 'Courier New', monospace" font-size="56">01:53</text>
+  <rect x="148" y="121" width="16" height="48" fill="#00ff62"/>
+  <rect x="170" y="133" width="16" height="36" fill="#00ff62"/>
+  <rect x="192" y="145" width="16" height="24" fill="#00ff62"/>
+  <rect x="214" y="129" width="16" height="40" fill="#00ff62"/>
+  <rect x="236" y="117" width="16" height="52" fill="#00ff62"/>
+  <rect x="258" y="138" width="16" height="31" fill="#00ff62"/>
+  <rect x="280" y="150" width="16" height="19" fill="#00ff62"/>
+
+  <text x="560" y="126" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="28" font-weight="700">4. Crusher-P - Echo (3:50)</text>
+  <rect x="560" y="145" width="296" height="44" fill="#090c14" stroke="#7b84a2" stroke-width="2"/>
+  <text x="576" y="174" fill="#00ff62" font-family="'Lucida Console', 'Courier New', monospace" font-size="24">128 kbps  48 kHz  stereo</text>
+
+  <rect x="560" y="194" width="418" height="10" fill="#4a536f"/>
+  <rect x="560" y="194" width="212" height="10" fill="#d7cb68"/>
+  <rect x="762" y="188" width="22" height="22" fill="#d0d4df" stroke="#545c73" stroke-width="2"/>
+  <rect x="996" y="188" width="128" height="22" fill="#d1d5de" stroke="#545c73" stroke-width="2"/>
+  <text x="1035" y="204" fill="#2f3550" font-family="Tahoma, Verdana, sans-serif" font-size="14" font-weight="700">PLAY</text>
+
+  <rect x="124" y="216" width="502" height="16" fill="#3b425d"/>
+  <rect x="560" y="216" width="162" height="16" fill="#d1d5de" stroke="#545c73" stroke-width="1"/>
+  <text x="599" y="228" fill="#293049" font-family="Tahoma, Verdana, sans-serif" font-size="13" font-weight="700">SHUFFLE</text>
+  <rect x="736" y="216" width="170" height="16" fill="#d1d5de" stroke="#545c73" stroke-width="1"/>
+  <text x="781" y="228" fill="#293049" font-family="Tahoma, Verdana, sans-serif" font-size="13" font-weight="700">REPEAT</text>
+
+  <rect x="92" y="268" width="1096" height="182" fill="url(#shell)" stroke="#111421" stroke-width="4"/>
+  <rect x="92" y="268" width="1096" height="24" fill="url(#titlebar)" stroke="#0c0f19" stroke-width="2"/>
+  <rect x="112" y="278" width="120" height="4" fill="#cabf6c"/>
+  <rect x="248" y="278" width="784" height="4" fill="#cabf6c"/>
+  <text x="535" y="285" fill="#f2ecb1" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">WINAMP EQUALIZER</text>
+  <rect x="124" y="308" width="128" height="32" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <text x="158" y="329" fill="#2f3550" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">ON</text>
+  <rect x="264" y="308" width="156" height="32" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <text x="308" y="329" fill="#2f3550" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">AUTO</text>
+  <rect x="944" y="308" width="184" height="32" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <text x="987" y="329" fill="#2f3550" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">PRESETS</text>
+  <text x="160" y="386" fill="#d7cb68" font-family="'Lucida Console', 'Courier New', monospace" font-size="24">+12db</text>
+  <text x="160" y="424" fill="#d7cb68" font-family="'Lucida Console', 'Courier New', monospace" font-size="24">0db</text>
+  <text x="160" y="462" fill="#d7cb68" font-family="'Lucida Console', 'Courier New', monospace" font-size="24">-12db</text>
+  <g stroke="#d7cb68" stroke-width="6">
+    <line x1="354" y1="348" x2="354" y2="430"/>
+    <line x1="418" y1="332" x2="418" y2="430"/>
+    <line x1="482" y1="364" x2="482" y2="430"/>
+    <line x1="546" y1="348" x2="546" y2="430"/>
+    <line x1="610" y1="320" x2="610" y2="430"/>
+    <line x1="674" y1="356" x2="674" y2="430"/>
+    <line x1="738" y1="340" x2="738" y2="430"/>
+    <line x1="802" y1="352" x2="802" y2="430"/>
+    <line x1="866" y1="326" x2="866" y2="430"/>
+    <line x1="930" y1="312" x2="930" y2="430"/>
+    <line x1="994" y1="336" x2="994" y2="430"/>
+  </g>
+  <g fill="#d1d5de" stroke="#50576e" stroke-width="2">
+    <rect x="342" y="372" width="24" height="24"/>
+    <rect x="406" y="356" width="24" height="24"/>
+    <rect x="470" y="388" width="24" height="24"/>
+    <rect x="534" y="372" width="24" height="24"/>
+    <rect x="598" y="344" width="24" height="24"/>
+    <rect x="662" y="380" width="24" height="24"/>
+    <rect x="726" y="364" width="24" height="24"/>
+    <rect x="790" y="376" width="24" height="24"/>
+    <rect x="854" y="350" width="24" height="24"/>
+    <rect x="918" y="336" width="24" height="24"/>
+    <rect x="982" y="360" width="24" height="24"/>
+  </g>
+
+  <rect x="92" y="474" width="1096" height="194" fill="url(#shell)" stroke="#111421" stroke-width="4"/>
+  <rect x="92" y="474" width="1096" height="24" fill="url(#titlebar)" stroke="#0c0f19" stroke-width="2"/>
+  <rect x="112" y="484" width="120" height="4" fill="#cabf6c"/>
+  <rect x="248" y="484" width="784" height="4" fill="#cabf6c"/>
+  <text x="545" y="491" fill="#f2ecb1" font-family="Tahoma, Verdana, sans-serif" font-size="18" font-weight="700">WINAMP PLAYLIST</text>
+  <rect x="124" y="512" width="1032" height="116" fill="#05070c" stroke="#8088a4" stroke-width="2"/>
+  <text x="146" y="548" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">1. Mori Calliope - Go-Getters</text>
+  <text x="1040" y="548" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">3:15</text>
+  <text x="146" y="582" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">2. CircusP - Goodbye</text>
+  <text x="1052" y="582" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">3:24</text>
+  <text x="146" y="616" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">3. Crusher-P - Echo</text>
+  <text x="1060" y="616" fill="#00ff62" font-family="Tahoma, Verdana, sans-serif" font-size="34" font-weight="700">3:50</text>
+  <rect x="124" y="634" width="220" height="22" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <rect x="360" y="634" width="220" height="22" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <rect x="596" y="634" width="220" height="22" fill="#d1d5de" stroke="#4f566e" stroke-width="2"/>
+  <rect x="832" y="634" width="220" height="22" fill="#090c14" stroke="#8088a4" stroke-width="2"/>
+  <text x="902" y="651" fill="#00ff62" font-family="'Lucida Console', 'Courier New', monospace" font-size="18">0:00/27:45</text>
 </svg>

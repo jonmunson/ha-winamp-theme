@@ -1,6 +1,6 @@
 # Winamp Classic for Home Assistant
 
-Home Assistant theme tuned to the classic default Winamp 2.x skin: silver gunmetal chrome, blue selection states, amber controls, and green LCD-style display accents.
+Home Assistant theme tuned to the Winamp 5.9.2 default skin shown on Wikipedia: dark navy title bars, blue-grey chassis panels, gold controls, and black display surfaces with neon green text.
 
 ![Winamp Classic preview](docs/preview.svg)
 
@@ -8,13 +8,14 @@ Home Assistant theme tuned to the classic default Winamp 2.x skin: silver gunmet
 
 This repository is structured as a HACS theme repo, so once it is pushed to GitHub it can be added to any Home Assistant instance through HACS as a custom repository.
 
-The theme is tuned around the default classic skin cues:
+The theme is tuned around the referenced Winamp 5.9.2 screenshot:
 
-- silver and gunmetal chrome
-- blue selection and focus states
-- amber transport-style controls
-- green LCD display accents
-- square edges and hard beveled cards
+- dark navy title bars with gold separators
+- blue-grey chassis panels
+- black playlist and display surfaces
+- neon green status and playlist text
+- yellow and gold control accents
+- hard beveled, square-edged cards
 
 ## Installation
 
@@ -51,6 +52,6 @@ Restart Home Assistant after changing `configuration.yaml`.
 
 ## Notes
 
-Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but they cannot fully recreate the bitmap skinning system Winamp used. This theme is biased toward the default 2.x palette and chrome treatment without requiring extra custom cards.
+Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but they cannot fully recreate Winamp's bitmap skinning system. This theme is biased toward the specific Winamp 5.9.2 screenshot palette and chrome treatment without requiring extra custom cards.
 
 If you want a more extreme recreation later, the next step would be pairing this theme with dashboard-level styling such as `card-mod`, image assets, and a custom view layout that mimics the Winamp player frame.
