@@ -214,6 +214,109 @@
           linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%) !important;
         box-shadow: inset 1px 1px 0 #868faa, inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
       }
+    ha-more-info-dialog$:
+      ha-adaptive-dialog:
+        ha-more-info-info$:
+          more-info-content$:
+            more-info-media_player$: |
+              :host {
+                color: #e6e0bf !important;
+                font-family: Tahoma, Arial, sans-serif !important;
+                --mdc-theme-primary: #cabf6c !important;
+                --slider-color: #bca742 !important;
+                --slider-secondary-color: #3e465d !important;
+                --ha-button-filled-container-color: #d6dae5 !important;
+                --ha-button-filled-text-color: #283048 !important;
+                --ha-button-border-radius: 0px !important;
+              }
+              .cover-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 20px;
+                height: 256px !important;
+                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+              }
+              .cover-image,
+              .empty-cover {
+                width: 208px !important;
+                height: 208px !important;
+                border-radius: 0 !important;
+                background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+                background-color: #0b0f17 !important;
+                box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+              }
+              .cover-image--playing {
+                width: 224px !important;
+                height: 224px !important;
+              }
+              .media-info-row {
+                margin: 0 20px !important;
+                padding: 10px 12px !important;
+                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+              }
+              .media-title {
+                color: #00ff62 !important;
+                font-family: Tahoma, Arial, sans-serif !important;
+                font-size: 14px !important;
+                font-weight: 700 !important;
+                letter-spacing: 0.01em !important;
+              }
+              .media-artist {
+                color: #d8d2ae !important;
+                font-family: Tahoma, Arial, sans-serif !important;
+                font-size: 11px !important;
+              }
+              .position-bar,
+              .volume,
+              .bottom-controls {
+                margin: 0 20px !important;
+              }
+              .position-bar,
+              .volume {
+                padding: 8px 10px !important;
+                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+              }
+              .bottom-controls {
+                gap: 10px !important;
+                padding: 10px 12px !important;
+                background:
+                  linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
+                  linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+              }
+              .main-controls,
+              .controls-row {
+                direction: ltr;
+              }
+              ha-icon-button {
+                color: var(--winamp-gold) !important;
+                --ha-icon-button-size: 30px !important;
+                --mdc-icon-size: 18px !important;
+              }
+              .main-controls ha-icon-button {
+                --ha-icon-button-size: 34px !important;
+                --mdc-icon-size: 20px !important;
+              }
+              .center-control {
+                --ha-button-height: 50px !important;
+                --ha-button-filled-container-color: #d6dae5 !important;
+                --ha-button-filled-text-color: #283048 !important;
+                --ha-button-border-radius: 0px !important;
+              }
+              .position-bar ha-slider,
+              .volume ha-slider {
+                --slider-color: #bca742 !important;
+                --slider-secondary-color: #3e465d !important;
+              }
+              .position-bar ha-slider::part(references) {
+                color: #bcb7a2 !important;
+                font-family: Tahoma, Arial, sans-serif !important;
+                font-size: 10px !important;
+              }
     .: |
       ha-app-layout {
         background: var(--lovelace-background);
