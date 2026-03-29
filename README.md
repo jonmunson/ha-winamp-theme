@@ -19,6 +19,15 @@ The theme is tuned around the referenced Winamp 5.9.2 screenshot:
 - brighter dialog and button chrome
 - stronger black display treatment for lists, badges, and inputs
 
+## Fidelity levels
+
+There are two ways to use the repo:
+
+- Theme only: installs cleanly through HACS and applies the Winamp palette, spacing, and core component styling.
+- Full fidelity: adds card-by-card, row, dialog, header, and sidebar chrome through `card-mod` theme hooks. This is the version that pushes closest to the screenshot.
+
+For the full fidelity path, install `card-mod` through HACS and load it as a frontend module. The official card-mod docs note that frontend-module loading improves functionality and is required when styling non-dashboard panels such as the sidebar.
+
 ## Installation
 
 Add the following to your `configuration.yaml` if you do not already load themes:
@@ -40,6 +49,27 @@ Restart Home Assistant after changing `configuration.yaml`.
 6. Run the `frontend.reload_themes` action, or restart Home Assistant.
 7. Select `Winamp Classic` in your user profile.
 
+### Full fidelity with card-mod
+
+If you want the detailed header, sidebar, dialog, row, and component chrome included in this theme:
+
+1. Install `card-mod` from HACS.
+2. In Home Assistant, open `Settings -> Dashboards -> Resources` and copy the `card-mod.js` resource URL HACS added.
+3. Add that resource URL to `frontend.extra_module_url` in `configuration.yaml`.
+4. Restart Home Assistant.
+5. Keep the dashboard resource entry HACS created; do not remove it.
+
+Example:
+
+```yaml
+frontend:
+  themes: !include_dir_merge_named themes
+  extra_module_url:
+    - /hacsfiles/lovelace-card-mod/card-mod.js?hacstag=YOUR_HACS_TAG
+```
+
+Detailed notes: [docs/full_fidelity.md](docs/full_fidelity.md)
+
 ### Manual
 
 1. Copy `themes/winamp_classic.yaml` into your Home Assistant `themes/` directory.
@@ -54,6 +84,4 @@ Restart Home Assistant after changing `configuration.yaml`.
 
 ## Notes
 
-Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but they cannot fully recreate Winamp's bitmap skinning system. This theme is biased toward the specific Winamp 5.9.2 screenshot palette and chrome treatment without requiring extra custom cards.
-
-If you want a more extreme recreation later, the next step would be pairing this theme with dashboard-level styling such as `card-mod`, image assets, and a custom view layout that mimics the Winamp player frame. This repo currently stays dependency-free so it can be installed as a plain HACS theme.
+Home Assistant themes can control colors, spacing, shadows, and many component surfaces, but the closest clone in this repo comes from combining the theme with `card-mod` theme hooks. The plain theme works on its own; the full Winamp window chrome needs `card-mod`.

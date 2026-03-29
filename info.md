@@ -1,1 +1,1 @@
-Home Assistant theme tuned to the Winamp 5.9.2 default screenshot with navy title bars, blue-grey panels, gold controls, and neon green playlist-style accents. Install through HACS as a custom `Theme` repository.
+Home Assistant theme tuned to the Winamp 5.9.2 default screenshot with navy title bars, blue-grey panels, gold controls, and neon green playlist-style accents. For the closest clone, pair it with the card-mod frontend module described in the README.
