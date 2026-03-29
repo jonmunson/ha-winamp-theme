@@ -93,6 +93,8 @@
   paper-font-common-base_-_font-family: "Arial, Tahoma, Verdana, sans-serif"
   paper-font-common-code_-_font-family: "'Lucida Console', 'Courier New', monospace"
   primary-font-family: "Arial, Tahoma, Verdana, sans-serif"
+  mcg-title-letter-spacing: "0.015em"
+  mcg-title-font-weight: "700"
   code-editor-background-color: "#090c14"
   markdown-code-background-color: "#090c14"
   markdown-table-row-background-color: "#090c14"
@@ -547,6 +549,78 @@
       --slider-color: var(--winamp-gold);
       --slider-secondary-color: #4c5670;
     }
+
+  card-mod-card-yaml: |
+    mini-graph-card$: |
+      .states,
+      .state,
+      .state__value,
+      .state__uom,
+      .name,
+      .icon,
+      .info,
+      .graph__legend,
+      .graph__legend__item,
+      .legend__item,
+      .label,
+      .labels {
+        font-family: Arial, Tahoma, Verdana, sans-serif !important;
+      }
+      .name,
+      .state__uom,
+      .label,
+      .labels {
+        color: var(--winamp-gold-bright) !important;
+      }
+      .name {
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 9px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.015em !important;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #090b12;
+      }
+      .state,
+      .state__value,
+      .state__uom,
+      .info {
+        color: #e6e0bf !important;
+      }
+      .state__value {
+        font-size: 2.25em !important;
+        font-weight: 400 !important;
+        line-height: 1;
+      }
+      .icon,
+      ha-icon {
+        color: var(--winamp-gold) !important;
+      }
+      .graph,
+      .graph__container,
+      .graph__wrapper,
+      svg {
+        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+      }
+      .graph,
+      .graph__container,
+      .graph__wrapper {
+        padding: 4px;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .graph__legend,
+      .legend,
+      .legend__item,
+      .graph__legend__item {
+        color: #d8d2ae !important;
+      }
+      svg text {
+        fill: #bcb7a2 !important;
+      }
+      line,
+      .line--threshold,
+      .grid line {
+        stroke: #404860 !important;
+      }
 
   card-mod-glance: |
     :host {
