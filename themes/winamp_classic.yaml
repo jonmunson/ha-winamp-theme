@@ -509,6 +509,12 @@
       background: linear-gradient(180deg, #121623 0%, #090c14 32%, #05070c 100%) !important;
       box-shadow: inset 1px 1px 0 #6d7693, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
     }
+    hui-media-control-card {
+      --primary-color: #141927 !important;
+      --text-primary-color: #efe8b7 !important;
+      --mdc-theme-primary: #cabf6c !important;
+      --mdc-linear-progress-buffer-color: #3e465d !important;
+    }
     ha-card table,
     ha-card .table,
     ha-card .mdc-data-table,
@@ -573,128 +579,133 @@
     }
 
   card-mod-card-yaml: |
-    hui-media-control-card$:
-      .: |
-        ha-card {
-          overflow: hidden;
-        }
-        .background,
-        .color-block,
-        .color-gradient,
-        .image,
-        .no-img {
-          background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-          background-color: #0b0f17 !important;
-        }
-        .background {
-          opacity: 1 !important;
-          filter: none !important;
-        }
-        .color-block {
-          width: 100% !important;
-        }
-        .color-gradient {
-          opacity: 0.12 !important;
-        }
-        .image {
-          opacity: 0.16 !important;
-          background-size: cover !important;
-        }
-        .no-img {
-          width: 34% !important;
-          opacity: 0.18 !important;
-          background-image: none !important;
-          background-color: #131827 !important;
-          box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-        }
-        .player {
-          margin: 7px !important;
-          padding: 10px !important;
-          height: calc(100% - 14px);
-          box-sizing: border-box !important;
-          background:
-            linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
-            linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-          box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-        }
-        .top-info {
-          align-items: center;
-          margin-bottom: 8px;
-          padding-bottom: 6px;
-          border-bottom: 1px solid rgba(82, 89, 110, 0.7);
-        }
-        .icon-name,
-        .icon-name div {
-          color: var(--winamp-gold-bright) !important;
-          font-family: Tahoma, Arial, sans-serif !important;
-          font-size: 9px !important;
-          font-weight: 700 !important;
-          letter-spacing: 0.015em !important;
-          text-transform: uppercase;
-          text-shadow: 0 1px 0 #090b12;
-        }
-        .icon,
-        .icon-name ha-state-icon {
-          color: var(--winamp-gold) !important;
-        }
-        .more-info {
-          top: 0 !important;
-          right: 0 !important;
-        }
-        .title-controls {
-          padding-top: 4px !important;
-        }
-        .media-info,
-        hui-marquee {
-          color: #00ff62 !important;
-          font-family: Tahoma, Arial, sans-serif !important;
-        }
-        .media-info {
-          font-size: 13px !important;
-          text-shadow: 0 0 6px rgba(0,255,98,0.08);
-        }
-        hui-marquee {
-          font-size: 1.02em !important;
-          font-weight: 700 !important;
-          letter-spacing: 0.01em !important;
-        }
-        .controls {
-          padding: 8px 0 2px !important;
-          align-items: center;
-          gap: 6px;
-        }
-        .controls .start,
-        .controls .end {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-        }
-        .controls ha-icon-button,
-        .controls ha-control-button,
-        .controls mwc-icon-button,
-        .controls mwc-button,
-        .controls button {
-          min-width: 28px;
-          min-height: 28px;
-          border-radius: 0 !important;
-          background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-          color: #283048 !important;
-          box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-        }
-        ha-icon-button[action="media_play"],
-        ha-icon-button[action="media_play_pause"],
-        ha-icon-button[action="media_pause"],
-        ha-icon-button[action="media_stop"],
-        ha-icon-button[action="turn_on"],
-        ha-icon-button[action="turn_off"] {
-          --ha-icon-button-size: 36px !important;
-          --mdc-icon-size: 22px !important;
-        }
-        mwc-linear-progress {
-          margin-top: 10px !important;
-          --mdc-theme-primary: #bca742 !important;
-          --mdc-linear-progress-buffer-color: #3e465d !important;
-        }
+    hui-media-control-card$: |
+      :host {
+        --primary-color: #141927 !important;
+        --text-primary-color: #efe8b7 !important;
+        --mdc-theme-primary: #cabf6c !important;
+        --mdc-linear-progress-buffer-color: #3e465d !important;
+      }
+      ha-card {
+        overflow: hidden;
+      }
+      .background,
+      .color-block,
+      .color-gradient,
+      .image,
+      .no-img {
+        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
+        background-color: #0b0f17 !important;
+      }
+      .background {
+        opacity: 1 !important;
+        filter: none !important;
+      }
+      .color-block {
+        width: 100% !important;
+      }
+      .color-gradient {
+        opacity: 0.08 !important;
+      }
+      .image {
+        opacity: 0.12 !important;
+        background-size: cover !important;
+      }
+      .no-img {
+        width: 34% !important;
+        opacity: 0.16 !important;
+        background-image: none !important;
+        background-color: #131827 !important;
+        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .player {
+        margin: 7px !important;
+        padding: 10px !important;
+        height: calc(100% - 14px);
+        box-sizing: border-box !important;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
+          linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
+        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      }
+      .top-info {
+        align-items: center;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(82, 89, 110, 0.7);
+      }
+      .icon-name,
+      .icon-name div {
+        color: var(--winamp-gold-bright) !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+        font-size: 9px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.015em !important;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #090b12;
+      }
+      .icon,
+      .icon-name ha-state-icon {
+        color: var(--winamp-gold) !important;
+      }
+      .more-info {
+        top: 0 !important;
+        right: 0 !important;
+      }
+      .title-controls {
+        padding-top: 4px !important;
+      }
+      .media-info,
+      hui-marquee {
+        color: #00ff62 !important;
+        font-family: Tahoma, Arial, sans-serif !important;
+      }
+      .media-info {
+        font-size: 13px !important;
+        text-shadow: 0 0 6px rgba(0,255,98,0.08);
+      }
+      hui-marquee {
+        font-size: 1.02em !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.01em !important;
+      }
+      .controls {
+        padding: 8px 0 2px !important;
+        align-items: center;
+        gap: 6px;
+      }
+      .controls .start,
+      .controls .end {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .controls ha-icon-button,
+      .controls ha-control-button,
+      .controls mwc-icon-button,
+      .controls mwc-button,
+      .controls button {
+        min-width: 28px;
+        min-height: 28px;
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
+        color: #283048 !important;
+        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      }
+      ha-icon-button[action="media_play"],
+      ha-icon-button[action="media_play_pause"],
+      ha-icon-button[action="media_pause"],
+      ha-icon-button[action="media_stop"],
+      ha-icon-button[action="turn_on"],
+      ha-icon-button[action="turn_off"] {
+        --ha-icon-button-size: 36px !important;
+        --mdc-icon-size: 22px !important;
+      }
+      mwc-linear-progress {
+        margin-top: 10px !important;
+        --mdc-theme-primary: #bca742 !important;
+        --mdc-linear-progress-buffer-color: #3e465d !important;
+      }
     mini-media-player$: |
       ha-card {
         background:
@@ -1249,6 +1260,16 @@
           }
 
   card-mod-dialog: |
+    more-info-media_player,
+    more-info-media_player ha-media-player,
+    ha-media-player {
+      --primary-color: #141927 !important;
+      --text-primary-color: #efe8b7 !important;
+      --mdc-theme-primary: #cabf6c !important;
+      --mdc-linear-progress-buffer-color: #3e465d !important;
+      --slider-color: #bca742 !important;
+      --slider-secondary-color: #3e465d !important;
+    }
     .mdc-dialog__surface,
     .container,
     .content {
