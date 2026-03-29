@@ -221,6 +221,15 @@
         --mdc-filled-button-container-color: #d7dce6;
         --mdc-filled-button-label-text-color: #283048;
       }
+      hui-energy-period-selector,
+      hui-energy-date-selection,
+      ha-date-range-picker {
+        background:
+          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 10%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.14) 100%),
+          linear-gradient(180deg, #555d73 0%, #454d62 18%, #3a4154 100%) !important;
+        box-shadow: inset 1px 1px 0 #8d95ad, inset -1px -1px 0 #20263a, 0 0 0 1px #0b0d15 !important;
+        border-radius: 0 !important;
+      }
       paper-tab[aria-selected="true"] {
         color: var(--winamp-gold-bright) !important;
       }
@@ -238,7 +247,10 @@
 
   card-mod-sidebar: |
     :host {
-      background: linear-gradient(180deg, #59617a 0%, #4a5167 16%, #42495f 58%, #3d4459 100%) !important;
+      background:
+        linear-gradient(180deg, rgba(180,186,206,0.08) 0%, rgba(0,0,0,0) 12%),
+        repeating-linear-gradient(180deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
+        linear-gradient(180deg, #535b72 0%, #444b5f 18%, #3b4255 58%, #343a4d 100%) !important;
       border-right: 1px solid #131722;
       box-shadow: inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 #69718d;
     }
@@ -246,12 +258,24 @@
     .iron-selected,
     .menu-link {
       border-radius: 0 !important;
+      margin: 1px 8px !important;
+      min-height: 34px !important;
+      background: linear-gradient(180deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 100%);
     }
     .iron-selected,
     ha-md-list-item[selected] {
       background: linear-gradient(180deg, #53656d 0%, #44565d 18%, #3a4a50 100%) !important;
       color: var(--winamp-lcd-green) !important;
       box-shadow: inset 1px 1px 0 #8592a6, inset -1px -1px 0 #223239, 0 0 0 1px #141724;
+    }
+    ha-md-list-item:not([selected]):not(.iron-selected),
+    .menu-link:not(.iron-selected) {
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 0 0 1px rgba(20,23,36,0.18);
+    }
+    .primary,
+    .mdc-list-item__primary-text {
+      font-size: 13px !important;
+      letter-spacing: 0.01em;
     }
     ha-icon,
     ha-svg-icon {
@@ -379,6 +403,32 @@
       background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%);
       box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
     }
+    ha-card .media-player {
+      padding: 8px 10px;
+    }
+    ha-card .media-player .title,
+    ha-card .media-player .artist,
+    ha-card .media-player .media-info,
+    ha-card .media-player .name {
+      color: #e6e0bf !important;
+    }
+    ha-card .media-player .controls button,
+    ha-card .media-player .controls ha-icon-button,
+    ha-card .media-player .controls mwc-button {
+      min-width: 28px;
+      min-height: 28px;
+      padding: 0 !important;
+      background: linear-gradient(180deg, #eef2f8 0%, #d2d8e3 18%, #b4bdd2 54%, #98a2bb 100%) !important;
+      box-shadow: inset 1px 1px 0 #fafdff, inset -1px -1px 0 #68728d, 0 0 0 1px #31384e !important;
+    }
+    ha-card .media-player .progress,
+    ha-card .media-player .progress-bar,
+    ha-card .media-player .volume,
+    ha-card .media-player .volume-level {
+      padding: 4px;
+      background: linear-gradient(180deg, #121623 0%, #090c14 32%, #05070c 100%) !important;
+      box-shadow: inset 1px 1px 0 #6d7693, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    }
     ha-card table,
     ha-card .table,
     ha-card .mdc-data-table,
@@ -440,6 +490,7 @@
       border-radius: 4px;
       box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
       padding: 0 5px;
+      min-height: 22px;
     }
 
   card-mod-heading-badge: |
@@ -449,6 +500,7 @@
       border: 1px solid #23293c;
       border-radius: 4px;
       box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      min-height: 22px;
     }
 
   card-mod-assist-chip: |
@@ -458,6 +510,8 @@
       border: 1px solid #23293c;
       border-radius: 4px;
       box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      min-height: 22px;
+      padding: 0 4px;
     }
 
   card-mod-row-yaml: |
