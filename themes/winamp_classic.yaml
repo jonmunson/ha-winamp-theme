@@ -1,7 +1,7 @@
 "Winamp Classic":
   winamp-shell-dark: "#1a1e2d"
-  winamp-shell-mid: "#40485f"
-  winamp-shell-light: "#69738f"
+  winamp-shell-mid: "#4b5267"
+  winamp-shell-light: "#747d95"
   winamp-panel-dark: "#090c14"
   winamp-panel-mid: "#161a27"
   winamp-gold: "#cabf6c"
@@ -20,17 +20,17 @@
   light-primary-color: "#dfd59b"
   dark-primary-color: "#847a37"
 
-  primary-background-color: "#1e2232"
-  secondary-background-color: "#31384f"
-  lovelace-background: "radial-gradient(circle at top, rgba(202,191,108,0.07) 0%, rgba(202,191,108,0.015) 12%, rgba(30,34,52,0) 24%), linear-gradient(180deg, #262a3d 0%, #1c2030 100%)"
-  mdc-theme-background: "#1e2232"
-  card-background-color: "#40485f"
-  ha-card-background: "#40485f"
-  secondary-card-background-color: "#343b52"
-  mdc-theme-surface: "#40485f"
-  mdc-theme-surface-variant: "#343b52"
-  popup-background-color: "#394159"
-  card-background-image: "linear-gradient(180deg, rgba(160,168,193,0.2) 0%, rgba(96,106,136,0.12) 12%, rgba(52,58,82,0.08) 52%, rgba(10,12,20,0.2) 100%)"
+  primary-background-color: "#1d2130"
+  secondary-background-color: "#33394d"
+  lovelace-background: "radial-gradient(circle at top, rgba(202,191,108,0.05) 0%, rgba(202,191,108,0.012) 10%, rgba(30,34,52,0) 22%), linear-gradient(180deg, #252938 0%, #1b1e2b 100%)"
+  mdc-theme-background: "#1d2130"
+  card-background-color: "#4b5267"
+  ha-card-background: "#4b5267"
+  secondary-card-background-color: "#3c4357"
+  mdc-theme-surface: "#4b5267"
+  mdc-theme-surface-variant: "#3c4357"
+  popup-background-color: "#434a5f"
+  card-background-image: "linear-gradient(180deg, rgba(170,176,198,0.18) 0%, rgba(100,109,136,0.11) 12%, rgba(52,58,78,0.06) 52%, rgba(10,12,20,0.18) 100%)"
 
   primary-text-color: "#d9d8c8"
   secondary-text-color: "#b9b498"
@@ -48,7 +48,7 @@
   header-tab-text-color-active: "#f2ecb1"
   header-tab-text-color-inactive: "#8f8a66"
 
-  sidebar-background-color: "#363d55"
+  sidebar-background-color: "#444b61"
   sidebar-text-color: "#c9c28a"
   sidebar-icon-color: "#c9c28a"
   sidebar-selected-background-color: "#090c14"
@@ -166,11 +166,11 @@
   ha-view-sections-row-gap: "12px"
   masonry-view-card-margin: "6px 6px 12px"
 
-  chip-background-color: "#c9ced9"
-  ha-chip-background-color: "#c9ced9"
-  ha-chip-box-shadow: "inset 1px 1px 0 #f0f3f9, inset -1px -1px 0 #69728f, 0 0 0 1px #20263a"
-  badge-color: "#2a3049"
-  badge-background-color: "#c9ced9"
+  chip-background-color: "#0b0e16"
+  ha-chip-background-color: "#0b0e16"
+  ha-chip-box-shadow: "inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #20263a"
+  badge-color: "#d6d2b8"
+  badge-background-color: "#0b0e16"
 
   card-mod-root-yaml: |
     paper-tabs$: |
@@ -219,7 +219,7 @@
 
   card-mod-sidebar: |
     :host {
-      background: linear-gradient(180deg, #3f4660 0%, #343b53 100%) !important;
+      background: linear-gradient(180deg, #4a5167 0%, #40475c 100%) !important;
       border-right: 1px solid #131722;
       box-shadow: inset -1px 0 0 #626a86;
     }
@@ -230,9 +230,9 @@
     }
     .iron-selected,
     ha-md-list-item[selected] {
-      background: linear-gradient(180deg, #445566 0%, #3d4c5c 100%) !important;
-      color: var(--winamp-gold-bright) !important;
-      box-shadow: inset 1px 1px 0 #6b728d, inset -1px -1px 0 #242b3f, 0 0 0 1px #141724;
+      background: linear-gradient(180deg, #40545a 0%, #35464c 100%) !important;
+      color: var(--winamp-lcd-green) !important;
+      box-shadow: inset 1px 1px 0 #73849a, inset -1px -1px 0 #223239, 0 0 0 1px #141724;
     }
     ha-icon,
     ha-svg-icon {
@@ -253,8 +253,8 @@
       overflow: hidden;
       padding-top: 14px;
       background:
-        linear-gradient(180deg, rgba(160, 168, 193, 0.18) 0%, rgba(96, 106, 136, 0.11) 10%, rgba(52, 59, 84, 0.08) 50%, rgba(9, 11, 18, 0.16) 100%),
-        linear-gradient(180deg, var(--winamp-shell-mid) 0%, #343b52 100%) !important;
+        linear-gradient(180deg, rgba(172, 178, 198, 0.16) 0%, rgba(99, 108, 132, 0.1) 10%, rgba(52, 59, 80, 0.06) 50%, rgba(9, 11, 18, 0.15) 100%),
+        linear-gradient(180deg, var(--winamp-shell-mid) 0%, #3f4659 100%) !important;
       border: 1px solid #141724 !important;
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
@@ -267,7 +267,7 @@
       right: 0;
       height: 12px;
       background:
-        linear-gradient(90deg, transparent 0 8px, var(--winamp-gold) 8px 82px, transparent 82px calc(100% - 82px), var(--winamp-gold) calc(100% - 82px) calc(100% - 8px), transparent calc(100% - 8px)),
+        linear-gradient(90deg, transparent 0 8px, var(--winamp-gold) 8px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 8px), transparent calc(100% - 8px)),
         linear-gradient(180deg, var(--winamp-shell-dark) 0%, #111522 100%);
       border-bottom: 1px solid #49506a;
       box-shadow: inset 0 1px 0 #69718d;
@@ -331,30 +331,30 @@
 
   card-mod-badge: |
     :host {
-      background: linear-gradient(180deg, #d9dde5 0%, #aab2c7 100%);
-      color: #2a3049 !important;
+      background: linear-gradient(180deg, #0d1018 0%, #05070c 100%);
+      color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 999px;
-      box-shadow: inset 1px 1px 0 #f4f6fb, inset -1px -1px 0 #737b94, 0 1px 0 #0c0f18;
-      padding: 1px 7px;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 0 #707996, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      padding: 1px 6px;
     }
 
   card-mod-heading-badge: |
     :host {
-      background: linear-gradient(180deg, #d9dde5 0%, #aab2c7 100%);
-      color: #2a3049 !important;
+      background: linear-gradient(180deg, #0d1018 0%, #05070c 100%);
+      color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 999px;
-      box-shadow: inset 1px 1px 0 #f4f6fb, inset -1px -1px 0 #737b94, 0 1px 0 #0c0f18;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 0 #707996, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
     }
 
   card-mod-assist-chip: |
     :host {
-      background: linear-gradient(180deg, #d9dde5 0%, #aab2c7 100%);
-      color: #2a3049 !important;
+      background: linear-gradient(180deg, #0d1018 0%, #05070c 100%);
+      color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 999px;
-      box-shadow: inset 1px 1px 0 #f4f6fb, inset -1px -1px 0 #737b94, 0 1px 0 #0c0f18;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 0 #707996, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
     }
 
   card-mod-row-yaml: |
