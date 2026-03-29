@@ -175,9 +175,26 @@
   card-mod-root-yaml: |
     paper-tabs$: |
       #selectionBar {
-        height: 1px !important;
-        background: linear-gradient(180deg, var(--winamp-gold-bright) 0%, var(--winamp-gold) 100%) !important;
-        box-shadow: 0 0 0 1px rgba(90,82,39,0.35);
+        height: 0 !important;
+        opacity: 0 !important;
+      }
+      paper-tab {
+        margin: 4px 4px 0 0;
+        padding: 0 10px;
+        min-width: 44px;
+        color: #a29d74 !important;
+        font-size: 12px !important;
+        letter-spacing: 0.01em;
+        border-radius: 0 !important;
+        background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 28%), linear-gradient(180deg, #212637 0%, #171b29 50%, #121521 100%);
+        box-shadow: inset 1px 1px 0 rgba(128,136,163,0.38), inset -1px -1px 0 rgba(11,13,21,0.9), 0 0 0 1px rgba(17,20,32,0.85);
+      }
+      paper-tab[aria-selected="true"] {
+        color: var(--winamp-gold-bright) !important;
+        background:
+          linear-gradient(90deg, transparent 0 6px, #f1eaac 6px 11px, var(--winamp-gold) 11px calc(100% - 11px), #f1eaac calc(100% - 11px) calc(100% - 6px), transparent calc(100% - 6px)),
+          linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%) !important;
+        box-shadow: inset 1px 1px 0 #868faa, inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
       }
     .: |
       ha-app-layout {
@@ -212,6 +229,21 @@
         --paper-tabs-selection-bar-color: var(--winamp-gold) !important;
         --mdc-tab-height: 32px;
       }
+      hui-view-badges,
+      .badges,
+      .heading-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 8px auto 12px;
+        padding: 6px 10px;
+        width: fit-content;
+        max-width: calc(100% - 24px);
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 24%),
+          linear-gradient(180deg, #23283b 0%, #181c2a 48%, #121624 100%);
+        box-shadow: inset 1px 1px 0 rgba(124,132,156,0.46), inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
+      }
       hui-energy-period-selector,
       hui-energy-date-selection,
       ha-date-range-picker,
@@ -229,14 +261,6 @@
           linear-gradient(180deg, #535b72 0%, #42495d 18%, #343b4d 100%) !important;
         box-shadow: inset 1px 1px 0 #8d95ad, inset -1px -1px 0 #20263a, 0 0 0 1px #0b0d15 !important;
         border-radius: 0 !important;
-      }
-      paper-tab[aria-selected="true"] {
-        color: var(--winamp-gold-bright) !important;
-      }
-      paper-tab {
-        color: #9a956f !important;
-        font-size: 12px !important;
-        letter-spacing: 0.02em;
       }
       h1,
       h2,
@@ -302,9 +326,9 @@
       overflow: hidden;
       padding-top: 14px;
       background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
+        linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
         repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
+        linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
       border: 1px solid #141724 !important;
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
@@ -421,6 +445,7 @@
     }
     ha-card .media-player .controls button,
     ha-card .media-player .controls ha-icon-button,
+    ha-card .media-player .controls mwc-icon-button,
     ha-card .media-player .controls mwc-button {
       min-width: 28px;
       min-height: 28px;
@@ -508,34 +533,34 @@
 
   card-mod-badge: |
     :host {
-      background: linear-gradient(180deg, #181d2b 0%, #0d1018 26%, #05070c 100%);
+      background: linear-gradient(180deg, #1f2434 0%, #141827 30%, #090c14 100%);
       color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
-      padding: 0 5px;
-      min-height: 22px;
+      border-radius: 8px;
+      box-shadow: inset 1px 1px 0 #8890aa, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      padding: 0 6px;
+      min-height: 24px;
     }
 
   card-mod-heading-badge: |
     :host {
-      background: linear-gradient(180deg, #181d2b 0%, #0d1018 26%, #05070c 100%);
+      background: linear-gradient(180deg, #1f2434 0%, #141827 30%, #090c14 100%);
       color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
-      min-height: 22px;
+      border-radius: 8px;
+      box-shadow: inset 1px 1px 0 #8890aa, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      min-height: 24px;
     }
 
   card-mod-assist-chip: |
     :host {
-      background: linear-gradient(180deg, #181d2b 0%, #0d1018 26%, #05070c 100%);
+      background: linear-gradient(180deg, #1f2434 0%, #141827 30%, #090c14 100%);
       color: #d6d2b8 !important;
       border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
-      min-height: 22px;
-      padding: 0 4px;
+      border-radius: 8px;
+      box-shadow: inset 1px 1px 0 #8890aa, inset -1px -1px 0 #020305, 0 1px 0 #0c0f18;
+      min-height: 24px;
+      padding: 0 5px;
     }
 
   card-mod-row-yaml: |
@@ -636,6 +661,11 @@
       --mdc-filled-button-container-color: #d5dbe5 !important;
       --mdc-filled-button-label-text-color: #283048 !important;
     }
+    .content,
+    .mdc-dialog__content {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
     .mdc-dialog__surface::before {
       content: "";
       position: absolute;
@@ -696,6 +726,7 @@
     .controls button,
     .controls ha-icon-button,
     .controls ha-control-button,
+    .controls mwc-icon-button,
     .controls mwc-button {
       border-radius: 0 !important;
       background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
