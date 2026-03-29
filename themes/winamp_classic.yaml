@@ -90,9 +90,9 @@
   paper-dialog-background-color: "#343b50"
   paper-dialog-color: "#efe8b7"
   paper-dialog-button-color: "#cabf6c"
-  paper-font-common-base_-_font-family: "Tahoma, Verdana, 'Segoe UI', sans-serif"
+  paper-font-common-base_-_font-family: "Arial, Tahoma, Verdana, sans-serif"
   paper-font-common-code_-_font-family: "'Lucida Console', 'Courier New', monospace"
-  primary-font-family: "Tahoma, Verdana, 'Segoe UI', sans-serif"
+  primary-font-family: "Arial, Tahoma, Verdana, sans-serif"
   code-editor-background-color: "#090c14"
   markdown-code-background-color: "#090c14"
   markdown-table-row-background-color: "#090c14"
@@ -183,7 +183,9 @@
         padding: 0 10px;
         min-width: 44px;
         color: #a29d74 !important;
-        font-size: 12px !important;
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 11px !important;
+        font-weight: 700;
         letter-spacing: 0.01em;
         border-radius: 0 !important;
         background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 28%), linear-gradient(180deg, #212637 0%, #171b29 50%, #121521 100%);
@@ -199,6 +201,9 @@
     .: |
       ha-app-layout {
         background: var(--lovelace-background);
+        font-family: Arial, Tahoma, Verdana, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
       app-header {
         background: linear-gradient(180deg, #202637 0%, #171b29 45%, #0f121d 100%) !important;
@@ -215,10 +220,12 @@
       }
       [main-title] {
         color: var(--winamp-gold-bright) !important;
-        font-size: 12px !important;
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 11px !important;
         font-weight: 700;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.01em;
         text-transform: none;
+        text-shadow: 0 1px 0 #090b12;
       }
       ha-menu-button,
       ha-button-menu,
@@ -266,7 +273,8 @@
       h2,
       .title,
       .header {
-        letter-spacing: 0.01em;
+        font-family: Arial, Tahoma, Verdana, sans-serif;
+        letter-spacing: 0.005em;
       }
 
   card-mod-sidebar: |
@@ -303,8 +311,11 @@
     }
     .primary,
     .mdc-list-item__primary-text {
-      font-size: 13px !important;
-      letter-spacing: 0.01em;
+      font-family: Tahoma, Arial, sans-serif;
+      font-size: 12px !important;
+      font-weight: 700;
+      letter-spacing: 0.005em;
+      text-shadow: 0 1px 0 rgba(11,13,21,0.75);
     }
     ha-icon,
     ha-svg-icon {
@@ -351,12 +362,22 @@
     ha-card > .card-header {
       position: relative;
       z-index: 1;
-      margin: -1px 0 6px;
-      padding: 0 9px 4px;
+      display: flex;
+      align-items: center;
+      min-height: 18px;
+      margin: -1px 7px 6px;
+      padding: 1px 8px 3px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 26%),
+        linear-gradient(180deg, #596178 0%, #4c5468 36%, #444b5f 100%);
+      border-top: 1px solid rgba(143,151,175,0.55);
+      border-bottom: 1px solid #252a3d;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(11,13,21,0.75);
       color: var(--winamp-gold-bright);
-      font-size: 10px;
+      font-family: Tahoma, Arial, sans-serif;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.015em;
       line-height: 1.2;
       text-transform: uppercase;
       text-shadow: 0 1px 0 #090b12;
@@ -366,6 +387,7 @@
     ha-card > .content {
       margin: 0 7px 7px;
       padding: 8px;
+      font-size: 13px;
       background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%);
       box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
       color: var(--primary-text-color);
@@ -376,12 +398,14 @@
     ha-card .name,
     ha-card .header {
       color: var(--winamp-gold-bright);
+      font-family: Arial, Tahoma, Verdana, sans-serif;
     }
     ha-card .secondary,
     ha-card .state__uom,
     ha-card .state,
     ha-card .value {
       color: var(--primary-text-color);
+      font-family: Arial, Tahoma, Verdana, sans-serif;
     }
     ha-card ha-chart-base,
     ha-card state-history-charts,
@@ -503,6 +527,7 @@
     ha-card .mdc-data-table__cell {
       color: #d8d2ae !important;
       border-color: #24293b !important;
+      font-size: 13px;
     }
     ha-card .forecast,
     ha-card .hourly,
