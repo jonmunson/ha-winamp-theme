@@ -247,4 +247,108 @@
       gap: 12px !important;
     }
 
+  card-mod-card: |
+    ha-card {
+      position: relative;
+      overflow: hidden;
+      padding-top: 18px;
+      background:
+        linear-gradient(180deg, rgba(154, 162, 189, 0.22) 0%, rgba(90, 99, 128, 0.16) 10%, rgba(52, 59, 84, 0.12) 50%, rgba(9, 11, 18, 0.18) 100%),
+        linear-gradient(180deg, var(--winamp-shell-mid) 0%, #303650 100%) !important;
+      border: 1px solid #141724 !important;
+      border-radius: 0 !important;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
+    }
+    ha-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 16px;
+      background:
+        linear-gradient(90deg, transparent 0 8px, var(--winamp-gold) 8px 92px, transparent 92px calc(100% - 92px), var(--winamp-gold) calc(100% - 92px) calc(100% - 8px), transparent calc(100% - 8px)),
+        linear-gradient(180deg, var(--winamp-shell-dark) 0%, #111522 100%);
+      border-bottom: 1px solid #49506a;
+      box-shadow: inset 0 1px 0 #69718d;
+      pointer-events: none;
+      z-index: 0;
+    }
+    ha-card > .card-header {
+      position: relative;
+      z-index: 1;
+      margin: -2px 0 10px;
+      padding: 0 12px 6px;
+      color: var(--winamp-gold-bright);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 #090b12;
+    }
+    ha-card > .card-content,
+    ha-card > #states,
+    ha-card > .content {
+      margin: 0 8px 8px;
+      padding: 10px;
+      background: linear-gradient(180deg, #0c0f18 0%, #05070c 100%);
+      box-shadow: inset 1px 1px 0 #626b89, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+      color: var(--winamp-lcd-green);
+    }
+    ha-card h1,
+    ha-card h2,
+    ha-card h3,
+    ha-card .name,
+    ha-card .header {
+      color: var(--winamp-gold-bright);
+    }
+    ha-card mwc-button,
+    ha-card button,
+    ha-card .button {
+      --mdc-theme-primary: #293049;
+      --mdc-theme-on-primary: var(--winamp-gold-bright);
+    }
+    ha-card ha-slider,
+    ha-card ha-control-slider {
+      --slider-color: var(--winamp-gold);
+      --slider-secondary-color: #4c5670;
+    }
+
+  card-mod-glance: |
+    :host {
+      background: linear-gradient(180deg, #0c0f18 0%, #05070c 100%);
+      box-shadow: inset 1px 1px 0 #626b89, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+      color: var(--winamp-lcd-green);
+      padding: 6px 4px;
+    }
+
+  card-mod-badge: |
+    :host {
+      background: linear-gradient(180deg, #0d1019 0%, #05070c 100%);
+      color: var(--winamp-lcd-green) !important;
+      border: 1px solid #141724;
+      border-radius: 0;
+      box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305;
+      padding: 2px 6px;
+    }
+
+  card-mod-heading-badge: |
+    :host {
+      background: linear-gradient(180deg, #0d1019 0%, #05070c 100%);
+      color: var(--winamp-lcd-green) !important;
+      border: 1px solid #141724;
+      border-radius: 0;
+      box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305;
+    }
+
+  card-mod-assist-chip: |
+    :host {
+      background: linear-gradient(180deg, #0d1019 0%, #05070c 100%);
+      color: var(--winamp-gold-bright) !important;
+      border: 1px solid #141724;
+      border-radius: 0;
+      box-shadow: inset 1px 1px 0 #69718d, inset -1px -1px 0 #020305;
+    }
+
   card-mod-theme: "Winamp Classic"
