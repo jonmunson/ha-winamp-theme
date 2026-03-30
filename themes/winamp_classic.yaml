@@ -210,113 +210,10 @@
       paper-tab[aria-selected="true"] {
         color: var(--winamp-gold-bright) !important;
         background:
-          linear-gradient(90deg, transparent 0 5px, #f1eaac 5px 8px, var(--winamp-gold) 8px 22px, #6a6240 22px 24px, transparent 24px calc(100% - 24px), #6a6240 calc(100% - 24px) calc(100% - 22px), var(--winamp-gold) calc(100% - 22px) calc(100% - 8px), #f1eaac calc(100% - 8px) calc(100% - 5px), transparent calc(100% - 5px)),
+          linear-gradient(90deg, transparent 0 6px, #f1eaac 6px 11px, var(--winamp-gold) 11px calc(100% - 11px), #f1eaac calc(100% - 11px) calc(100% - 6px), transparent calc(100% - 6px)),
           linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%) !important;
         box-shadow: inset 1px 1px 0 #868faa, inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
       }
-    ha-more-info-dialog$:
-      ha-adaptive-dialog:
-        ha-more-info-info$:
-          more-info-content$:
-            more-info-media_player$: |
-              :host {
-                color: #e6e0bf !important;
-                font-family: Tahoma, Arial, sans-serif !important;
-                --mdc-theme-primary: #cabf6c !important;
-                --slider-color: #bca742 !important;
-                --slider-secondary-color: #3e465d !important;
-                --ha-button-filled-container-color: #d6dae5 !important;
-                --ha-button-filled-text-color: #283048 !important;
-                --ha-button-border-radius: 0px !important;
-              }
-              .cover-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 20px;
-                height: 256px !important;
-                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-              }
-              .cover-image,
-              .empty-cover {
-                width: 208px !important;
-                height: 208px !important;
-                border-radius: 0 !important;
-                background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-                background-color: #0b0f17 !important;
-                box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-              }
-              .cover-image--playing {
-                width: 224px !important;
-                height: 224px !important;
-              }
-              .media-info-row {
-                margin: 0 20px !important;
-                padding: 10px 12px !important;
-                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-              }
-              .media-title {
-                color: #00ff62 !important;
-                font-family: Tahoma, Arial, sans-serif !important;
-                font-size: 14px !important;
-                font-weight: 700 !important;
-                letter-spacing: 0.01em !important;
-              }
-              .media-artist {
-                color: #d8d2ae !important;
-                font-family: Tahoma, Arial, sans-serif !important;
-                font-size: 11px !important;
-              }
-              .position-bar,
-              .volume,
-              .bottom-controls {
-                margin: 0 20px !important;
-              }
-              .position-bar,
-              .volume {
-                padding: 8px 10px !important;
-                background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-              }
-              .bottom-controls {
-                gap: 10px !important;
-                padding: 10px 12px !important;
-                background:
-                  linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
-                  linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-                box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-              }
-              .main-controls,
-              .controls-row {
-                direction: ltr;
-              }
-              ha-icon-button {
-                color: var(--winamp-gold) !important;
-                --ha-icon-button-size: 30px !important;
-                --mdc-icon-size: 18px !important;
-              }
-              .main-controls ha-icon-button {
-                --ha-icon-button-size: 34px !important;
-                --mdc-icon-size: 20px !important;
-              }
-              .center-control {
-                --ha-button-height: 50px !important;
-                --ha-button-filled-container-color: #d6dae5 !important;
-                --ha-button-filled-text-color: #283048 !important;
-                --ha-button-border-radius: 0px !important;
-              }
-              .position-bar ha-slider,
-              .volume ha-slider {
-                --slider-color: #bca742 !important;
-                --slider-secondary-color: #3e465d !important;
-              }
-              .position-bar ha-slider::part(references) {
-                color: #bcb7a2 !important;
-                font-family: Tahoma, Arial, sans-serif !important;
-                font-size: 10px !important;
-              }
     .: |
       ha-app-layout {
         background: var(--lovelace-background);
@@ -332,7 +229,7 @@
       app-toolbar {
         min-height: 34px;
         background:
-          linear-gradient(90deg, transparent 0 8px, #f4efb4 8px 12px, var(--winamp-gold) 12px 54px, #6a6240 54px 56px, transparent 56px calc(100% - 74px), #6a6240 calc(100% - 74px) calc(100% - 72px), var(--winamp-gold) calc(100% - 72px) calc(100% - 14px), #f4efb4 calc(100% - 14px) calc(100% - 10px), transparent calc(100% - 10px)),
+          linear-gradient(90deg, transparent 0 10px, #efe8a9 10px 18px, var(--winamp-gold) 18px 126px, transparent 126px calc(100% - 126px), var(--winamp-gold) calc(100% - 126px) calc(100% - 18px), #efe8a9 calc(100% - 18px) calc(100% - 10px), transparent calc(100% - 10px)),
           repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
           linear-gradient(180deg, #23283b 0%, #181c2a 42%, #121624 100%) !important;
         box-shadow: inset 0 1px 0 #7b849b, inset 0 2px 0 rgba(255,255,255,0.08), inset 0 -1px 0 #0b0d15;
@@ -360,15 +257,13 @@
       .heading-badges {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 6px;
         margin: 8px auto 10px;
-        padding: 4px 8px;
+        padding: 0;
         width: fit-content;
         max-width: calc(100% - 24px);
-        background:
-          linear-gradient(180deg, rgba(255,255,255,0.016) 0%, rgba(255,255,255,0) 18%),
-          linear-gradient(180deg, #202536 0%, #181c2a 54%, #111420 100%);
-        box-shadow: inset 1px 1px 0 rgba(124,132,156,0.32), inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
+        background: transparent;
+        box-shadow: none;
       }
       hui-energy-period-selector,
       hui-energy-date-selection,
@@ -469,23 +364,12 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 9px;
+      height: 10px;
       background:
-        linear-gradient(
-          90deg,
-          transparent 0 6px,
-          #f4efb4 6px 10px,
-          var(--winamp-gold) 10px 36px,
-          #6a6240 36px 38px,
-          transparent 38px calc(100% - 58px),
-          #6a6240 calc(100% - 58px) calc(100% - 56px),
-          var(--winamp-gold) calc(100% - 56px) calc(100% - 12px),
-          #f4efb4 calc(100% - 12px) calc(100% - 8px),
-          transparent calc(100% - 8px)
-        ),
-        linear-gradient(180deg, #262c3f 0%, #181c2a 48%, #0f121d 100%);
-      border-bottom: 1px solid #434962;
-      box-shadow: inset 0 1px 0 #7f88a0, inset 0 -1px 0 #0a0d14;
+        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
+        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
+      border-bottom: 1px solid #49506a;
+      box-shadow: inset 0 1px 0 #7f88a0;
       pointer-events: none;
       z-index: 0;
     }
@@ -494,20 +378,20 @@
       z-index: 1;
       display: flex;
       align-items: center;
-      min-height: 16px;
+      min-height: 18px;
       margin: -1px 7px 6px;
-      padding: 1px 7px 2px;
+      padding: 1px 8px 3px;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 18%),
-        linear-gradient(180deg, #5b637a 0%, #4d5568 32%, #454c60 100%);
-      border-top: 1px solid rgba(143,151,175,0.46);
-      border-bottom: 1px solid #23283a;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(11,13,21,0.82);
+        linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 26%),
+        linear-gradient(180deg, #596178 0%, #4c5468 36%, #444b5f 100%);
+      border-top: 1px solid rgba(143,151,175,0.55);
+      border-bottom: 1px solid #252a3d;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(11,13,21,0.75);
       color: var(--winamp-gold-bright);
       font-family: Tahoma, Arial, sans-serif;
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.015em;
       line-height: 1.2;
       text-transform: uppercase;
       text-shadow: 0 1px 0 #090b12;
@@ -693,15 +577,12 @@
     }
 
   card-mod-card-yaml: |
-    hui-media-control-card$: |
+    .: |
       :host {
         --primary-color: #141927 !important;
         --text-primary-color: #efe8b7 !important;
         --mdc-theme-primary: #cabf6c !important;
         --mdc-linear-progress-buffer-color: #3e465d !important;
-      }
-      ha-card {
-        overflow: hidden;
       }
       .background,
       .color-block,
@@ -715,68 +596,55 @@
         opacity: 1 !important;
         filter: none !important;
       }
-      .color-block {
-        width: 100% !important;
-      }
       .color-gradient {
-        opacity: 0.08 !important;
+        opacity: 0.06 !important;
       }
       .image {
-        opacity: 0.12 !important;
-        background-size: cover !important;
+        opacity: 0.1 !important;
       }
       .no-img {
-        width: 34% !important;
+        width: 32% !important;
         opacity: 0.16 !important;
         background-image: none !important;
         background-color: #131827 !important;
-        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
       }
       .player {
         margin: 7px !important;
-        padding: 10px !important;
+        padding: 9px 10px 8px !important;
         height: calc(100% - 14px);
         box-sizing: border-box !important;
         background:
-          linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
+          linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 20%),
           linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
         box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
       }
       .top-info {
         align-items: center;
-        margin-bottom: 8px;
-        padding-bottom: 6px;
+        margin-bottom: 7px;
+        padding-bottom: 5px;
         border-bottom: 1px solid rgba(82, 89, 110, 0.7);
       }
       .icon-name,
       .icon-name div {
         color: var(--winamp-gold-bright) !important;
         font-family: Tahoma, Arial, sans-serif !important;
-        font-size: 9px !important;
+        font-size: 10px !important;
         font-weight: 700 !important;
-        letter-spacing: 0.015em !important;
-        text-transform: uppercase;
+        letter-spacing: 0.01em !important;
         text-shadow: 0 1px 0 #090b12;
       }
       .icon,
-      .icon-name ha-state-icon {
-        color: var(--winamp-gold) !important;
-      }
+      .icon-name ha-state-icon,
       .more-info {
-        top: 0 !important;
-        right: 0 !important;
+        color: var(--winamp-gold) !important;
       }
       .title-controls {
         padding-top: 4px !important;
       }
       .media-info,
       hui-marquee {
-        color: #00ff62 !important;
+        color: #e6e0bf !important;
         font-family: Tahoma, Arial, sans-serif !important;
-      }
-      .media-info {
-        font-size: 13px !important;
-        text-shadow: 0 0 6px rgba(0,255,98,0.08);
       }
       hui-marquee {
         font-size: 1.02em !important;
@@ -784,27 +652,22 @@
         letter-spacing: 0.01em !important;
       }
       .controls {
-        padding: 8px 0 2px !important;
+        padding: 8px 0 1px !important;
         align-items: center;
-        gap: 6px;
+        gap: 4px;
+        margin-left: -8px;
+        margin-inline-start: -8px;
       }
       .controls .start,
       .controls .end {
-        display: flex;
-        align-items: center;
-        gap: 6px;
+        gap: 2px;
       }
       .controls ha-icon-button,
-      .controls ha-control-button,
-      .controls mwc-icon-button,
-      .controls mwc-button,
-      .controls button {
-        min-width: 28px;
-        min-height: 28px;
-        border-radius: 0 !important;
-        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-        color: #283048 !important;
-        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      .browse-media,
+      .join-media {
+        color: var(--winamp-silver) !important;
+        --ha-icon-button-size: 36px !important;
+        --mdc-icon-size: 22px !important;
       }
       ha-icon-button[action="media_play"],
       ha-icon-button[action="media_play_pause"],
@@ -812,11 +675,12 @@
       ha-icon-button[action="media_stop"],
       ha-icon-button[action="turn_on"],
       ha-icon-button[action="turn_off"] {
-        --ha-icon-button-size: 36px !important;
-        --mdc-icon-size: 22px !important;
+        color: var(--winamp-silver) !important;
+        --ha-icon-button-size: 44px !important;
+        --mdc-icon-size: 28px !important;
       }
       mwc-linear-progress {
-        margin-top: 10px !important;
+        margin-top: 8px !important;
         --mdc-theme-primary: #bca742 !important;
         --mdc-linear-progress-buffer-color: #3e465d !important;
       }
@@ -1061,15 +925,16 @@
 
   card-mod-badge: |
     :host {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 18%),
-        linear-gradient(180deg, #51586c 0%, #454d61 30%, #363d4f 100%);
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
       color: #d6d2b8 !important;
-      border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8b93ad, inset -1px -1px 0 #22283b, 0 0 0 1px #111420;
-      padding: 0 5px;
-      min-height: 22px;
+      border: 1px solid #293045;
+      border-radius: 14px;
+      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
+      padding: 0 7px;
+      min-height: 24px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
       font-weight: 700;
@@ -1078,15 +943,16 @@
 
   card-mod-heading-badge: |
     :host {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 18%),
-        linear-gradient(180deg, #51586c 0%, #454d61 30%, #363d4f 100%);
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
       color: #d6d2b8 !important;
-      border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8b93ad, inset -1px -1px 0 #22283b, 0 0 0 1px #111420;
-      min-height: 22px;
-      padding: 0 5px;
+      border: 1px solid #293045;
+      border-radius: 14px;
+      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
+      min-height: 24px;
+      padding: 0 7px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
       font-weight: 700;
@@ -1095,15 +961,16 @@
 
   card-mod-assist-chip: |
     :host {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 18%),
-        linear-gradient(180deg, #51586c 0%, #454d61 30%, #363d4f 100%);
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
       color: #d6d2b8 !important;
-      border: 1px solid #23293c;
-      border-radius: 4px;
-      box-shadow: inset 1px 1px 0 #8b93ad, inset -1px -1px 0 #22283b, 0 0 0 1px #111420;
-      min-height: 22px;
-      padding: 0 5px;
+      border: 1px solid #293045;
+      border-radius: 14px;
+      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
+      min-height: 24px;
+      padding: 0 7px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
       font-weight: 700;
@@ -1287,7 +1154,7 @@
     }
 
   card-mod-more-info-yaml: |
-    ha-more-info-info$:
+    .content-wrapper .content ha-more-info-info$:
       more-info-content$:
         more-info-media_player$: |
           :host {
