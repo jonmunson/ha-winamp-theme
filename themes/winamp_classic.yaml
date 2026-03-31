@@ -378,20 +378,20 @@
       z-index: 1;
       display: flex;
       align-items: center;
-      min-height: 18px;
+      min-height: 16px;
       margin: -1px 7px 6px;
-      padding: 1px 8px 3px;
+      padding: 1px 8px 2px;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 26%),
-        linear-gradient(180deg, #596178 0%, #4c5468 36%, #444b5f 100%);
+        linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 22%),
+        linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%);
       border-top: 1px solid rgba(143,151,175,0.55);
       border-bottom: 1px solid #252a3d;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(11,13,21,0.75);
       color: var(--winamp-gold-bright);
       font-family: Tahoma, Arial, sans-serif;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 700;
-      letter-spacing: 0.015em;
+      letter-spacing: 0.03em;
       line-height: 1.2;
       text-transform: uppercase;
       text-shadow: 0 1px 0 #090b12;
@@ -419,6 +419,33 @@
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 0.01em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 #090b12;
+    }
+    ha-card > .card-content > h1:first-child,
+    ha-card > .card-content > h2:first-child,
+    ha-card > .card-content > h3:first-child,
+    ha-card > #states > h1:first-child,
+    ha-card > #states > h2:first-child,
+    ha-card > #states > h3:first-child,
+    ha-card > .content > h1:first-child,
+    ha-card > .content > h2:first-child,
+    ha-card > .content > h3:first-child {
+      display: block;
+      margin: -8px -8px 8px;
+      padding: 3px 8px 4px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 20%),
+        linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%);
+      border-top: 1px solid rgba(143,151,175,0.52);
+      border-bottom: 1px solid #252a3d;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(11,13,21,0.75);
+      color: var(--winamp-gold-bright) !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 8px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.03em !important;
+      line-height: 1.2;
       text-transform: uppercase;
       text-shadow: 0 1px 0 #090b12;
     }
@@ -620,17 +647,23 @@
       }
       .top-info {
         align-items: center;
-        margin-bottom: 7px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid rgba(82, 89, 110, 0.7);
+        margin: -9px -10px 8px !important;
+        padding: 3px 8px 4px !important;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 20%),
+          linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%) !important;
+        border-top: 1px solid rgba(143,151,175,0.52);
+        border-bottom: 1px solid #252a3d;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(11,13,21,0.75);
       }
       .icon-name,
       .icon-name div {
         color: var(--winamp-gold-bright) !important;
         font-family: Tahoma, Arial, sans-serif !important;
-        font-size: 10px !important;
+        font-size: 8px !important;
         font-weight: 700 !important;
-        letter-spacing: 0.01em !important;
+        letter-spacing: 0.03em !important;
+        text-transform: uppercase;
         text-shadow: 0 1px 0 #090b12;
       }
       .icon,
@@ -639,24 +672,30 @@
         color: var(--winamp-gold) !important;
       }
       .title-controls {
-        padding-top: 4px !important;
+        padding-top: 2px !important;
       }
       .media-info,
       hui-marquee {
-        color: #e6e0bf !important;
+        color: #00ff62 !important;
         font-family: Tahoma, Arial, sans-serif !important;
+        text-shadow: 0 0 6px rgba(0,255,98,0.08);
+      }
+      .media-info {
+        font-size: 12px !important;
+        line-height: 1.25;
       }
       hui-marquee {
-        font-size: 1.02em !important;
+        font-size: 0.98em !important;
         font-weight: 700 !important;
         letter-spacing: 0.01em !important;
       }
       .controls {
-        padding: 8px 0 1px !important;
+        padding: 7px 0 1px !important;
         align-items: center;
         gap: 4px;
         margin-left: -8px;
         margin-inline-start: -8px;
+        border-top: 1px solid rgba(79, 86, 107, 0.55);
       }
       .controls .start,
       .controls .end {
