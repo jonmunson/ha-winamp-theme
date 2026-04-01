@@ -32,9 +32,9 @@
   light-primary-color: "#66ff9a"
   dark-primary-color: "#009938"
 
-  primary-background-color: "#1a1e2d"
-  secondary-background-color: "#282e3e"
-  lovelace-background: "linear-gradient(180deg, #1e2230 0%, #181c2a 100%)"
+  primary-background-color: "#090c14"
+  secondary-background-color: "#151a26"
+  lovelace-background: "#090c14"
   mdc-theme-background: "#1a1e2d"
   card-background-color: "#353b4e"
   ha-card-background: "#353b4e"
@@ -199,6 +199,9 @@
   ha-chip-box-shadow: "inset 1px 1px 0 #12151f, inset -1px -1px 0 #4a5068"
   badge-color: "#00ff62"
   badge-background-color: "#080a12"
+  ha-card-header-color: "#cdd3e0"
+  ha-card-header-font-size: "10px"
+  ha-card-header-font-family: "Tahoma, Arial, sans-serif"
 
   # ── card-mod: root (toolbar, tabs, top-level) ──────────
   card-mod-root-yaml: |
@@ -343,7 +346,7 @@
   card-mod-view: |
     :host {
       padding: 6px 8px 12px;
-      background: var(--lovelace-background);
+      background: #090c14;
     }
     #columns {
       gap: 8px !important;
@@ -360,22 +363,22 @@
       box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0a0d15 !important;
     }
     ha-card > .card-header {
-      display: flex;
-      align-items: center;
-      min-height: 18px;
-      margin: 0;
-      padding: 3px 8px;
-      background: var(--winamp-titlebar-bg);
-      border-bottom: 1px solid rgba(90,98,120,0.3);
-      box-shadow: inset 0 1px 0 rgba(90,98,120,0.3), inset 0 -1px 0 var(--winamp-bevel-dark);
-      color: var(--winamp-chrome-bright);
-      font-family: Tahoma, Arial, sans-serif;
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      line-height: 1.2;
-      text-transform: uppercase;
-      text-shadow: 0 1px 0 #080a12;
+      display: flex !important;
+      align-items: center !important;
+      min-height: 18px !important;
+      margin: 0 !important;
+      padding: 3px 8px !important;
+      background: var(--winamp-titlebar-bg) !important;
+      border-bottom: 1px solid rgba(90,98,120,0.3) !important;
+      box-shadow: inset 0 1px 0 rgba(90,98,120,0.3), inset 0 -1px 0 var(--winamp-bevel-dark) !important;
+      color: var(--winamp-chrome-bright) !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.02em !important;
+      line-height: 1.2 !important;
+      text-transform: uppercase !important;
+      text-shadow: 0 1px 0 #080a12 !important;
     }
     ha-card > .card-content,
     ha-card > #states,
@@ -827,17 +830,17 @@
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: var(--winamp-display);
+      background: var(--winamp-display) !important;
       color: var(--winamp-lcd-green) !important;
-      border: 1px solid var(--winamp-bevel-dark);
-      border-radius: 0;
-      box-shadow: var(--winamp-pane-shadow);
-      padding: 0 7px;
-      min-height: 22px;
-      font-family: Tahoma, Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
+      border: 1px solid var(--winamp-bevel-dark) !important;
+      border-radius: 0 !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
+      padding: 0 7px !important;
+      min-height: 22px !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.01em !important;
     }
 
   card-mod-heading-badge: |
@@ -845,17 +848,17 @@
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: var(--winamp-display);
+      background: var(--winamp-display) !important;
       color: var(--winamp-lcd-green) !important;
-      border: 1px solid var(--winamp-bevel-dark);
-      border-radius: 0;
-      box-shadow: var(--winamp-pane-shadow);
-      min-height: 22px;
-      padding: 0 7px;
-      font-family: Tahoma, Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
+      border: 1px solid var(--winamp-bevel-dark) !important;
+      border-radius: 0 !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
+      min-height: 22px !important;
+      padding: 0 7px !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.01em !important;
     }
 
   card-mod-assist-chip: |
@@ -863,17 +866,17 @@
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: var(--winamp-display);
+      background: var(--winamp-display) !important;
       color: var(--winamp-lcd-green) !important;
-      border: 1px solid var(--winamp-bevel-dark);
-      border-radius: 0;
-      box-shadow: var(--winamp-pane-shadow);
-      min-height: 22px;
-      padding: 0 7px;
-      font-family: Tahoma, Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
+      border: 1px solid var(--winamp-bevel-dark) !important;
+      border-radius: 0 !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
+      min-height: 22px !important;
+      padding: 0 7px !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.01em !important;
     }
 
   # ── card-mod: entity rows ──────────────────────────────
