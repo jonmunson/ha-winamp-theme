@@ -1,193 +1,206 @@
 "Winamp Classic":
-  winamp-shell-dark: "#1a1e2d"
-  winamp-shell-mid: "#444b5f"
-  winamp-shell-light: "#6d7790"
-  winamp-panel-dark: "#090c14"
-  winamp-panel-mid: "#161a27"
-  winamp-gold: "#cabf6c"
-  winamp-gold-bright: "#efe8a9"
+  # ── Winamp 5.9.2 palette ──────────────────────────────
+  # Chassis / frame
+  winamp-chassis: "#353b4e"
+  winamp-chassis-dark: "#1e2230"
+  winamp-chassis-light: "#4a5068"
+  # Display surfaces
+  winamp-display: "#080a12"
+  winamp-display-mid: "#121620"
+  # Silver chrome
+  winamp-chrome: "#a0a8bc"
+  winamp-chrome-bright: "#cdd3e0"
+  winamp-chrome-dim: "#6a7288"
+  # LCD green — the hero color
   winamp-lcd-green: "#00ff62"
   winamp-lcd-green-dim: "#0db34f"
-  winamp-silver: "#d2d6df"
-  winamp-silver-dark: "#6f7892"
-  winamp-bevel-light: "#8b92ad"
-  winamp-bevel-dark: "#20263a"
+  # Bevels
+  winamp-bevel-light: "#5a6278"
+  winamp-bevel-dark: "#12151f"
+  # Reusable composite patterns (referenced via var() in card-mod CSS)
+  winamp-pane-bg: "linear-gradient(180deg, #121620 0%, #0a0d15 30%, #060810 100%)"
+  winamp-pane-shadow: "inset 1px 1px 0 #12151f, inset -1px -1px 0 #4a5068"
+  winamp-titlebar-bg: "linear-gradient(180deg, #282e3c 0%, #1e2230 100%)"
+  winamp-btn-bg: "linear-gradient(180deg, #c8cdd8 0%, #b0b8c8 20%, #949cb2 55%, #8088a0 100%)"
+  winamp-btn-shadow: "inset 1px 1px 0 #dce0e8, inset -1px -1px 0 #5a6278, 0 0 0 1px #1e2230"
 
-  primary-color: "#cabf6c"
+  # ── Core HA variables ──────────────────────────────────
+  primary-color: "#00ff62"
   accent-color: "#00ff62"
-  rgb-primary-color: "202, 191, 108"
+  rgb-primary-color: "0, 255, 98"
   rgb-accent-color: "0, 255, 98"
-  light-primary-color: "#dfd59b"
-  dark-primary-color: "#847a37"
+  light-primary-color: "#66ff9a"
+  dark-primary-color: "#009938"
 
-  primary-background-color: "#181b27"
-  secondary-background-color: "#293042"
-  lovelace-background: "radial-gradient(circle at top, rgba(202,191,108,0.035) 0%, rgba(202,191,108,0.008) 8%, rgba(30,34,52,0) 18%), repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px), linear-gradient(180deg, #202432 0%, #151822 100%)"
-  mdc-theme-background: "#181b27"
-  card-background-color: "#40475b"
-  ha-card-background: "#40475b"
-  secondary-card-background-color: "#31384b"
-  mdc-theme-surface: "#40475b"
-  mdc-theme-surface-variant: "#31384b"
-  popup-background-color: "#353c50"
-  card-background-image: "linear-gradient(180deg, rgba(188,193,210,0.22) 0%, rgba(137,145,170,0.16) 8%, rgba(91,99,124,0.1) 20%, rgba(67,74,95,0.07) 52%, rgba(16,19,30,0.24) 100%)"
+  primary-background-color: "#1a1e2d"
+  secondary-background-color: "#282e3e"
+  lovelace-background: "linear-gradient(180deg, #1e2230 0%, #181c2a 100%)"
+  mdc-theme-background: "#1a1e2d"
+  card-background-color: "#353b4e"
+  ha-card-background: "#353b4e"
+  secondary-card-background-color: "#2a3040"
+  mdc-theme-surface: "#353b4e"
+  mdc-theme-surface-variant: "#2a3040"
+  popup-background-color: "#2e3444"
+  card-background-image: "repeating-linear-gradient(180deg, rgba(255,255,255,0.006) 0px, rgba(255,255,255,0.006) 1px, transparent 1px, transparent 2px)"
 
-  primary-text-color: "#d9d8c8"
-  secondary-text-color: "#b9b498"
-  text-primary-color: "#d9d8c8"
-  disabled-text-color: "#787b86"
-  text-medium-light-color: "#9da0ad"
+  primary-text-color: "#c8ceda"
+  secondary-text-color: "#8890a4"
+  text-primary-color: "#c8ceda"
+  disabled-text-color: "#505868"
+  text-medium-light-color: "#8890a4"
   text-accent-color: "#00ff62"
 
-  app-header-background-color: "#171a28"
-  app-header-text-color: "#ddd69b"
-  app-header-selection-bar-color: "#cabf6c"
-  paper-tabs-selection-bar-color: "transparent"
-  paper-tab-ink: "#cabf6c"
-  header-tab-text-color: "#b7b07a"
-  header-tab-text-color-active: "#f2ecb1"
-  header-tab-text-color-inactive: "#8f8a66"
+  app-header-background-color: "#1a1e2d"
+  app-header-text-color: "#cdd3e0"
+  app-header-selection-bar-color: "#00ff62"
+  paper-tabs-selection-bar-color: "#00ff62"
+  paper-tab-ink: "#a0a8bc"
+  header-tab-text-color: "#8890a4"
+  header-tab-text-color-active: "#cdd3e0"
+  header-tab-text-color-inactive: "#5a6278"
 
-  sidebar-background-color: "#40475b"
-  sidebar-text-color: "#c9c28a"
-  sidebar-icon-color: "#c9c28a"
-  sidebar-selected-background-color: "#090c14"
+  sidebar-background-color: "#353b4e"
+  sidebar-text-color: "#a0a8bc"
+  sidebar-icon-color: "#8890a4"
+  sidebar-selected-background-color: "#080a12"
   sidebar-selected-icon-color: "#00ff62"
   sidebar-selected-text-color: "#00ff62"
-  sidebar-border-color: "#141724"
+  sidebar-border-color: "#12151f"
 
-  divider-color: "#59607d"
-  border-color: "#141724"
-  outline-color: "#8890ab"
+  divider-color: "#3a4258"
+  border-color: "#12151f"
+  outline-color: "#5a6278"
   table-row-background-color: "#0a0d15"
-  table-row-alternative-background-color: "#121622"
-  table-row-hover-background-color: "#171b2a"
+  table-row-alternative-background-color: "#101420"
+  table-row-hover-background-color: "#151a28"
 
-  paper-item-icon-color: "#d7cb68"
+  paper-item-icon-color: "#8890a4"
   paper-item-icon-active-color: "#00ff62"
-  state-icon-color: "#d7cb68"
+  state-icon-color: "#8890a4"
   state-icon-active-color: "#00ff62"
-  state-icon-unavailable-color: "#5f6374"
-  paper-item-selected_-_background-color: "#090c14"
+  state-icon-unavailable-color: "#3a4054"
+  paper-item-selected_-_background-color: "#080a12"
   paper-item-selected-color: "#00ff62"
 
-  paper-listbox-background-color: "#090c14"
+  paper-listbox-background-color: "#080a12"
   paper-listbox-color: "#00ff62"
-  material-background-color: "#343b50"
-  list-item-background-color: "#090c14"
-  table-header-background-color: "#171a28"
-  table-header-color: "#efe8a9"
+  material-background-color: "#2e3444"
+  list-item-background-color: "#080a12"
+  table-header-background-color: "#1e2230"
+  table-header-color: "#cdd3e0"
 
-  label-badge-background-color: "#090c14"
+  label-badge-background-color: "#080a12"
   label-badge-text-color: "#00ff62"
   label-badge-red: "#ff643f"
   label-badge-blue: "#6e7ca9"
   label-badge-green: "#00ff62"
-  label-badge-yellow: "#d7cb68"
-  label-badge-grey: "#6d7388"
+  label-badge-yellow: "#c8b84c"
+  label-badge-grey: "#5a6278"
 
-  paper-card-header-color: "#efe8a9"
-  paper-dialog-background-color: "#343b50"
-  paper-dialog-color: "#efe8b7"
-  paper-dialog-button-color: "#cabf6c"
+  paper-card-header-color: "#cdd3e0"
+  paper-dialog-background-color: "#2e3444"
+  paper-dialog-color: "#c8ceda"
+  paper-dialog-button-color: "#a0a8bc"
   paper-font-common-base_-_font-family: "Tahoma, Arial, Verdana, sans-serif"
   paper-font-common-code_-_font-family: "'Lucida Console', 'Courier New', monospace"
   primary-font-family: "Tahoma, Arial, Verdana, sans-serif"
   mcg-title-letter-spacing: "0.015em"
   mcg-title-font-weight: "700"
-  mini-media-player-base-color: "#e6e0bf"
-  mini-media-player-accent-color: "#cabf6c"
-  mini-media-player-icon-color: "#cabf6c"
-  mini-media-player-button-color: "rgba(210,214,223,0.18)"
-  mini-media-player-overlay-color: "rgba(5,7,12,0.84)"
+  mini-media-player-base-color: "#c8ceda"
+  mini-media-player-accent-color: "#00ff62"
+  mini-media-player-icon-color: "#8890a4"
+  mini-media-player-button-color: "rgba(160,168,188,0.18)"
+  mini-media-player-overlay-color: "rgba(5,7,12,0.88)"
   mini-media-player-overlay-color-stop: "18%"
-  mini-media-player-overlay-base-color: "#e6e0bf"
-  mini-media-player-overlay-accent-color: "#cabf6c"
-  mini-media-player-media-cover-info-color: "#e6e0bf"
+  mini-media-player-overlay-base-color: "#c8ceda"
+  mini-media-player-overlay-accent-color: "#00ff62"
+  mini-media-player-media-cover-info-color: "#c8ceda"
   mini-media-player-background-opacity: "1"
   mini-media-player-artwork-opacity: "0.08"
   mini-media-player-progress-height: "6px"
   mini-media-player-scale: "1"
   mini-media-player-name-font-weight: "700"
-  code-editor-background-color: "#090c14"
-  markdown-code-background-color: "#090c14"
-  markdown-table-row-background-color: "#090c14"
-  markdown-table-row-alternative-background-color: "#121622"
+  code-editor-background-color: "#080a12"
+  markdown-code-background-color: "#080a12"
+  markdown-table-row-background-color: "#0a0d15"
+  markdown-table-row-alternative-background-color: "#101420"
 
-  mdc-theme-primary: "#cabf6c"
+  mdc-theme-primary: "#00ff62"
   mdc-theme-secondary: "#00ff62"
-  mdc-theme-on-primary: "#171a28"
-  mdc-theme-on-secondary: "#090c14"
-  mdc-ripple-color: "#d7cb68"
-  mdc-filled-button-container-color: "#cfd4df"
-  mdc-filled-button-label-text-color: "#2a3049"
-  mdc-outlined-button-outline-color: "#8088a4"
-  mdc-outlined-button-label-text-color: "#efe8b7"
-  mdc-text-button-label-text-color: "#cabf6c"
-  mdc-checkbox-unchecked-color: "#aeb4c4"
-  mdc-checkbox-disabled-color: "#5b6072"
-  mdc-radio-unchecked-color: "#aeb4c4"
-  mdc-radio-disabled-color: "#5b6072"
-  mdc-select-fill-color: "rgba(9, 12, 20, 0.94)"
-  mdc-select-idle-line-color: "#7f86a1"
-  mdc-select-hover-line-color: "#cabf6c"
-  mdc-select-label-ink-color: "#d9d8c8"
-  mdc-select-dropdown-icon-color: "#d7cb68"
+  mdc-theme-on-primary: "#080a12"
+  mdc-theme-on-secondary: "#080a12"
+  mdc-ripple-color: "#a0a8bc"
+  mdc-filled-button-container-color: "#c8cdd8"
+  mdc-filled-button-label-text-color: "#1e2230"
+  mdc-outlined-button-outline-color: "#5a6278"
+  mdc-outlined-button-label-text-color: "#c8ceda"
+  mdc-text-button-label-text-color: "#a0a8bc"
+  mdc-checkbox-unchecked-color: "#8890a4"
+  mdc-checkbox-disabled-color: "#3a4054"
+  mdc-radio-unchecked-color: "#8890a4"
+  mdc-radio-disabled-color: "#3a4054"
+  mdc-select-fill-color: "rgba(8, 10, 18, 0.94)"
+  mdc-select-idle-line-color: "#5a6278"
+  mdc-select-hover-line-color: "#00ff62"
+  mdc-select-label-ink-color: "#c8ceda"
+  mdc-select-dropdown-icon-color: "#8890a4"
 
-  input-fill-color: "rgba(9, 12, 20, 0.94)"
+  input-fill-color: "rgba(8, 10, 18, 0.94)"
   input-ink-color: "#00ff62"
-  input-label-ink-color: "#d9d8c8"
-  input-idle-line-color: "#7f86a1"
-  input-dropdown-icon-color: "#d7cb68"
-  input-outlined-idle-border-color: "#7f86a1"
-  input-outlined-hover-border-color: "#cabf6c"
-  input-outlined-disabled-border-color: "#575c71"
+  input-label-ink-color: "#c8ceda"
+  input-idle-line-color: "#5a6278"
+  input-dropdown-icon-color: "#8890a4"
+  input-outlined-idle-border-color: "#5a6278"
+  input-outlined-hover-border-color: "#00ff62"
+  input-outlined-disabled-border-color: "#3a4054"
   text-field-border-radius: "0px"
-  text-field-fill-color: "rgba(9, 12, 20, 0.94)"
+  text-field-fill-color: "rgba(8, 10, 18, 0.94)"
 
-  switch-checked-button-color: "#d7cb68"
-  switch-checked-track-color: "#8f8438"
-  switch-unchecked-button-color: "#b7bac6"
-  switch-unchecked-track-color: "#4f566e"
-  paper-toggle-button-checked-button-color: "#d7cb68"
-  paper-toggle-button-checked-bar-color: "#8f8438"
-  paper-toggle-button-unchecked-button-color: "#b7bac6"
-  paper-toggle-button-unchecked-bar-color: "#4f566e"
+  switch-checked-button-color: "#c8cdd8"
+  switch-checked-track-color: "#0db34f"
+  switch-unchecked-button-color: "#8890a4"
+  switch-unchecked-track-color: "#3a4054"
+  paper-toggle-button-checked-button-color: "#c8cdd8"
+  paper-toggle-button-checked-bar-color: "#0db34f"
+  paper-toggle-button-unchecked-button-color: "#8890a4"
+  paper-toggle-button-unchecked-bar-color: "#3a4054"
 
-  paper-slider-knob-color: "#bfc4d4"
-  paper-slider-knob-start-color: "#bfc4d4"
-  paper-slider-pin-color: "#d7cb68"
-  paper-slider-active-color: "#d7cb68"
-  paper-slider-secondary-color: "#5d6788"
-  paper-slider-container-color: "#444b62"
-  slider-color: "#d7cb68"
-  slider-secondary-color: "#5d6788"
+  paper-slider-knob-color: "#c8cdd8"
+  paper-slider-knob-start-color: "#c8cdd8"
+  paper-slider-pin-color: "#00ff62"
+  paper-slider-active-color: "#00ff62"
+  paper-slider-secondary-color: "#3a4054"
+  paper-slider-container-color: "#2a3040"
+  slider-color: "#00ff62"
+  slider-secondary-color: "#3a4054"
 
   error-color: "#ff6b3d"
-  warning-color: "#d7cb68"
+  warning-color: "#c8b84c"
   success-color: "#00ff62"
-  info-color: "#8ea0d3"
-  warning-text-color: "#171a28"
-  success-text-color: "#090c14"
-  info-text-color: "#171a28"
+  info-color: "#6e7ca9"
+  warning-text-color: "#1e2230"
+  success-text-color: "#080a12"
+  info-text-color: "#1e2230"
 
   ha-card-border-radius: "0px"
   ha-card-border-width: "1px"
-  ha-card-border-color: "#141724"
-  ha-card-box-shadow: "inset 1px 1px 0 #8b92ad, inset 2px 2px 0 rgba(255,255,255,0.08), inset -1px -1px 0 #20263a, inset -2px -2px 0 rgba(0,0,0,0.28), 0 0 0 1px #141724"
-  paper-card-background-color: "#343b50"
-  paper-card-background-image: "linear-gradient(180deg, rgba(149,157,185,0.2) 0%, rgba(93,102,131,0.12) 12%, rgba(46,52,75,0.08) 48%, rgba(12,14,24,0.26) 100%)"
+  ha-card-border-color: "#12151f"
+  ha-card-box-shadow: "inset 1px 1px 0 #5a6278, inset -1px -1px 0 #12151f, 0 0 0 1px #0a0d15"
+  paper-card-background-color: "#2e3444"
+  paper-card-background-image: "none"
   ha-dialog-border-radius: "0px"
   ha-view-sections-column-gap: "8px"
   ha-view-sections-row-gap: "8px"
   masonry-view-card-margin: "4px 4px 8px"
 
-  chip-background-color: "#0b0e16"
-  ha-chip-background-color: "#0b0e16"
-  ha-chip-box-shadow: "inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #20263a"
-  badge-color: "#d6d2b8"
-  badge-background-color: "#0b0e16"
+  chip-background-color: "#080a12"
+  ha-chip-background-color: "#080a12"
+  ha-chip-box-shadow: "inset 1px 1px 0 #12151f, inset -1px -1px 0 #4a5068"
+  badge-color: "#00ff62"
+  badge-background-color: "#080a12"
 
+  # ── card-mod: root (toolbar, tabs, top-level) ──────────
   card-mod-root-yaml: |
     paper-tabs$: |
       #selectionBar {
@@ -195,61 +208,56 @@
         opacity: 0 !important;
       }
       paper-tab {
-        margin: 4px 4px 0 0;
+        margin: 4px 3px 0 0;
         padding: 0 10px;
         min-width: 44px;
-        color: #a29d74 !important;
+        color: var(--winamp-chrome-dim) !important;
         font-family: Tahoma, Arial, sans-serif;
         font-size: 11px !important;
         font-weight: 700;
         letter-spacing: 0.01em;
         border-radius: 0 !important;
-        background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 28%), linear-gradient(180deg, #212637 0%, #171b29 50%, #121521 100%);
-        box-shadow: inset 1px 1px 0 rgba(128,136,163,0.38), inset -1px -1px 0 rgba(11,13,21,0.9), 0 0 0 1px rgba(17,20,32,0.85);
+        background: var(--winamp-titlebar-bg);
+        box-shadow: inset 1px 1px 0 rgba(90,98,120,0.4), inset -1px -1px 0 rgba(12,15,21,0.8);
       }
       paper-tab[aria-selected="true"] {
-        color: var(--winamp-gold-bright) !important;
-        background:
-          linear-gradient(90deg, transparent 0 6px, #f1eaac 6px 11px, var(--winamp-gold) 11px calc(100% - 11px), #f1eaac calc(100% - 11px) calc(100% - 6px), transparent calc(100% - 6px)),
-          linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%) !important;
-        box-shadow: inset 1px 1px 0 #868faa, inset -1px -1px 0 #090b12, 0 0 0 1px #111420;
+        color: var(--winamp-chrome-bright) !important;
+        background: linear-gradient(180deg, #3a4054 0%, #323848 100%) !important;
+        box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark);
+        border-bottom: 2px solid var(--winamp-lcd-green);
       }
     .: |
       ha-app-layout {
         background: var(--lovelace-background);
-        font-family: Arial, Tahoma, Verdana, sans-serif;
+        font-family: Tahoma, Arial, Verdana, sans-serif;
         -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
       }
       app-header {
-        background: linear-gradient(180deg, #202637 0%, #171b29 45%, #0f121d 100%) !important;
-        border-bottom: 1px solid #111420;
-        box-shadow: inset 0 1px 0 #7d869c, inset 0 2px 0 rgba(255,255,255,0.08), inset 0 -1px 0 #0b0d15;
+        background: linear-gradient(180deg, #232838 0%, #1a1e2d 100%) !important;
+        border-bottom: 1px solid var(--winamp-bevel-dark);
+        box-shadow: inset 0 1px 0 var(--winamp-bevel-light);
       }
       app-toolbar {
         min-height: 34px;
-        background:
-          linear-gradient(90deg, transparent 0 10px, #efe8a9 10px 18px, var(--winamp-gold) 18px 126px, transparent 126px calc(100% - 126px), var(--winamp-gold) calc(100% - 126px) calc(100% - 18px), #efe8a9 calc(100% - 18px) calc(100% - 10px), transparent calc(100% - 10px)),
-          repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-          linear-gradient(180deg, #23283b 0%, #181c2a 42%, #121624 100%) !important;
-        box-shadow: inset 0 1px 0 #7b849b, inset 0 2px 0 rgba(255,255,255,0.08), inset 0 -1px 0 #0b0d15;
+        background: var(--winamp-titlebar-bg) !important;
+        box-shadow: inset 0 1px 0 rgba(90,98,120,0.4), inset 0 -1px 0 var(--winamp-bevel-dark);
       }
       [main-title] {
-        color: var(--winamp-gold-bright) !important;
+        color: var(--winamp-chrome-bright) !important;
         font-family: Tahoma, Arial, sans-serif;
         font-size: 11px !important;
         font-weight: 700;
         letter-spacing: 0.01em;
         text-transform: none;
-        text-shadow: 0 1px 0 #090b12;
+        text-shadow: 0 1px 0 #080a12;
       }
       ha-menu-button,
       ha-button-menu,
       ha-assist-chip-icon {
-        color: var(--winamp-gold) !important;
+        color: var(--winamp-chrome) !important;
       }
       ha-tabs {
-        --paper-tabs-selection-bar-color: var(--winamp-gold) !important;
+        --paper-tabs-selection-bar-color: var(--winamp-lcd-green) !important;
         --mdc-tab-height: 32px;
       }
       hui-view-badges,
@@ -271,57 +279,46 @@
       ha-selector,
       .range-selection,
       .period-selector {
-        --mdc-filled-button-container-color: #d7dce6;
-        --mdc-filled-button-label-text-color: #283048;
+        --mdc-filled-button-container-color: #c8cdd8;
+        --mdc-filled-button-label-text-color: #1e2230;
       }
       hui-energy-period-selector,
       hui-energy-date-selection,
       ha-date-range-picker {
-        background:
-          linear-gradient(180deg, rgba(188, 194, 212, 0.16) 0%, rgba(142, 149, 173, 0.1) 10%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.16) 100%),
-          linear-gradient(180deg, #535b72 0%, #42495d 18%, #343b4d 100%) !important;
-        box-shadow: inset 1px 1px 0 #8d95ad, inset -1px -1px 0 #20263a, 0 0 0 1px #0b0d15 !important;
+        background: linear-gradient(180deg, #3e4458 0%, #353b4e 100%) !important;
+        box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark) !important;
         border-radius: 0 !important;
       }
-      h1,
-      h2,
-      .title,
-      .header {
-        font-family: Arial, Tahoma, Verdana, sans-serif;
+      h1, h2, .title, .header {
+        font-family: Tahoma, Arial, Verdana, sans-serif;
         letter-spacing: 0.005em;
       }
 
+  # ── card-mod: sidebar ──────────────────────────────────
   card-mod-sidebar: |
     :host {
-      background:
-        linear-gradient(180deg, rgba(180,186,206,0.07) 0%, rgba(0,0,0,0) 12%),
-        repeating-linear-gradient(180deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #51596f 0%, #434a5e 18%, #394054 58%, #31384a 100%) !important;
-      border-right: 1px solid #131722;
-      box-shadow: inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 #69718d;
+      background: linear-gradient(180deg, #3a4054 0%, #323848 50%, #2a3040 100%) !important;
+      border-right: 1px solid var(--winamp-bevel-dark);
+      box-shadow: inset 1px 0 0 var(--winamp-bevel-light);
     }
     ha-md-list-item,
     .iron-selected,
     .menu-link {
       border-radius: 0 !important;
       margin: 1px 6px !important;
-      min-height: 36px !important;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0) 20%),
-        linear-gradient(180deg, #4a5268 0%, #40485b 20%, #3b4255 100%);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(17,20,32,0.65), 0 0 0 1px rgba(20,23,36,0.28);
+      min-height: 34px !important;
+      background: transparent;
+      box-shadow: none;
     }
     .iron-selected,
     ha-md-list-item[selected] {
-      background:
-        linear-gradient(180deg, rgba(172,196,188,0.15) 0%, rgba(0,0,0,0) 26%),
-        linear-gradient(180deg, #586a6c 0%, #4b5d5f 18%, #3d4d50 100%) !important;
+      background: var(--winamp-display) !important;
       color: var(--winamp-lcd-green) !important;
-      box-shadow: inset 1px 1px 0 #8c98a8, inset -1px -1px 0 #213336, 0 0 0 1px #141724;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
-    ha-md-list-item:not([selected]):not(.iron-selected),
-    .menu-link:not(.iron-selected) {
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), inset 0 -1px 0 rgba(18,21,34,0.6), 0 0 0 1px rgba(20,23,36,0.18);
+    ha-md-list-item:not([selected]):not(.iron-selected):hover,
+    .menu-link:not(.iron-selected):hover {
+      background: rgba(8,10,18,0.3) !important;
     }
     .primary,
     .mdc-list-item__primary-text {
@@ -329,90 +326,66 @@
       font-size: 12px !important;
       font-weight: 700;
       letter-spacing: 0.005em;
-      text-shadow: 0 1px 0 rgba(11,13,21,0.75);
+      text-shadow: 0 1px 0 rgba(0,0,0,0.5);
     }
     ha-icon,
     ha-svg-icon {
-      color: var(--winamp-gold) !important;
+      color: var(--winamp-chrome-dim) !important;
+    }
+    .iron-selected ha-icon,
+    .iron-selected ha-svg-icon,
+    ha-md-list-item[selected] ha-icon,
+    ha-md-list-item[selected] ha-svg-icon {
+      color: var(--winamp-lcd-green) !important;
     }
 
+  # ── card-mod: view ─────────────────────────────────────
   card-mod-view: |
     :host {
       padding: 6px 8px 12px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.008) 0%, rgba(255,255,255,0) 14%), linear-gradient(180deg, #1d2130 0%, #161924 100%);
+      background: var(--lovelace-background);
     }
     #columns {
       gap: 8px !important;
     }
 
+  # ── card-mod: card shell ───────────────────────────────
   card-mod-card: |
     ha-card {
       position: relative;
       overflow: hidden;
-      padding-top: 14px;
-      background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
-        repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
-      border: 1px solid #141724 !important;
+      background: linear-gradient(180deg, #3e4458 0%, #353b4e 50%, #2e3444 100%) !important;
+      border: 1px solid var(--winamp-bevel-dark) !important;
       border-radius: 0 !important;
-      box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
-    }
-    ha-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background:
-        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
-        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
-      border-bottom: 1px solid #49506a;
-      box-shadow: inset 0 1px 0 #7f88a0;
-      pointer-events: none;
-      z-index: 0;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0a0d15 !important;
     }
     ha-card > .card-header {
-      position: relative;
-      z-index: 1;
       display: flex;
       align-items: center;
-      min-height: 16px;
-      margin: -1px 7px 6px;
-      padding: 1px 8px 2px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 22%),
-        linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%);
-      border-top: 1px solid rgba(143,151,175,0.55);
-      border-bottom: 1px solid #252a3d;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 0 rgba(11,13,21,0.75);
-      color: var(--winamp-gold-bright);
+      min-height: 18px;
+      margin: 0;
+      padding: 3px 8px;
+      background: var(--winamp-titlebar-bg);
+      border-bottom: 1px solid rgba(90,98,120,0.3);
+      box-shadow: inset 0 1px 0 rgba(90,98,120,0.3), inset 0 -1px 0 var(--winamp-bevel-dark);
+      color: var(--winamp-chrome-bright);
       font-family: Tahoma, Arial, sans-serif;
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
       line-height: 1.2;
       text-transform: uppercase;
-      text-shadow: 0 1px 0 #090b12;
+      text-shadow: 0 1px 0 #080a12;
     }
     ha-card > .card-content,
     ha-card > #states,
     ha-card > .content {
-      margin: 0 7px 7px;
+      margin: 4px 6px 6px;
       padding: 8px;
       font-size: 13px;
-      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%);
-      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
-      color: var(--primary-text-color);
-    }
-    ha-card h1,
-    ha-card h2,
-    ha-card h3,
-    ha-card .name,
-    ha-card .header {
-      color: var(--winamp-gold-bright);
-      font-family: Arial, Tahoma, Verdana, sans-serif;
+      background: var(--winamp-pane-bg);
+      box-shadow: var(--winamp-pane-shadow);
+      color: var(--winamp-lcd-green);
     }
     ha-card .header {
       font-family: Tahoma, Arial, sans-serif;
@@ -420,7 +393,8 @@
       font-weight: 700;
       letter-spacing: 0.01em;
       text-transform: uppercase;
-      text-shadow: 0 1px 0 #090b12;
+      text-shadow: 0 1px 0 #080a12;
+      color: var(--winamp-chrome-bright);
     }
     ha-card > .card-content > h1:first-child,
     ha-card > .card-content > h2:first-child,
@@ -434,39 +408,34 @@
       display: block;
       margin: -8px -8px 8px;
       padding: 3px 8px 4px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 20%),
-        linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%);
-      border-top: 1px solid rgba(143,151,175,0.52);
-      border-bottom: 1px solid #252a3d;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(11,13,21,0.75);
-      color: var(--winamp-gold-bright) !important;
+      background: var(--winamp-titlebar-bg);
+      border-bottom: 1px solid rgba(90,98,120,0.3);
+      box-shadow: inset 0 1px 0 rgba(90,98,120,0.3), inset 0 -1px 0 var(--winamp-bevel-dark);
+      color: var(--winamp-chrome-bright) !important;
       font-family: Tahoma, Arial, sans-serif !important;
-      font-size: 8px !important;
+      font-size: 9px !important;
       font-weight: 700 !important;
-      letter-spacing: 0.03em !important;
+      letter-spacing: 0.02em !important;
       line-height: 1.2;
       text-transform: uppercase;
-      text-shadow: 0 1px 0 #090b12;
+      text-shadow: 0 1px 0 #080a12;
     }
     ha-card .secondary,
     ha-card .state__uom,
     ha-card .state,
     ha-card .value {
-      color: var(--primary-text-color);
-      font-family: Arial, Tahoma, Verdana, sans-serif;
+      color: var(--winamp-lcd-green);
+      font-family: Tahoma, Arial, Verdana, sans-serif;
     }
     ha-card ha-chart-base,
     ha-card state-history-charts,
     ha-card .chart-container,
-    ha-card .graph,
-    ha-card .apexcharts-canvas,
-    ha-card .recharts-wrapper {
+    ha-card .graph {
       display: block;
       margin-top: 4px;
       padding: 8px;
-      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
       color: var(--winamp-lcd-green);
     }
     ha-card svg text,
@@ -475,13 +444,12 @@
     ha-card .axis,
     ha-card .xAxis,
     ha-card .yAxis {
-      fill: #bcb7a2 !important;
-      color: #bcb7a2 !important;
+      fill: var(--winamp-chrome-dim) !important;
+      color: var(--winamp-chrome-dim) !important;
     }
     ha-card .grid line,
-    ha-card .gridline,
-    ha-card .recharts-cartesian-grid line {
-      stroke: #404860 !important;
+    ha-card .gridline {
+      stroke: #2a3248 !important;
     }
     ha-card .forecast,
     ha-card .hourly,
@@ -490,55 +458,18 @@
     ha-card .temp,
     ha-card .templow,
     ha-card .temperature {
-      color: #e4dfc1;
+      color: var(--winamp-chrome-bright);
     }
     ha-card .media-info,
     ha-card .entity__info,
-    ha-card .metadata,
-    ha-card .title,
-    ha-card .artist {
-      color: #e4dfc1;
-    }
-    ha-card .media-player,
-    ha-card .player,
-    ha-card .controls,
-    ha-card .progress {
-      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%);
-      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
-    }
-    ha-card .media-player {
-      padding: 8px 10px;
-      border-top: 1px solid rgba(118,126,151,0.3);
-    }
-    ha-card .media-player .title,
-    ha-card .media-player .artist,
-    ha-card .media-player .media-info,
-    ha-card .media-player .name {
-      color: #e6e0bf !important;
-    }
-    ha-card .media-player .controls button,
-    ha-card .media-player .controls ha-icon-button,
-    ha-card .media-player .controls mwc-icon-button,
-    ha-card .media-player .controls mwc-button {
-      min-width: 28px;
-      min-height: 28px;
-      padding: 0 !important;
-      background: linear-gradient(180deg, #eef2f8 0%, #d2d8e3 18%, #b4bdd2 54%, #98a2bb 100%) !important;
-      box-shadow: inset 1px 1px 0 #fafdff, inset -1px -1px 0 #68728d, 0 0 0 1px #31384e !important;
-    }
-    ha-card .media-player .progress,
-    ha-card .media-player .progress-bar,
-    ha-card .media-player .volume,
-    ha-card .media-player .volume-level {
-      padding: 4px;
-      background: linear-gradient(180deg, #121623 0%, #090c14 32%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #6d7693, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+    ha-card .metadata {
+      color: var(--winamp-lcd-green);
     }
     hui-media-control-card {
-      --primary-color: #141927 !important;
-      --text-primary-color: #efe8b7 !important;
-      --mdc-theme-primary: #cabf6c !important;
-      --mdc-linear-progress-buffer-color: #3e465d !important;
+      --primary-color: var(--winamp-display) !important;
+      --text-primary-color: var(--winamp-chrome-bright) !important;
+      --mdc-theme-primary: var(--winamp-lcd-green) !important;
+      --mdc-linear-progress-buffer-color: #2a3040 !important;
     }
     ha-card table,
     ha-card .table,
@@ -546,14 +477,12 @@
     ha-card .mdc-data-table__table-container,
     ha-card .mdc-data-table__content,
     ha-card .table-container,
-    ha-card .sources,
     ha-card .entries,
-    ha-card .details,
     ha-card .logbook,
     ha-card .history {
-      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-      color: #d8d2ae !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
+      color: var(--winamp-lcd-green) !important;
     }
     ha-card hui-energy-distribution-card,
     ha-card hui-energy-usage-graph-card,
@@ -561,124 +490,108 @@
     ha-card hui-energy-devices-graph-card,
     ha-card hui-energy-sources-table,
     ha-card hui-energy-carbon-consumed-gas-graph-card,
-    ha-card hui-energy-carbon-value-card,
-    ha-card .energy,
-    ha-card .distribution,
-    ha-card .energy-usage,
-    ha-card .details,
-    ha-card .table-container,
-    ha-card .chart {
+    ha-card hui-energy-carbon-value-card {
       display: block;
-      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
     ha-card thead,
     ha-card th,
     ha-card .mdc-data-table__header-cell {
-      color: var(--winamp-gold-bright) !important;
+      color: var(--winamp-chrome-bright) !important;
       background: transparent !important;
     }
     ha-card td,
     ha-card .mdc-data-table__cell {
-      color: #d8d2ae !important;
-      border-color: #24293b !important;
+      color: var(--winamp-lcd-green) !important;
+      border-color: #1a1e2d !important;
       font-size: 13px;
     }
     ha-card .forecast,
     ha-card .hourly,
     ha-card .daily {
       padding: 6px 8px;
-      background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
     ha-card mwc-button,
     ha-card button,
     ha-card .button {
-      --mdc-theme-primary: #293049;
-      --mdc-theme-on-primary: var(--winamp-gold-bright);
+      --mdc-theme-primary: #1e2230;
+      --mdc-theme-on-primary: var(--winamp-chrome-bright);
     }
     ha-card ha-slider,
     ha-card ha-control-slider {
-      --slider-color: var(--winamp-gold);
-      --slider-secondary-color: #4c5670;
+      --slider-color: var(--winamp-lcd-green);
+      --slider-secondary-color: #3a4054;
     }
 
+  # ── card-mod: card-yaml (shadow DOM targets) ───────────
   card-mod-card-yaml: |
     .: |
       :host {
-        --primary-color: #141927 !important;
-        --text-primary-color: #efe8b7 !important;
-        --mdc-theme-primary: #cabf6c !important;
-        --mdc-linear-progress-buffer-color: #3e465d !important;
+        --primary-color: var(--winamp-display) !important;
+        --text-primary-color: var(--winamp-chrome-bright) !important;
+        --mdc-theme-primary: var(--winamp-lcd-green) !important;
+        --mdc-linear-progress-buffer-color: #2a3040 !important;
       }
       .background,
       .color-block,
       .color-gradient,
       .image,
       .no-img {
-        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-        background-color: #0b0f17 !important;
+        background: var(--winamp-pane-bg) !important;
+        background-color: var(--winamp-display) !important;
       }
       .background {
         opacity: 1 !important;
         filter: none !important;
       }
-      .color-gradient {
-        opacity: 0.06 !important;
-      }
-      .image {
-        opacity: 0.1 !important;
-      }
+      .color-gradient { opacity: 0.06 !important; }
+      .image { opacity: 0.1 !important; }
       .no-img {
         width: 32% !important;
         opacity: 0.16 !important;
         background-image: none !important;
-        background-color: #131827 !important;
+        background-color: var(--winamp-display-mid) !important;
       }
       .player {
-        margin: 7px !important;
-        padding: 9px 10px 8px !important;
-        height: calc(100% - 14px);
+        margin: 6px !important;
+        padding: 8px !important;
+        height: calc(100% - 12px);
         box-sizing: border-box !important;
-        background:
-          linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 20%),
-          linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+        background: var(--winamp-pane-bg) !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
       }
       .top-info {
         align-items: center;
-        margin: -9px -10px 8px !important;
-        padding: 3px 8px 4px !important;
-        background:
-          linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 20%),
-          linear-gradient(180deg, #586077 0%, #4b5367 34%, #434a5e 100%) !important;
-        border-top: 1px solid rgba(143,151,175,0.52);
-        border-bottom: 1px solid #252a3d;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), inset 0 -1px 0 rgba(11,13,21,0.75);
+        margin: -8px -8px 8px !important;
+        padding: 3px 8px !important;
+        background: var(--winamp-titlebar-bg) !important;
+        border-bottom: 1px solid rgba(90,98,120,0.3);
+        box-shadow: inset 0 1px 0 rgba(90,98,120,0.3), inset 0 -1px 0 var(--winamp-bevel-dark);
       }
       .icon-name,
       .icon-name div {
-        color: var(--winamp-gold-bright) !important;
+        color: var(--winamp-chrome-bright) !important;
         font-family: Tahoma, Arial, sans-serif !important;
-        font-size: 8px !important;
+        font-size: 9px !important;
         font-weight: 700 !important;
-        letter-spacing: 0.03em !important;
+        letter-spacing: 0.02em !important;
         text-transform: uppercase;
-        text-shadow: 0 1px 0 #090b12;
+        text-shadow: 0 1px 0 #080a12;
       }
       .icon,
       .icon-name ha-state-icon,
       .more-info {
-        color: var(--winamp-gold) !important;
+        color: var(--winamp-chrome) !important;
       }
-      .title-controls {
-        padding-top: 2px !important;
-      }
+      .title-controls { padding-top: 2px !important; }
       .media-info,
       hui-marquee {
-        color: #00ff62 !important;
+        color: var(--winamp-lcd-green) !important;
         font-family: Tahoma, Arial, sans-serif !important;
-        text-shadow: 0 0 6px rgba(0,255,98,0.08);
+        text-shadow: 0 0 6px rgba(0,255,98,0.1);
       }
       .media-info {
         font-size: 12px !important;
@@ -695,16 +608,14 @@
         gap: 4px;
         margin-left: -8px;
         margin-inline-start: -8px;
-        border-top: 1px solid rgba(79, 86, 107, 0.55);
+        border-top: 1px solid rgba(90,98,120,0.3);
       }
       .controls .start,
-      .controls .end {
-        gap: 2px;
-      }
+      .controls .end { gap: 2px; }
       .controls ha-icon-button,
       .browse-media,
       .join-media {
-        color: var(--winamp-silver) !important;
+        color: var(--winamp-chrome) !important;
         --ha-icon-button-size: 36px !important;
         --mdc-icon-size: 22px !important;
       }
@@ -714,57 +625,44 @@
       ha-icon-button[action="media_stop"],
       ha-icon-button[action="turn_on"],
       ha-icon-button[action="turn_off"] {
-        color: var(--winamp-silver) !important;
+        color: var(--winamp-chrome) !important;
         --ha-icon-button-size: 44px !important;
         --mdc-icon-size: 28px !important;
       }
       mwc-linear-progress {
         margin-top: 8px !important;
-        --mdc-theme-primary: #bca742 !important;
-        --mdc-linear-progress-buffer-color: #3e465d !important;
+        --mdc-theme-primary: var(--winamp-lcd-green) !important;
+        --mdc-linear-progress-buffer-color: #2a3040 !important;
       }
     mini-media-player$: |
       ha-card {
-        background:
-          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
-          repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-          linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
+        background: linear-gradient(180deg, #3e4458 0%, #353b4e 50%, #2e3444 100%) !important;
         --ha-card-background: transparent !important;
       }
       .mmp-player,
-      .mmp-player__bg,
-      .mmp-player__info,
-      .mmp-player__details,
-      .mmp-player__controls,
-      .mmp-player__progress,
-      .mmp-player__cover,
-      .mmp-player__artwork {
+      .mmp-player__bg {
         background-color: transparent !important;
       }
       .mmp-player__info,
       .mmp-player__details,
       .mmp-player__controls,
       .mmp-player__progress {
-        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-      }
-      .mmp-player__info,
-      .mmp-player__details,
-      .mmp-player__controls {
+        background: var(--winamp-pane-bg) !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
         padding: 8px !important;
       }
       .mmp-player__cover,
       .mmp-player__artwork,
       .entity-picture,
       .cover {
-        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-        background-color: #0b0f17 !important;
-        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+        background: var(--winamp-pane-bg) !important;
+        background-color: var(--winamp-display) !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
       }
       .entity__info__name,
       .mmp-player__primary-info,
       .mmp-player__title {
-        color: #e6e0bf !important;
+        color: var(--winamp-chrome-bright) !important;
         font-family: Tahoma, Arial, sans-serif !important;
         font-size: 10px !important;
         font-weight: 700 !important;
@@ -775,92 +673,72 @@
       .mmp-player__secondary-info,
       .mmp-player__source,
       .mmp-player__time {
-        color: #d8d2ae !important;
-        font-family: Arial, Tahoma, Verdana, sans-serif !important;
+        color: var(--winamp-lcd-green) !important;
+        font-family: Tahoma, Arial, Verdana, sans-serif !important;
       }
       .mmp-player__controls *,
       mwc-icon-button,
       paper-icon-button,
       ha-icon-button {
-        color: var(--winamp-gold) !important;
+        color: var(--winamp-chrome) !important;
       }
       .mmp-player__controls mwc-icon-button,
       .mmp-player__controls paper-icon-button,
       .mmp-player__controls ha-icon-button,
       .mmp-player__controls button {
         border-radius: 0 !important;
-        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-        color: #283048 !important;
-        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-      }
-      .mmp-player .mdc-slider,
-      .mmp-player .slider,
-      .mmp-player paper-progress {
-        --mdc-slider-active-track-color: #bca742 !important;
-        --mdc-slider-inactive-track-color: #3e465d !important;
+        background: var(--winamp-btn-bg) !important;
+        color: #1e2230 !important;
+        box-shadow: var(--winamp-btn-shadow) !important;
       }
     hui-media-player-card$: |
       ha-card {
-        background:
-          linear-gradient(180deg, rgba(188, 194, 212, 0.18) 0%, rgba(142, 149, 173, 0.12) 8%, rgba(103, 110, 134, 0.06) 18%, rgba(71, 77, 97, 0.05) 52%, rgba(9, 11, 18, 0.22) 100%),
-          repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-          linear-gradient(180deg, #50586d 0%, #434a5e 14%, #3b4255 54%, #343b4e 100%) !important;
+        background: linear-gradient(180deg, #3e4458 0%, #353b4e 50%, #2e3444 100%) !important;
       }
       .color-block,
       .background,
-      .background-cover,
       .image,
       .no-image,
       .no-img,
       .overlay,
       .artwork,
-      .cover,
-      .entity__picture {
-        background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-        background-color: #0b0f17 !important;
-        box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      .cover {
+        background: var(--winamp-pane-bg) !important;
+        background-color: var(--winamp-display) !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
       }
       .container,
-      .music-player,
       .player,
       .content,
       .media-info,
-      .metadata,
-      .title-controls,
       .controls,
       .progress,
       .progress-bar,
       .volume,
       .volume-level {
-        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-        background-color: #090c14 !important;
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+        background: var(--winamp-pane-bg) !important;
+        background-color: var(--winamp-display) !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
       }
-      .music-player,
       .player,
-      .content {
-        padding: 8px !important;
-      }
-      .title,
-      .name,
-      .artist,
-      .media-info,
-      .source {
-        color: #e6e0bf !important;
-        font-family: Arial, Tahoma, Verdana, sans-serif !important;
-      }
+      .content { padding: 8px !important; }
       .title,
       .name {
+        color: var(--winamp-chrome-bright) !important;
         font-family: Tahoma, Arial, sans-serif !important;
         font-size: 10px !important;
         font-weight: 700 !important;
         letter-spacing: 0.015em !important;
         text-transform: uppercase;
       }
-      ha-icon,
-      .icon {
-        color: var(--winamp-gold) !important;
+      .artist,
+      .media-info,
+      .source {
+        color: var(--winamp-lcd-green) !important;
+        font-family: Tahoma, Arial, Verdana, sans-serif !important;
       }
+      ha-icon,
+      .icon { color: var(--winamp-chrome) !important; }
       .controls ha-icon-button,
       .controls ha-control-button,
       .controls mwc-icon-button,
@@ -869,20 +747,16 @@
         min-width: 28px;
         min-height: 28px;
         border-radius: 0 !important;
-        background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-        color: #283048 !important;
-        box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+        background: var(--winamp-btn-bg) !important;
+        color: #1e2230 !important;
+        box-shadow: var(--winamp-btn-shadow) !important;
       }
       .progress,
       .progress-bar,
       .volume,
-      .volume-level {
-        padding: 4px !important;
-      }
+      .volume-level { padding: 4px !important; }
       .state,
-      .state-info {
-        color: var(--winamp-lcd-green) !important;
-      }
+      .state-info { color: var(--winamp-lcd-green) !important; }
     mini-graph-card$: |
       .states,
       .state,
@@ -896,84 +770,70 @@
       .legend__item,
       .label,
       .labels {
-        font-family: Arial, Tahoma, Verdana, sans-serif !important;
+        font-family: Tahoma, Arial, Verdana, sans-serif !important;
       }
       .name,
-      .state__uom,
       .label,
-      .labels {
-        color: var(--winamp-gold-bright) !important;
-      }
+      .labels { color: var(--winamp-chrome-bright) !important; }
       .name {
         font-family: Tahoma, Arial, sans-serif !important;
         font-size: 9px !important;
         font-weight: 700 !important;
         letter-spacing: 0.015em !important;
         text-transform: uppercase;
-        text-shadow: 0 1px 0 #090b12;
+        text-shadow: 0 1px 0 #080a12;
       }
       .state,
       .state__value,
       .state__uom,
-      .info {
-        color: #e6e0bf !important;
-      }
+      .info { color: var(--winamp-lcd-green) !important; }
       .state__value {
         font-size: 2.25em !important;
         font-weight: 400 !important;
         line-height: 1;
       }
       .icon,
-      ha-icon {
-        color: var(--winamp-gold) !important;
-      }
+      ha-icon { color: var(--winamp-chrome) !important; }
       .graph,
       .graph__container,
       .graph__wrapper,
-      svg {
-        background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-      }
+      svg { background: var(--winamp-pane-bg) !important; }
       .graph,
       .graph__container,
       .graph__wrapper {
         padding: 4px;
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+        box-shadow: var(--winamp-pane-shadow) !important;
       }
       .graph__legend,
       .legend,
       .legend__item,
-      .graph__legend__item {
-        color: #d8d2ae !important;
-      }
-      svg text {
-        fill: #bcb7a2 !important;
-      }
+      .graph__legend__item { color: var(--winamp-chrome-dim) !important; }
+      svg text { fill: var(--winamp-chrome-dim) !important; }
       line,
-      .line--threshold,
-      .grid line {
-        stroke: #404860 !important;
-      }
+      .grid line { stroke: #2a3248 !important; }
 
+  # ── card-mod: glance ───────────────────────────────────
   card-mod-glance: |
     :host {
-      background: linear-gradient(180deg, #121623 0%, #090c14 32%, #05070c 100%);
-      box-shadow: inset 1px 1px 0 #6d7693, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+      background: var(--winamp-pane-bg);
+      box-shadow: var(--winamp-pane-shadow);
       color: var(--winamp-lcd-green);
       padding: 6px 4px;
     }
 
+  # ── card-mod: badges / chips ───────────────────────────
   card-mod-badge: |
     :host {
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
-      color: #d6d2b8 !important;
-      border: 1px solid #293045;
-      border-radius: 14px;
-      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
+      background: var(--winamp-display);
+      color: var(--winamp-lcd-green) !important;
+      border: 1px solid var(--winamp-bevel-dark);
+      border-radius: 0;
+      box-shadow: var(--winamp-pane-shadow);
       padding: 0 7px;
-      min-height: 24px;
+      min-height: 22px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
       font-weight: 700;
@@ -985,12 +845,12 @@
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
-      color: #d6d2b8 !important;
-      border: 1px solid #293045;
-      border-radius: 14px;
-      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
-      min-height: 24px;
+      background: var(--winamp-display);
+      color: var(--winamp-lcd-green) !important;
+      border: 1px solid var(--winamp-bevel-dark);
+      border-radius: 0;
+      box-shadow: var(--winamp-pane-shadow);
+      min-height: 22px;
       padding: 0 7px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
@@ -1003,12 +863,12 @@
       display: inline-flex;
       align-items: center;
       overflow: hidden;
-      background: linear-gradient(180deg, #5a6279 0%, #4b5368 34%, #3a4154 100%);
-      color: #d6d2b8 !important;
-      border: 1px solid #293045;
-      border-radius: 14px;
-      box-shadow: inset 1px 1px 0 #8c94ae, inset -1px -1px 0 #20273a;
-      min-height: 24px;
+      background: var(--winamp-display);
+      color: var(--winamp-lcd-green) !important;
+      border: 1px solid var(--winamp-bevel-dark);
+      border-radius: 0;
+      box-shadow: var(--winamp-pane-shadow);
+      min-height: 22px;
       padding: 0 7px;
       font-family: Tahoma, Arial, sans-serif;
       font-size: 10px;
@@ -1016,18 +876,19 @@
       letter-spacing: 0.01em;
     }
 
+  # ── card-mod: entity rows ──────────────────────────────
   card-mod-row-yaml: |
     .: |
       :host {
         display: block;
         margin: 2px 0;
         padding: 1px 5px;
-        background: linear-gradient(180deg, #141927 0%, #0b0f17 32%, #05070c 100%);
-        box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622;
+        background: var(--winamp-pane-bg);
+        box-shadow: var(--winamp-pane-shadow);
       }
     hui-generic-entity-row$: |
       state-badge {
-        color: var(--winamp-gold) !important;
+        color: var(--winamp-chrome) !important;
       }
       .info,
       .text-content,
@@ -1036,11 +897,11 @@
         color: var(--winamp-lcd-green) !important;
       }
       .name {
-        color: #d8d2ae !important;
+        color: var(--winamp-lcd-green) !important;
       }
     hui-toggle-entity-row$: |
       state-badge {
-        color: var(--winamp-gold) !important;
+        color: var(--winamp-chrome) !important;
       }
       .info,
       .text-content,
@@ -1049,19 +910,20 @@
         color: var(--winamp-lcd-green) !important;
       }
       .name {
-        color: #d8d2ae !important;
+        color: var(--winamp-lcd-green) !important;
       }
 
+  # ── card-mod: interactive elements ─────────────────────
   card-mod-element: |
     button,
     mwc-button,
     ha-icon-button,
     ha-control-button {
       border-radius: 0 !important;
-      background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-      color: #283048 !important;
-      box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
-      text-shadow: 0 1px 0 rgba(255,255,255,0.32);
+      background: var(--winamp-btn-bg) !important;
+      color: #1e2230 !important;
+      box-shadow: var(--winamp-btn-shadow) !important;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25);
     }
     button:active,
     mwc-button:active,
@@ -1069,32 +931,33 @@
     ha-control-button:active,
     .selected,
     [aria-pressed="true"] {
-      background: linear-gradient(180deg, #9ea7bf 0%, #b7bfd2 26%, #d6dae5 100%) !important;
-      box-shadow: inset -1px -1px 0 #f8fafd, inset 1px 1px 0 #6f7892, 0 0 0 1px #2e354c !important;
+      background: linear-gradient(180deg, #8088a0 0%, #949cb2 30%, #b0b8c8 70%, #c8cdd8 100%) !important;
+      box-shadow: inset 1px 1px 0 #5a6278, inset -1px -1px 0 #dce0e8, 0 0 0 1px #1e2230 !important;
       transform: translateY(1px);
     }
     ha-slider,
     ha-control-slider {
-      --slider-color: var(--winamp-gold) !important;
-      --slider-secondary-color: #4c5670 !important;
-      --mdc-slider-handle-color: #d7dce6 !important;
-      --mdc-slider-focus-handle-color: #d7dce6 !important;
-      --mdc-slider-hover-handle-color: #d7dce6 !important;
-      --mdc-slider-inactive-track-color: #3e465d !important;
-      --mdc-slider-active-track-color: #bca742 !important;
+      --slider-color: var(--winamp-lcd-green) !important;
+      --slider-secondary-color: #3a4054 !important;
+      --mdc-slider-handle-color: #c8cdd8 !important;
+      --mdc-slider-focus-handle-color: #c8cdd8 !important;
+      --mdc-slider-hover-handle-color: #c8cdd8 !important;
+      --mdc-slider-inactive-track-color: #2a3040 !important;
+      --mdc-slider-active-track-color: var(--winamp-lcd-green) !important;
     }
     ha-control-button-group {
       border-radius: 0 !important;
     }
     ha-switch {
-      --switch-checked-button-color: #d9dde5;
-      --switch-checked-track-color: #8e8540;
-      --switch-unchecked-button-color: #d9dde5;
-      --switch-unchecked-track-color: #495069;
+      --switch-checked-button-color: #c8cdd8;
+      --switch-checked-track-color: #0db34f;
+      --switch-unchecked-button-color: #8890a4;
+      --switch-unchecked-track-color: #3a4054;
       border-radius: 3px;
-      box-shadow: inset 1px 1px 0 #8088a3, inset -1px -1px 0 #1b2237;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark);
     }
 
+  # ── card-mod: more-info dialog ─────────────────────────
   card-mod-more-info: |
     .container,
     .content,
@@ -1102,45 +965,25 @@
     .mdc-dialog__surface {
       position: relative;
       overflow: hidden;
-      padding-top: 14px;
-      background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
-        repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
+      background: linear-gradient(180deg, #3e4458 0%, #353b4e 50%, #2e3444 100%) !important;
       border-radius: 0 !important;
-      box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
-      --mdc-theme-primary: var(--winamp-gold) !important;
-      --mdc-theme-secondary: var(--winamp-gold) !important;
-      --mdc-filled-button-container-color: #d5dbe5 !important;
-      --mdc-filled-button-label-text-color: #283048 !important;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0a0d15 !important;
+      --mdc-theme-primary: var(--winamp-lcd-green) !important;
+      --mdc-theme-secondary: var(--winamp-lcd-green) !important;
+      --mdc-filled-button-container-color: #c8cdd8 !important;
+      --mdc-filled-button-label-text-color: #1e2230 !important;
     }
     .content,
     .mdc-dialog__content {
       background: transparent !important;
       box-shadow: none !important;
     }
-    .mdc-dialog__surface::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background:
-        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
-        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
-      border-bottom: 1px solid #49506a;
-      box-shadow: inset 0 1px 0 #7f88a0;
-      pointer-events: none;
-      z-index: 0;
-    }
     .header,
-    h1,
-    h2,
+    h1, h2,
     .title {
-      color: var(--winamp-gold-bright) !important;
+      color: var(--winamp-chrome-bright) !important;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
     }
     .value,
     .state,
@@ -1155,16 +998,15 @@
       display: block;
       margin: 0 10px 10px;
       padding: 10px;
-      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
     .artwork,
-    .entity__picture,
     .player__image,
     .cover,
     .coverart {
-      background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
     .controls,
     .bottom-controls,
@@ -1173,8 +1015,8 @@
     .progress,
     .volume,
     .volume-level {
-      background: linear-gradient(180deg, #161a27 0%, #0b0f17 32%, #05070c 100%) !important;
-      box-shadow: inset 1px 1px 0 #717a95, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+      background: var(--winamp-pane-bg) !important;
+      box-shadow: var(--winamp-pane-shadow) !important;
     }
     .controls button,
     .controls ha-icon-button,
@@ -1182,9 +1024,9 @@
     .controls mwc-icon-button,
     .controls mwc-button {
       border-radius: 0 !important;
-      background: linear-gradient(180deg, #eff2f7 0%, #d6dae5 18%, #b7bfd2 52%, #9ea7bf 100%) !important;
-      color: #283048 !important;
-      box-shadow: inset 1px 1px 0 #f8fafd, inset -1px -1px 0 #6f7892, 0 0 0 1px #3a425d !important;
+      background: var(--winamp-btn-bg) !important;
+      color: #1e2230 !important;
+      box-shadow: var(--winamp-btn-shadow) !important;
     }
     ha-control-button,
     button,
@@ -1192,18 +1034,19 @@
       border-radius: 0 !important;
     }
 
+  # ── card-mod: more-info-yaml (deep media popup) ────────
   card-mod-more-info-yaml: |
     .content-wrapper .content ha-more-info-info$:
       more-info-content$:
         more-info-media_player$: |
           :host {
-            color: #e6e0bf !important;
+            color: var(--winamp-chrome-bright) !important;
             font-family: Tahoma, Arial, sans-serif !important;
-            --mdc-theme-primary: #cabf6c !important;
-            --slider-color: #bca742 !important;
-            --slider-secondary-color: #3e465d !important;
-            --ha-button-filled-container-color: #d6dae5 !important;
-            --ha-button-filled-text-color: #283048 !important;
+            --mdc-theme-primary: var(--winamp-lcd-green) !important;
+            --slider-color: var(--winamp-lcd-green) !important;
+            --slider-secondary-color: #2a3040 !important;
+            --ha-button-filled-container-color: #c8cdd8 !important;
+            --ha-button-filled-text-color: #1e2230 !important;
             --ha-button-border-radius: 0px !important;
           }
           .cover-container {
@@ -1212,17 +1055,17 @@
             align-items: center;
             margin: 0 20px;
             height: 256px !important;
-            background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+            background: var(--winamp-pane-bg) !important;
+            box-shadow: var(--winamp-pane-shadow) !important;
           }
           .cover-image,
           .empty-cover {
             width: 208px !important;
             height: 208px !important;
             border-radius: 0 !important;
-            background: linear-gradient(180deg, #171c2a 0%, #0c1018 34%, #05070c 100%) !important;
-            background-color: #0b0f17 !important;
-            box-shadow: inset 1px 1px 0 #69728d, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+            background: var(--winamp-pane-bg) !important;
+            background-color: var(--winamp-display) !important;
+            box-shadow: var(--winamp-pane-shadow) !important;
           }
           .cover-image--playing {
             width: 224px !important;
@@ -1231,18 +1074,18 @@
           .media-info-row {
             margin: 0 20px !important;
             padding: 10px 12px !important;
-            background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+            background: var(--winamp-pane-bg) !important;
+            box-shadow: var(--winamp-pane-shadow) !important;
           }
           .media-title {
-            color: #00ff62 !important;
+            color: var(--winamp-lcd-green) !important;
             font-family: Tahoma, Arial, sans-serif !important;
             font-size: 14px !important;
             font-weight: 700 !important;
             letter-spacing: 0.01em !important;
           }
           .media-artist {
-            color: #d8d2ae !important;
+            color: var(--winamp-chrome-dim) !important;
             font-family: Tahoma, Arial, sans-serif !important;
             font-size: 11px !important;
           }
@@ -1254,23 +1097,17 @@
           .position-bar,
           .volume {
             padding: 8px 10px !important;
-            background: linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
+            background: var(--winamp-pane-bg) !important;
+            box-shadow: var(--winamp-pane-shadow) !important;
           }
           .bottom-controls {
             gap: 10px !important;
             padding: 10px 12px !important;
-            background:
-              linear-gradient(180deg, rgba(255,255,255,0.024) 0%, rgba(255,255,255,0) 20%),
-              linear-gradient(180deg, #141927 0%, #0b0f17 30%, #05070c 100%) !important;
-            box-shadow: inset 1px 1px 0 #757f9c, inset -1px -1px 0 #020305, 0 0 0 1px #121622 !important;
-          }
-          .main-controls,
-          .controls-row {
-            direction: ltr;
+            background: var(--winamp-pane-bg) !important;
+            box-shadow: var(--winamp-pane-shadow) !important;
           }
           ha-icon-button {
-            color: var(--winamp-gold) !important;
+            color: var(--winamp-chrome) !important;
             --ha-icon-button-size: 30px !important;
             --mdc-icon-size: 18px !important;
           }
@@ -1280,65 +1117,47 @@
           }
           .center-control {
             --ha-button-height: 50px !important;
-            --ha-button-filled-container-color: #d6dae5 !important;
-            --ha-button-filled-text-color: #283048 !important;
+            --ha-button-filled-container-color: #c8cdd8 !important;
+            --ha-button-filled-text-color: #1e2230 !important;
             --ha-button-border-radius: 0px !important;
           }
           .position-bar ha-slider,
           .volume ha-slider {
-            --slider-color: #bca742 !important;
-            --slider-secondary-color: #3e465d !important;
+            --slider-color: var(--winamp-lcd-green) !important;
+            --slider-secondary-color: #2a3040 !important;
           }
           .position-bar ha-slider::part(references) {
-            color: #bcb7a2 !important;
+            color: var(--winamp-chrome-dim) !important;
             font-family: Tahoma, Arial, sans-serif !important;
             font-size: 10px !important;
           }
 
+  # ── card-mod: dialog ───────────────────────────────────
   card-mod-dialog: |
     more-info-media_player,
     more-info-media_player ha-media-player,
     ha-media-player {
-      --primary-color: #141927 !important;
-      --text-primary-color: #efe8b7 !important;
-      --mdc-theme-primary: #cabf6c !important;
-      --mdc-linear-progress-buffer-color: #3e465d !important;
-      --slider-color: #bca742 !important;
-      --slider-secondary-color: #3e465d !important;
+      --primary-color: var(--winamp-display) !important;
+      --text-primary-color: var(--winamp-chrome-bright) !important;
+      --mdc-theme-primary: var(--winamp-lcd-green) !important;
+      --mdc-linear-progress-buffer-color: #2a3040 !important;
+      --slider-color: var(--winamp-lcd-green) !important;
+      --slider-secondary-color: #2a3040 !important;
     }
     .mdc-dialog__surface,
     .container,
     .content {
       position: relative;
       overflow: hidden;
-      padding-top: 14px;
-      background:
-        linear-gradient(180deg, rgba(188, 194, 212, 0.2) 0%, rgba(142, 149, 173, 0.14) 8%, rgba(103, 110, 134, 0.08) 18%, rgba(71, 77, 97, 0.06) 52%, rgba(9, 11, 18, 0.18) 100%),
-        repeating-linear-gradient(180deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px),
-        linear-gradient(180deg, #565e74 0%, #464e63 14%, #3f4659 54%, #383f52 100%) !important;
+      background: linear-gradient(180deg, #3e4458 0%, #353b4e 50%, #2e3444 100%) !important;
       border-radius: 0 !important;
-      box-shadow: inset 1px 1px 0 #9097af, inset 2px 2px 0 rgba(255,255,255,0.07), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0b0d15 !important;
-    }
-    .mdc-dialog__surface::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background:
-        linear-gradient(90deg, transparent 0 8px, #f1eaac 8px 14px, var(--winamp-gold) 14px 76px, transparent 76px calc(100% - 76px), var(--winamp-gold) calc(100% - 76px) calc(100% - 14px), #f1eaac calc(100% - 14px) calc(100% - 8px), transparent calc(100% - 8px)),
-        linear-gradient(180deg, #252b3e 0%, #181c2a 45%, #111522 100%);
-      border-bottom: 1px solid #49506a;
-      box-shadow: inset 0 1px 0 #7f88a0;
-      pointer-events: none;
-      z-index: 0;
+      box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0a0d15 !important;
     }
     .mdc-dialog__title,
     h2 {
-      color: var(--winamp-gold-bright) !important;
+      color: var(--winamp-chrome-bright) !important;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
     }
     .mdc-dialog__content,
     .content,
