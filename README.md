@@ -7,11 +7,9 @@
 
 Home Assistant theme inspired by the default Winamp 5.9.2 skin: dark navy chrome, metallic blue-grey panels, gold trim, and black display surfaces with neon green accents.
 
-![Winamp Classic preview](docs/preview.svg)
+![Winamp Classic preview — standard mode showing entity cards, gauges, weather, and scene rows styled with the Winamp palette](docs/preview.jpg)
 
 ## Overview
-
-This repository is a HACS-installable Home Assistant theme designed to push Lovelace toward the look of the Winamp 5.9.2 default skin.
 
 The theme focuses on:
 
@@ -24,6 +22,12 @@ The theme focuses on:
 - darker inset panes for graphs, tables, and media displays
 
 It also includes styling for [`mini-graph-card`](https://github.com/kalkih/mini-graph-card), and it supports a higher-fidelity mode through `card-mod`.
+
+## Prerequisites
+
+- **Home Assistant** with themes enabled (see Installation below)
+- **HACS** for the recommended install method
+- **[card-mod](https://github.com/thomasloven/lovelace-card-mod)** — required for enhanced (full-fidelity) mode only. Install it via HACS before following the enhanced setup guide.
 
 ## Installation
 
@@ -39,24 +43,24 @@ Restart Home Assistant after changing `configuration.yaml`.
 ### HACS
 
 1. In Home Assistant, open HACS.
-2. Open the menu in the top right and choose `Custom repositories`.
-3. Add `https://github.com/jonmunson/ha-winamp-theme` and select the `Theme` category.
-4. Install `Winamp Classic`.
+2. Go to **Frontend**, open the overflow menu (⋮) and choose **Custom repositories**.
+3. Add `https://github.com/jonmunson/ha-winamp-theme` and select the **Theme** category.
+4. Search for `Winamp Classic` and install it.
 5. Run the `frontend.reload_themes` action, or restart Home Assistant.
-6. Select `Winamp Classic` in your user profile.
+6. Select `Winamp Classic` in your user profile under **Theme**.
 
 ### Manual
 
 1. Copy `themes/winamp_classic.yaml` into your Home Assistant `themes/` directory.
 2. Run the `frontend.reload_themes` action, or restart Home Assistant.
-3. Select `Winamp Classic` in your user profile.
+3. Select `Winamp Classic` in your user profile under **Theme**.
 
 ## Fidelity Modes
 
 There are two ways to use the theme:
 
-- Standard mode: uses the theme by itself and applies the Winamp palette, pane treatment, bevels, and typography.
-- Enhanced mode: adds sidebar, dialog, popup, row, and component chrome through `card-mod`. This is the closest match to the Winamp reference.
+- **Standard mode:** uses the theme by itself and applies the Winamp palette, pane treatment, bevels, and typography.
+- **Enhanced mode:** adds sidebar, dialog, popup, row, and component chrome through `card-mod`. This is the closest match to the Winamp reference. Requires [card-mod](https://github.com/thomasloven/lovelace-card-mod).
 
 If you want the enhanced version, follow the setup guide in [docs/full_fidelity.md](docs/full_fidelity.md).
 
@@ -80,23 +84,23 @@ If HACS does not show an update immediately:
 3. Hard refresh the browser.
 4. Restart Home Assistant if you use the `card-mod` frontend module.
 
-## For Maintainers
+## Contributing
 
-- Release notes and HACS update flow: [docs/releases.md](docs/releases.md)
+Issues and pull requests are welcome. For release notes and the HACS update flow, see [docs/releases.md](docs/releases.md).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
 
 ### Who made this?
 
-I’m **Jon Munson** - I like building simple things that solve real problems.
+I'm **Jon Munson** - I like building simple things that solve real problems.
 
-**Your support helps me keep shipping:** maintaining repos, refining themes, and improving the details.  
-<a href="https://buymeacoffee.com/jonmunson">
-  <img src="https://cdn.simpleicons.org/buymeacoffee/FFDD00" alt="buy me a coffee" width="16" height="16">
-  <b>&nbsp;Buy me a coffee</b>
-</a>
+**Your support helps me keep building:** maintaining repos, refining themes, and improving the details.
 
-More about me:
-&nbsp;<a href="https://www.jonmunson.co.uk"><img src="https://cdn.simpleicons.org/googlechrome/ffffff" width="16" height="16"><b>&nbsp;Website</b></a>
-&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="https://x.com/jonmunson"><img src="https://s.magecdn.com/social/tc-x.svg" width="16" height="16"><b>&nbsp;@jonmunson</b></a>
-&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/jonmunson/"><img src="https://s.magecdn.com/social/tc-linkedin.svg" width="16" height="16"><b>&nbsp;LinkedIn</b></a>
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-FFDD00?logo=buymeacoffee&logoColor=000000)](https://buymeacoffee.com/jonmunson)
+[![Website](https://img.shields.io/badge/Website-jonmunson.co.uk-111111?)](https://www.jonmunson.co.uk)
+[![X](https://img.shields.io/badge/@jonmunson-111111?logo=x&logoColor=white)](https://x.com/jonmunson)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jon%20Munson-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonmunson/)
