@@ -197,6 +197,7 @@
   chip-background-color: "#080a12"
   ha-chip-background-color: "#080a12"
   ha-chip-box-shadow: "inset 1px 1px 0 #12151f, inset -1px -1px 0 #4a5068"
+  ha-chip-border-radius: "0px"
   badge-color: "#00ff62"
   badge-background-color: "#080a12"
   ha-card-header-color: "#cdd3e0"
@@ -362,7 +363,8 @@
       border-radius: 0 !important;
       box-shadow: inset 1px 1px 0 var(--winamp-bevel-light), inset -1px -1px 0 var(--winamp-bevel-dark), 0 0 0 1px #0a0d15 !important;
     }
-    ha-card > .card-header {
+    ha-card > .card-header,
+    .card-header {
       display: flex !important;
       align-items: center !important;
       min-height: 18px !important;
@@ -379,6 +381,18 @@
       line-height: 1.2 !important;
       text-transform: uppercase !important;
       text-shadow: 0 1px 0 #080a12 !important;
+    }
+    ::slotted(.card-header) {
+      background: var(--winamp-titlebar-bg) !important;
+      color: var(--winamp-chrome-bright) !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      font-family: Tahoma, Arial, sans-serif !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.02em !important;
+      padding: 3px 8px !important;
+      min-height: 18px !important;
+      margin: 0 !important;
     }
     ha-card > .card-content,
     ha-card > #states,
