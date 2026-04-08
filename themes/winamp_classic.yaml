@@ -231,6 +231,13 @@
         border-bottom: 2px solid var(--winamp-lcd-green);
       }
     .: |
+      :host,
+      html {
+        --ha-chip-border-radius: 0px;
+        --md-assist-chip-container-shape: 0px;
+        --md-sys-shape-corner-small: 0px;
+        --md-sys-shape-corner-extra-small: 0px;
+      }
       ha-app-layout {
         background: var(--lovelace-background);
         font-family: Tahoma, Arial, Verdana, sans-serif;
@@ -841,6 +848,9 @@
   # ── card-mod: badges / chips ───────────────────────────
   card-mod-badge: |
     :host {
+      --ha-chip-border-radius: 0px;
+      --md-assist-chip-container-shape: 0px;
+      --md-sys-shape-corner-small: 0px;
       display: inline-flex;
       align-items: center;
       overflow: hidden;
@@ -855,10 +865,21 @@
       font-size: 10px !important;
       font-weight: 700 !important;
       letter-spacing: 0.01em !important;
+    }
+    .chip,
+    button,
+    [part="chip"],
+    [part="container"],
+    .container {
+      border-radius: 0 !important;
+      background: var(--winamp-display) !important;
     }
 
   card-mod-heading-badge: |
     :host {
+      --ha-chip-border-radius: 0px;
+      --md-assist-chip-container-shape: 0px;
+      --md-sys-shape-corner-small: 0px;
       display: inline-flex;
       align-items: center;
       overflow: hidden;
@@ -874,9 +895,20 @@
       font-weight: 700 !important;
       letter-spacing: 0.01em !important;
     }
+    .chip,
+    button,
+    [part="chip"],
+    [part="container"],
+    .container {
+      border-radius: 0 !important;
+      background: var(--winamp-display) !important;
+    }
 
   card-mod-assist-chip: |
     :host {
+      --ha-chip-border-radius: 0px;
+      --md-assist-chip-container-shape: 0px;
+      --md-sys-shape-corner-small: 0px;
       display: inline-flex;
       align-items: center;
       overflow: hidden;
@@ -891,6 +923,14 @@
       font-size: 10px !important;
       font-weight: 700 !important;
       letter-spacing: 0.01em !important;
+    }
+    .chip,
+    button,
+    [part="chip"],
+    [part="container"],
+    .container {
+      border-radius: 0 !important;
+      background: var(--winamp-display) !important;
     }
 
   # ── card-mod: entity rows ──────────────────────────────
